@@ -1,0 +1,87 @@
+DATA
+----
+A pre-release version of Hindi Dependency Treebank is being released now. HTB is a multi-layered dependency treebank with morphological, part-of-speech and dependency annotations on sentences from news domain corpus acquired from ISI-Kolkata, India. During annotation, the dependency relations are only marked between chunks in the sentence and the words are annotated with POS tags and morphological analysis. The annotations are stored in the Shakti Standard Format (See $parent_dir/docs/ssf-guide.pdf for a detailed description of the format). An automatic tool is then used on the inter-chunk relations as a post-processing step to get the complete dependency tree between words. This is done by first identifying the head word in the chunk and then identifying the intra-chunk relations between words in the chunks. The expanded tree is also stored in SSF without losing the chunk information.
+
+The problem sentences with comment='probsent' in the SSF format in the sentences are removed while converting from SSF to CoNLL format.
+New Expander has been created using ARC-EAGER algorithm (Shift-Reduce Parsing). The new expanded intrachunk data has been generated using the mentioned expander.
+
+To resolve some of the conflicts another expander is developed using ARC-Standard algorithm (Shift-Reduce Parsing)and the intrachunk data is generated using the mentioned expander.
+
+
+DATA FONT
+---------
+
+Though the original data is in UTF-8, it is also being released in wx notation (See $parent_dir/docs/wxroman.doc for description) for the sake of users who can not read devanagari script. 
+
+
+DATA FORMAT
+-----------
+
+The data is being released in 8 formats, Inter Chunk and Intra Chunk, SSF and CoNLL, utf and wx. For detailed introduction to SSF, please read $parent_dir/docs/ssf-guide.pdf and for an intro to the CoNLL format, go through the link http://ilk.uvt.nl/conll/#dataformat.
+
+
+DATA RELEASE
+------------
+
+The folder structure for the data is organized as follows:
+
+HTB-ver0.5*/
+|
+|__Inter Chunk/
+|      |
+|      |__CoNLL/
+|      |    |
+|      |    |__utf/
+|      |    |__wx/ 
+|      |    
+|      |__SSF/
+|      |    |
+|      |    |__utf/
+|      |    |__wx/
+|            
+|__Intra Chunk/
+|      |
+|      |__CoNLL/
+|      |    |
+|      |    |__utf/
+|      |    |__wx/ 
+|      |    
+|      |__SSF/
+|      |    |
+|      |    |__utf/
+|      |    |__wx/
+
+
+DOCUMENTATION
+-------------
+
+The folder structure for documents is organized as follows:
+
+docs/
+|____ ssf-guide.pdf
+|____ ssf-api/       # SSF APIs in C, Java and Python
+|____ wxroman.doc    # Description of the wx notation
+|____ GUIDELINES-MORPH
+|____ GUIDELINES-POS
+|____ DS-guidelines.pdf
+
+
+ACKNOWLEDGEMENTS
+----------------
+
+We would like to acknowledge each and everyone from Language Technologies Research Centre (LTRC), IIIT Hyderabad who have been part of this Hindi Urdu Treebanking Project.
+
+ 
+CONTACT
+-------
+
+hutb-request@lists.iiit.ac.in
+<for people who want to get the treebank; this would be the first port of call.>
+
+
+hutb-updates@lists.iiit.ac.in
+<for people who just want further update information.>
+
+
+hutb-discussion@lists.iiit.ac.in
+<people who want to ask questions about the HUTB.>

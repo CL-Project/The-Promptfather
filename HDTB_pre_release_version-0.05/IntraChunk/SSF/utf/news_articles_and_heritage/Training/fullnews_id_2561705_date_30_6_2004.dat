@@ -1,0 +1,355 @@
+<Sentence id='1'>
+1	भारत	NNP	<fs af='भारत,n,m,sg,3,d,0,0' drel='k1:मंगा' name='भारत' chunkId='NP' chunkType='head:NP' posn='10'>
+2	अपनी	PRP	<fs af='अपना,pn,f,any,any,o,0,0' drel='r6:सीमा' name='अपनी' chunkId='NP2' chunkType='head:NP2' posn='20'>
+3	सीमा	NN	<fs af='सीमा,n,f,sg,3,o,0_में,0' drel='k7p:रोकने' vpos='vib_2' name='सीमा' chunkId='NP3' chunkType='head:NP3' posn='30'>
+4	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:सीमा' name='में' chunkType='child:NP3' posn='40'>
+5	बंगलादेशी	JJ	<fs af='बंगलादेशी,adj,any,any,,d,,' drel='nmod__adj:घुसपैठ' name='बंगलादेशी' chunkType='child:NP4' posn='50'>
+6	घुसपैठ	NN	<fs af='घुसपैठ,n,f,sg,3,d,0,0' drel='k2:रोकने' name='घुसपैठ' chunkId='NP4' chunkType='head:NP4' posn='60'>
+7	रोकने	VM	<fs af='रोक,v,any,any,any,o,ना_के_लिए,nA' drel='rt:मंगा' vpos='tam_2_3' name='रोकने' chunkId='VGNN' chunkType='head:VGNN' posn='70'>
+8	के	PSP	<fs af='के,psp,,,,,,' drel='lwg__psp:रोकने' name='के' chunkType='child:VGNN' posn='80'>
+9	लिए	PSP	<fs af='लिए,psp,,,,,,' drel='lwg__psp:रोकने' name='लिए' chunkType='child:VGNN' posn='90'>
+10	जल्द	RB	<fs af='जल्द,adv,,,,,,' drel='adv:मंगा' name='जल्द' chunkId='RBP' chunkType='head:RBP' posn='100'>
+11	ही	RP	<fs af='ही,avy,,,,,,' drel='lwg__rp:जल्द' name='ही' chunkType='child:RBP' posn='110'>
+12	अमेरिका	NNP	<fs af='अमेरिका,n,m,sg,3,o,0_से,0' drel='k5:मंगा' vpos='vib_2' name='अमेरिका' chunkId='NP5' chunkType='head:NP5' posn='120'>
+13	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:अमेरिका' name='से' chunkType='child:NP5' posn='130'>
+14	खोजी	JJ	<fs af='खोजी,adj,any,any,,d,,' drel='nmod__adj:सेंसर' name='खोजी' chunkType='child:NP6' posn='140'>
+15	सेंसर	NN	<fs af='सेंसर,n,m,sg,3,d,0,0' drel='ccof:और' name='सेंसर' chunkId='NP6' chunkType='head:NP6' posn='150'>
+16	और	CC	<fs af='और,avy,,,,,,' drel='k2:मंगा' name='और' chunkId='CCP' chunkType='head:CCP' posn='160'>
+17	फ्लडलाइट	NN	<fs af='फ्लडलाइट,n,f,sg,3,d,0,0' drel='ccof:और' name='फ्लडलाइट' chunkId='NP7' chunkType='head:NP7' posn='170'>
+18	मंगा	VM	<fs af='मंगा,v,m,sg,3,,0_सक+ता_है,0' vpos='tam_2_3' name='मंगा' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='180'>
+19	सकता	VAUX	<fs af='सक,v,m,sg,any,,ता,wA' drel='lwg__vaux:मंगा' name='सकता' chunkType='child:VGF' posn='190'>
+20	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:सकता' name='है' chunkType='child:VGF' posn='200'>
+21	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:मंगा' name='।' chunkId='BLK' chunkType='head:BLK' posn='210'>
+</Sentence>
+
+<Sentence id='2'>
+1	जल्द	RB	<fs af='जल्द,adv,,,,,,' drel='adv:करने' name='जल्द' chunkId='RBP' chunkType='head:RBP' posn='10'>
+2	ही	RP	<fs af='ही,avy,,,,,,' drel='lwg__rp:जल्द' name='ही' chunkType='child:RBP' posn='20'>
+3	भारतीय	JJ	<fs af='भारतीय,adj,any,any,,o,,' drel='nmod__adj:मंत्रालय' name='भारतीय' chunkType='child:NP' posn='30'>
+4	गृह	NNPC	<fs af='गृह,n,m,sg,3,d,0,0' drel='pof__cn:मंत्रालय' name='गृह' chunkType='child:NP' posn='40'>
+5	मंत्रालय	NNP	<fs af='मंत्रालय,n,m,sg,3,o,0_का,0' drel='r6:टीम' vpos='vib_4' name='मंत्रालय' chunkId='NP' chunkType='head:NP' posn='50'>
+6	की	PSP	<fs af='का,psp,f,sg,,d,,' drel='lwg__psp:मंत्रालय' name='की' chunkType='child:NP' posn='60'>
+7	एक	QC	<fs af='एक,num,any,any,,any,,' drel='nmod__adj:टीम' name='एक' chunkType='child:NP2' posn='70'>
+8	टीम	NN	<fs af='टीम,n,f,sg,3,d,0,0' drel='k1:करने' name='टीम' chunkId='NP2' chunkType='head:NP2' posn='80'>
+9	इन	DEM	<fs af='यह,pn,any,pl,3,o,,' drel='nmod__adj:उपकरणों' name='इन' chunkType='child:NP3' posn='90'>
+10	उपकरणों	NN	<fs af='उपकरण,n,m,pl,3,o,0_का,0' drel='r6:खरीदारी' vpos='vib_3' name='उपकरणों' chunkId='NP3' chunkType='head:NP3' posn='100'>
+11	की	PSP	<fs af='का,psp,f,sg,,o,,' drel='lwg__psp:उपकरणों' name='की2' chunkType='child:NP3' posn='110'>
+12	खरीदारी	NN	<fs af='खरीदारी,n,f,sg,3,o,0_का,0' drel='r6:सिलसिले' vpos='vib_2' name='खरीदारी' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	के	PSP	<fs af='का,psp,m,sg,,o,,' drel='lwg__psp:खरीदारी' name='के' chunkType='child:NP4' posn='130'>
+14	सिलसिले	NN	<fs af='सिलसिला,n,m,sg,3,o,0_में,0' drel='k7:करने' vpos='vib_2' name='सिलसिले' chunkId='NP5' chunkType='head:NP5' posn='140'>
+15	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:सिलसिले' name='में' chunkType='child:NP5' posn='150'>
+16	अमेरिका	NNP	<fs af='अमेरिका,n,m,sg,3,o,0_का,0' drel='r6-k2:यात्रा' vpos='vib_2' name='अमेरिका' chunkId='NP6' chunkType='head:NP6' posn='160'>
+17	की	PSP	<fs af='का,psp,f,sg,,d,,' drel='lwg__psp:अमेरिका' name='की3' chunkType='child:NP6' posn='170'>
+18	यात्रा	NN	<fs af='यात्रा,n,f,sg,3,d,0,0' drel='pof:करने' name='यात्रा' chunkId='NP7' chunkType='head:NP7' posn='180'>
+19	करने	VM	<fs af='कर,v,f,sg,3,,ना_वाला_है,nA' vpos='tam_2_3' name='करने' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='190'>
+20	वाली	VAUX	<fs af='वाला,v,f,sg,any,,0,0' drel='lwg__vaux:करने' name='वाली' chunkType='child:VGF' posn='200'>
+21	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:वाली' name='है' chunkType='child:VGF' posn='210'>
+22	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:करने' name='।' chunkId='BLK' chunkType='head:BLK' posn='220'>
+</Sentence>
+
+<Sentence id='3'>
+1	सीमा	NNC	<fs af='सीमा,n,f,sg,3,d,0,0' drel='pof__cn:बल' name='सीमा' chunkType='child:NP' posn='10'>
+2	सुरक्षा	NNC	<fs af='सुरक्षा,n,f,sg,3,d,0,0' drel='pof__cn:बल' name='सुरक्षा' chunkType='child:NP' posn='20'>
+3	बल	NN	<fs af='बल,n,m,sg,3,o,0_का,0' drel='r6:अधिकारी' vpos='vib_4' name='बल' chunkId='NP' chunkType='head:NP' posn='30'>
+4	के	PSP	<fs af='का,psp,m,sg,,o,,' drel='lwg__psp:बल' name='के' chunkType='child:NP' posn='40'>
+5	एक	QC	<fs af='एक,num,any,any,,any,,' drel='nmod__adj:अधिकारी' name='एक' chunkType='child:NP2' posn='50'>
+6	वरिष्ठ	JJ	<fs af='वरिष्ठ,adj,any,any,,o,,' drel='nmod__adj:अधिकारी' name='वरिष्ठ' chunkType='child:NP2' posn='60'>
+7	अधिकारी	NN	<fs af='अधिकारी,n,m,sg,3,o,0_ने,0' drel='k1:बताया' vpos='vib_4' name='अधिकारी' chunkId='NP2' chunkType='head:NP2' posn='70'>
+8	ने	PSP	<fs af='ने,psp,,,,,,' drel='lwg__psp:अधिकारी' name='ने' chunkType='child:NP2' posn='80'>
+9	अपना	PRP	<fs af='अपना,pn,m,sg,any,d,0,0' drel='r6:नाम' name='अपना' chunkId='NP3' chunkType='head:NP3' posn='90'>
+10	नाम	NN	<fs af='नाम,n,m,sg,3,d,0,0' drel='k2:रखने' name='नाम' chunkId='NP4' chunkType='head:NP4' posn='100'>
+11	गुप्त	JJ	<fs af='गुप्त,adj,any,any,,,,' drel='pof:रखने' name='गुप्त' chunkId='JJP' chunkType='head:JJP' posn='110'>
+12	रखने	VM	<fs af='रख,v,any,sg,any,o,ना_का,nA' drel='r6:शर्त' vpos='tam_2' name='रखने' chunkId='VGNN' chunkType='head:VGNN' posn='120'>
+13	की	PSP	<fs af='का,psp,f,sg,,d,,' drel='lwg__psp:रखने' name='की' chunkType='child:VGNN' posn='130'>
+14	शर्त	NN	<fs af='शर्त,n,f,sg,3,o,0_पर,0' drel='k7:बताया' vpos='vib_2' name='शर्त' chunkId='NP5' chunkType='head:NP5' posn='140'>
+15	पर	PSP	<fs af='पर,psp,,,,,,' drel='lwg__psp:शर्त' name='पर' chunkType='child:NP5' posn='150'>
+16	बताया	VM	<fs af='बता,v,m,sg,any,,या,yA' name='बताया' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='160'>
+17	कि	CC	<fs af='कि,avy,,,,,,' drel='k2:बताया' name='कि' chunkId='CCP' chunkType='head:CCP' posn='170'>
+18	गृह	NNPC	<fs af='गृह,n,m,sg,3,d,0,0' drel='pof__cn:मंत्रालय' name='गृह' chunkType='child:NP6' posn='180'>
+19	मंत्रालय	NNP	<fs af='मंत्रालय,n,m,sg,3,d,0,0' drel='k1:करने' name='मंत्रालय' chunkId='NP6' chunkType='head:NP6' posn='190'>
+20	विशेषज्ञों	NN	<fs af='विशेषज्ञ,n,m,pl,3,o,0_का,0' drel='r6:टीम' vpos='vib_2' name='विशेषज्ञों' chunkId='NP7' chunkType='head:NP7' posn='200'>
+21	की	PSP	<fs af='का,psp,f,sg,,d,,' drel='lwg__psp:विशेषज्ञों' name='की2' chunkType='child:NP7' posn='210'>
+22	एक	QC	<fs af='एक,num,any,any,,any,,' drel='nmod__adj:टीम' name='एक2' chunkType='child:NP8' posn='220'>
+23	टीम	NN	<fs af='टीम,n,f,sg,3,d,0,0' drel='k1s:करने' name='टीम' chunkId='NP8' chunkType='head:NP8' posn='230'>
+24	अमेरिका	NNP	<fs af='अमेरिका,n,m,sg,3,d,0,0' drel='k2p:करने' name='अमेरिका' chunkId='NP9' chunkType='head:NP9' posn='240'>
+25	रवाना	JJ	<fs af='रवाना,adj,any,any,,,,' drel='pof:करने' name='रवाना' chunkId='JJP2' chunkType='head:JJP2' posn='250'>
+26	करने	VM	<fs af='कर,v,m,sg,3,o,ना_वाला_है,nA' drel='ccof:कि' vpos='tam_2_3' name='करने' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='260'>
+27	वाला	VAUX	<fs af='वाला,v,m,sg,any,,0,0' drel='lwg__vaux:करने' name='वाला' chunkType='child:VGF2' posn='270'>
+28	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:वाला' name='है' chunkType='child:VGF2' posn='280'>
+29	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:बताया' name='।' chunkId='BLK' chunkType='head:BLK' posn='290'>
+</Sentence>
+
+<Sentence id='4'>
+1	अमेरिका	NNP	<fs af='अमेरिका,n,m,sg,3,o,0_का,0' drel='r6:मैक्सिको' vpos='vib_2' name='अमेरिका' chunkId='NP' chunkType='head:NP' posn='10'>
+2	के	PSP	<fs af='का,psp,m,sg,,o,,' drel='lwg__psp:अमेरिका' name='के' chunkType='child:NP' posn='20'>
+3	न्यू	NNPC	<fs af='न्यू,adj,any,any,,d,,' drel='pof__cn:मैक्सिको' name='न्यू' chunkType='child:NP2' posn='30'>
+4	मैक्सिको	NNP	<fs af='मैक्सिको,n,m,sg,3,d,0,0' drel='jjmod:स्थित' name='मैक्सिको' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	स्थित	JJ	<fs af='स्थित,adj,any,any,,o,,' drel='nmod:लेबोरेटरीज' name='स्थित' chunkId='JJP' chunkType='head:JJP' posn='50'>
+6	सांडिआ	NNPC	<fs af='सांडिआ,n,m,sg,3,d,0,0' drel='pof__cn:लेबोरेटरीज' name='सांडिआ' chunkType='child:NP3' posn='60'>
+7	नेशनल	NNPC	<fs af='नेशनल,adj,any,any,,o,,' drel='pof__cn:लेबोरेटरीज' name='नेशनल' chunkType='child:NP3' posn='70'>
+8	लेबोरेटरीज	NNP	<fs af='लेबोरेटरी,n,f,pl,3,o,0_से,0' drel='k5:की2' vpos='vib_4' name='लेबोरेटरीज' chunkId='NP3' chunkType='head:NP3' posn='80'>
+9	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:लेबोरेटरीज' name='से' chunkType='child:NP3' posn='90'>
+10	इन	DEM	<fs af='यह,pn,any,pl,3,o,,' drel='nmod__adj:उपकरणों' name='इन' chunkType='child:NP4' posn='100'>
+11	अत्याधुनिक	JJ	<fs af='अत्याधुनिक,adj,any,any,,o,,' drel='nmod__adj:उपकरणों' name='अत्याधुनिक' chunkType='child:NP4' posn='110'>
+12	उपकरणों	NN	<fs af='उपकरण,n,m,pl,3,o,0_का,0' drel='r6-k2:खरीददारी' vpos='vib_4' name='उपकरणों' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	की	PSP	<fs af='का,psp,f,sg,,d,,' drel='lwg__psp:उपकरणों' name='की' chunkType='child:NP4' posn='130'>
+14	खरीददारी	NN	<fs af='खरीददारी,n,f,sg,3,d,0,0' drel='pof:की2' name='खरीददारी' chunkId='NP5' chunkType='head:NP5' posn='140'>
+15	की	VM	<fs af='कर,v,f,sg,3,,या_जा+गा,yA' vpos='tam_2' name='की2' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='150'>
+16	जाएगी	VAUX	<fs af='जा,v,f,sg,3,,गा,gA' drel='lwg__vaux:की2' name='जाएगी' chunkType='child:VGF' posn='160'>
+17	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:की2' name='।' chunkId='BLK' chunkType='head:BLK' posn='170'>
+</Sentence>
+
+<Sentence id='5'>
+1	अधिकारी	NN	<fs af='अधिकारी,n,m,sg,3,o,0_ने,0' drel='k1:बताया' vpos='vib_2' name='अधिकारी' chunkId='NP' chunkType='head:NP' posn='10'>
+2	ने	PSP	<fs af='ने,psp,,,,,,' drel='lwg__psp:अधिकारी' name='ने' chunkType='child:NP' posn='20'>
+3	बताया	VM	<fs af='बता,v,m,sg,any,,या,yA' name='बताया' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='30'>
+4	कि	CC	<fs af='कि,avy,,,,,,' drel='k2:बताया' name='कि' chunkId='CCP' chunkType='head:CCP' posn='40'>
+5	खोजी	JJ	<fs af='खोजी,adj,any,any,,o,,' drel='ccof:व' name='खोजी' chunkId='JJP' chunkType='head:JJP' posn='50'>
+6	व	CC	<fs af='व,avy,,,,,,' drel='nmod:उपकरणों' name='व' chunkId='CCP2' chunkType='head:CCP2' posn='60'>
+7	टोही	JJ	<fs af='टोह,adj,any,any,,o,,' drel='ccof:व' name='टोही' chunkId='JJP2' chunkType='head:JJP2' posn='70'>
+8	उपकरणों	NN	<fs af='उपकरण,n,m,pl,3,o,0_का,0' drel='r6:मदद' vpos='vib_2' name='उपकरणों' chunkId='NP2' chunkType='head:NP2' posn='80'>
+9	की	PSP	<fs af='का,psp,f,sg,,o,,' drel='lwg__psp:उपकरणों' name='की' chunkType='child:NP2' posn='90'>
+10	मदद	NN	<fs af='मदद,n,f,sg,3,o,0_से,0' drel='k3:हो' vpos='vib_2' name='मदद' chunkId='NP3' chunkType='head:NP3' posn='100'>
+11	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:मदद' name='से' chunkType='child:NP3' posn='110'>
+12	घुसपैठियों	NN	<fs af='घुसपैठ,n,m,pl,3,o,0_पर,0' drel='k7:रखना' vpos='vib_2' name='घुसपैठियों' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	पर	PSP	<fs af='पर,psp,,,,,,' drel='lwg__psp:घुसपैठियों' name='पर' chunkType='child:NP4' posn='130'>
+14	नजर	NN	<fs af='नजर,n,f,sg,3,d,0,0' drel='k2:रखना' name='नजर' chunkId='NP5' chunkType='head:NP5' posn='140'>
+15	रखना	VM	<fs af='रख,v,any,any,any,d,ना,nA' drel='k2:हो' name='रखना' chunkId='VGNN' chunkType='head:VGNN' posn='150'>
+16	बिल्कुल	RB	<fs af='बिल्कुल,adv,,,,,,' drel='adv:हो' name='बिल्कुल' chunkId='RBP' chunkType='head:RBP' posn='160'>
+17	आसान	JJ	<fs af='आसान,adj,any,any,,,,' drel='pof:हो' name='आसान' chunkId='JJP3' chunkType='head:JJP3' posn='170'>
+18	हो	VM	<fs af='हो,v,any,sg,3,,0_जा+गा,0' drel='ccof:कि' vpos='tam_2' name='हो' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='180'>
+19	जाएगा	VAUX	<fs af='जा,v,m,sg,3,,गा,gA' drel='lwg__vaux:हो' name='जाएगा' chunkType='child:VGF2' posn='190'>
+20	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:बताया' name='।' chunkId='BLK' chunkType='head:BLK' posn='200'>
+</Sentence>
+
+<Sentence id='6'>
+1	NULL	PRP	<fs af='null,unk,,,,,,' drel='k1:है' name='NULL' chunkId='NULL__NP' chunkType='head:NULL__NP' mtype='gap' troot='यह'>
+2	उल्लेखनीय	JJ	<fs af='उल्लेखनीय,adj,any,any,,,,' drel='k1s:है' name='उल्लेखनीय' chunkId='JJP' chunkType='head:JJP' posn='10'>
+3	है	VM	<fs af='है,v,any,sg,3,,है,hE' name='है' chunkId='VGF' chunkType='head:VGF' troot='है' stype='declarative' voicetype='active' posn='20'>
+4	कि	CC	<fs af='कि,avy,,,,,,' drel='rs:NULL' name='कि' chunkId='CCP' chunkType='head:CCP' posn='30'>
+5	अमेरिका	NNP	<fs af='अमेरिका,n,m,sg,3,d,0,0' drel='k1:करता' name='अमेरिका' chunkId='NP' chunkType='head:NP' posn='40'>
+6	घुसपैठ	NN	<fs af='घुसपैठ,n,f,sg,3,d,0,0' drel='k2:रोकने' name='घुसपैठ' chunkId='NP2' chunkType='head:NP2' posn='50'>
+7	रोकने	VM	<fs af='रोक,v,any,any,any,o,ना_के_लिए,nA' drel='rt:करता' vpos='tam_2_3' name='रोकने' chunkId='VGNN' chunkType='head:VGNN' posn='60'>
+8	के	PSP	<fs af='के,psp,,,,,,' drel='lwg__psp:रोकने' name='के' chunkType='child:VGNN' posn='70'>
+9	लिए	PSP	<fs af='लिए,psp,,,,,,' drel='lwg__psp:रोकने' name='लिए' chunkType='child:VGNN' posn='80'>
+10	सांडिआ	NNPC	<fs af='सांडिआ,n,m,sg,3,d,0,0' drel='pof__cn:लेबोरेटरीज' name='सांडिआ' chunkType='child:NP3' posn='90'>
+11	नेशनल	NNPC	<fs af='नेशनल,adj,any,any,,d,,' drel='pof__cn:लेबोरेटरीज' name='नेशनल' chunkType='child:NP3' posn='100'>
+12	लेबोरेटरीज	NNP	<fs af='लेबोरेटरी,n,f,pl,3,o,0_द्वारा,0' drel='jjmod:विकसित' vpos='vib_4' name='लेबोरेटरीज' chunkId='NP3' chunkType='head:NP3' posn='110'>
+13	द्वारा	PSP	<fs af='द्वारा,psp,,,,,,' drel='lwg__psp:लेबोरेटरीज' name='द्वारा' chunkType='child:NP3' posn='120'>
+14	विकसित	JJ	<fs af='विकसित,adj,any,any,,o,,' drel='nmod:सेंसरों' name='विकसित' chunkId='JJP2' chunkType='head:JJP2' posn='130'>
+15	सेंसरों	NN	<fs af='सेंसर,n,m,pl,3,o,0_का,0' drel='r6-k2:इस्तेमाल' vpos='vib_2' name='सेंसरों' chunkId='NP4' chunkType='head:NP4' posn='140'>
+16	का	PSP	<fs af='का,psp,m,sg,,d,,' drel='lwg__psp:सेंसरों' name='का' chunkType='child:NP4' posn='150'>
+17	इस्तेमाल	NN	<fs af='इस्तेमाल,n,m,sg,3,d,0,0' drel='pof:करता' name='इस्तेमाल' chunkId='NP5' chunkType='head:NP5' posn='160'>
+18	करता	VM	<fs af='कर,v,m,sg,3,,ता_रह+या_है,wA' drel='ccof:कि' vpos='tam_2_3' name='करता' chunkId='VGF2' chunkType='head:VGF2' troot='कर' stype='declarative' voicetype='active' posn='170'>
+19	रहा	VAUX	<fs af='रह,v,m,sg,any,,या,yA' drel='lwg__vaux:करता' name='रहा' chunkType='child:VGF2' posn='180'>
+20	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:रहा' name='है2' chunkType='child:VGF2' posn='190'>
+21	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:है' name='।' chunkId='BLK' chunkType='head:BLK' posn='200'>
+</Sentence>
+
+<Sentence id='7'>
+1	भारतीय	JJ	<fs af='भारतीय,adj,any,any,,o,,' drel='nmod__adj:प्रतिनिधिमंडल' name='भारतीय' chunkType='child:NP' posn='10'>
+2	प्रतिनिधिमंडल	NN	<fs af='प्रतिनिधिमंडल,n,m,sg,3,o,0_का,0' drel='r6:सदस्य' vpos='vib_3' name='प्रतिनिधिमंडल' chunkId='NP' chunkType='head:NP' posn='20'>
+3	के	PSP	<fs af='का,psp,m,pl,,d,,' drel='lwg__psp:प्रतिनिधिमंडल' name='के' chunkType='child:NP' posn='30'>
+4	सदस्य	NN	<fs af='सदस्य,n,m,pl,3,d,0,0' drel='k1:करेंगे' name='सदस्य' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	इस	DEM	<fs af='यह,pn,any,sg,3,o,,' drel='nmod__adj:संस्थान' name='इस' chunkType='child:NP3' posn='50'>
+6	संस्थान	NN	<fs af='संस्थान,n,m,sg,3,o,0_का,0' drel='r6:विशेषज्ञों' vpos='vib_3' name='संस्थान' chunkId='NP3' chunkType='head:NP3' posn='60'>
+7	के	PSP	<fs af='का,psp,m,pl,,o,,' drel='lwg__psp:संस्थान' name='के2' chunkType='child:NP3' posn='70'>
+8	विशेषज्ञों	NN	<fs af='विशेषज्ञ,n,m,pl,3,o,0_से,0' drel='k2:करेंगे' vpos='vib_2_RP' name='विशेषज्ञों' chunkId='NP4' chunkType='head:NP4' posn='80'>
+9	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:विशेषज्ञों' name='से' chunkType='child:NP4' posn='90'>
+10	भी	RP	<fs af='भी,avy,,,,,,' drel='lwg__rp:विशेषज्ञों' name='भी' chunkType='child:NP4' posn='100'>
+11	घुसपैठ	NN	<fs af='घुसपैठ,n,f,sg,3,o,0_का,0' drel='r6:पहलुओं' vpos='vib_2' name='घुसपैठ' chunkId='NP5' chunkType='head:NP5' posn='110'>
+12	के	PSP	<fs af='का,psp,m,pl,,o,,' drel='lwg__psp:घुसपैठ' name='के3' chunkType='child:NP5' posn='120'>
+13	विभिन्न	JJ	<fs af='विभिन्न,adj,any,any,,o,,' drel='nmod__adj:पहलुओं' name='विभिन्न' chunkType='child:NP6' posn='130'>
+14	पहलुओं	NN	<fs af='पहलू,n,m,pl,3,o,0_पर,0' drel='k7:करेंगे' vpos='vib_3' name='पहलुओं' chunkId='NP6' chunkType='head:NP6' posn='140'>
+15	पर	PSP	<fs af='पर,psp,,,,,,' drel='lwg__psp:पहलुओं' name='पर' chunkType='child:NP6' posn='150'>
+16	बातचीत	NN	<fs af='बातचीत,n,f,sg,3,d,0,0' drel='pof:करेंगे' name='बातचीत' chunkId='NP7' chunkType='head:NP7' posn='160'>
+17	करेंगे	VM	<fs af='कर,v,m,pl,3,,गा,gA' name='करेंगे' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='170'>
+18	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:करेंगे' name='।' chunkId='BLK' chunkType='head:BLK' posn='180'>
+</Sentence>
+
+<Sentence id='8'>
+1	4095	QC	<fs af='4095,num,any,any,,any,,' drel='nmod__adj:किलोमीटर' name='4095' chunkType='child:NP' posn='10'>
+2	किलोमीटर	NN	<fs af='किलोमीटर,n,m,pl,3,d,0,0' drel='jjmod:लंबी' name='किलोमीटर' chunkId='NP' chunkType='head:NP' posn='20'>
+3	लंबी	JJ	<fs af='लंबा,adj,f,sg,,o,,' drel='nmod:सीमा' name='लंबी' chunkId='JJP' chunkType='head:JJP' posn='30'>
+4	भारत	NNPC	<fs af='भारत,n,m,sg,3,d,0,0' drel='pof__cn:सीमा' name='भारत' chunkType='child:NP2' posn='40'>
+5	-	SYM	<fs af='-,punc,,,,,,' drel='rsym:सीमा' name='-' chunkType='child:NP2' posn='50'>
+6	बांग्लादेश	NNPC	<fs af='बांग्लादेश,n,m,sg,3,d,0,0' drel='pof__cn:सीमा' name='बांग्लादेश' chunkType='child:NP2' posn='60'>
+7	सीमा	NNP	<fs af='सीमा,n,f,sg,3,o,0_का,0' drel='r6:हिस्से' vpos='vib_5' name='सीमा' chunkId='NP2' chunkType='head:NP2' posn='70'>
+8	के	PSP	<fs af='का,psp,m,sg,,o,,' drel='lwg__psp:सीमा' name='के' chunkType='child:NP2' posn='80'>
+9	अधिकांश	JJ	<fs af='अधिकांश,adj,any,any,,o,,' drel='nmod__adj:हिस्से' name='अधिकांश' chunkType='child:NP3' posn='90'>
+10	हिस्से	NN	<fs af='हिस्सा,n,m,sg,3,o,0_का,0' drel='r6-k2:बाड़बंदी' vpos='vib_3' name='हिस्से' chunkId='NP3' chunkType='head:NP3' posn='100'>
+11	की	PSP	<fs af='का,psp,f,sg,,d,,' drel='lwg__psp:हिस्से' name='की' chunkType='child:NP3' posn='110'>
+12	बाड़बंदी	NN	<fs af='बाड़बंदी,n,f,sg,3,d,0,0' drel='pof:की2' name='बाड़बंदी' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	नहीं	NEG	<fs af='नहीं,avy,,,,,,' drel='lwg__neg:की2' name='नहीं' chunkType='child:VGF' posn='130'>
+14	की	VM	<fs af='कर,v,f,sg,3,,या_जा+या1_है,yA' vpos='tam_3_4' name='की2' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='140'>
+15	गई	VAUX	<fs af='जा,v,f,sg,any,,या1,yA1' drel='lwg__vaux:की2' name='गई' chunkType='child:VGF' posn='150'>
+16	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:गई' name='है' chunkType='child:VGF' posn='160'>
+17	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:की2' name='।' chunkId='BLK' chunkType='head:BLK' posn='170'>
+</Sentence>
+
+<Sentence id='9'>
+1	ऐसे	PRP	<fs af='ऐसा,pn,m,sg,3,o,0_में,0' drel='k7:हो' vpos='vib_2' name='ऐसे' chunkId='NP' chunkType='head:NP' posn='10'>
+2	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:ऐसे' name='में' chunkType='child:NP' posn='20'>
+3	बांग्लादेशियों	NN	<fs af='बांग्लादेशी,n,m,pl,3,o,0_के_लिए,0' drel='rt:हो' vpos='vib_2_3' name='बांग्लादेशियों' chunkId='NP2' chunkType='head:NP2' posn='30'>
+4	के	PSP	<fs af='के,psp,,,,,,' drel='lwg__psp:बांग्लादेशियों' name='के' chunkType='child:NP2' posn='40'>
+5	लिए	PSP	<fs af='लिए,psp,,,,,,' drel='lwg__psp:बांग्लादेशियों' name='लिए' chunkType='child:NP2' posn='50'>
+6	भारतीय	JJ	<fs af='भारतीय,adj,any,any,,o,,' drel='nmod__adj:सीमा' name='भारतीय' chunkType='child:NP3' posn='60'>
+7	सीमा	NN	<fs af='सीमा,n,f,sg,3,o,0_में,0' drel='k7p:करना' vpos='vib_3' name='सीमा' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:सीमा' name='में2' chunkType='child:NP3' posn='80'>
+9	प्रवेश	NN	<fs af='प्रवेश,n,m,sg,3,d,0,0' drel='pof:करना' name='प्रवेश' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	करना	VM	<fs af='कर,v,any,any,any,d,ना,nA' drel='k1:हो' name='करना' chunkId='VGNN' chunkType='head:VGNN' posn='100'>
+11	आसान	JJ	<fs af='आसान,adj,any,any,,,,' drel='pof:हो' name='आसान' chunkId='JJP' chunkType='head:JJP' posn='110'>
+12	हो	VM	<fs af='हो,v,m,sg,3,,0_जा+या1_है,0' vpos='tam_2_3' name='हो' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='120'>
+13	गया	VAUX	<fs af='जा,v,m,sg,any,,या1,yA1' drel='lwg__vaux:हो' name='गया' chunkType='child:VGF' posn='130'>
+14	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:गया' name='है' chunkType='child:VGF' posn='140'>
+15	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:हो' name='।' chunkId='BLK' chunkType='head:BLK' posn='150'>
+</Sentence>
+
+<Sentence id='10'>
+1	इलाके	NN	<fs af='इलाका,n,m,sg,3,o,0_का,0' drel='r6:स्थिति' vpos='vib_2' name='इलाके' chunkId='NP' chunkType='head:NP' posn='10'>
+2	की	PSP	<fs af='का,psp,f,sg,,d,,' drel='lwg__psp:इलाके' name='की' chunkType='child:NP' posn='20'>
+3	भौगोलिक	JJ	<fs af='भौगोलिक,adj,any,any,,d,,' drel='nmod__adj:स्थिति' name='भौगोलिक' chunkType='child:NP2' posn='30'>
+4	स्थिति	NN	<fs af='स्थिति,n,f,sg,3,d,0,0' drel='k1:है' name='स्थिति' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	ऐसी	PRP	<fs af='ऐसा,pn,f,sg,any,d,0,0' drel='k1s:है' name='ऐसी' chunkId='NP3' chunkType='head:NP3' posn='50'>
+6	है	VM	<fs af='है,v,any,sg,3,,है,hE' name='है' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='60'>
+7	कि	CC	<fs af='कि,avy,,,,,,' drel='rs:ऐसी' name='कि' chunkId='CCP' chunkType='head:CCP' posn='70'>
+8	घुसपैठ	NN	<fs af='घुसपैठ,n,f,sg,3,d,0,0' drel='k2:रोकना' name='घुसपैठ' chunkId='NP4' chunkType='head:NP4' posn='80'>
+9	पूरी	JJ	<fs af='पूरा,adj,f,sg,,d,,' drel='nmod__adj:तरह' name='पूरी' chunkType='child:NP5' posn='90'>
+10	तरह	NN	<fs af='तरह,n,f,sg,3,d,0,0' drel='vmod:रोकना' name='तरह' chunkId='NP5' chunkType='head:NP5' posn='100'>
+11	रोकना	VM	<fs af='रोक,v,any,any,any,d,ना,nA' drel='k1:है2' name='रोकना' chunkId='VGNN' chunkType='head:VGNN' posn='110'>
+12	आसान	JJ	<fs af='आसान,adj,any,any,,,,' drel='k1s:है2' name='आसान' chunkId='JJP' chunkType='head:JJP' posn='120'>
+13	नहीं	NEG	<fs af='नहीं,avy,,,,,,' drel='lwg__neg:है2' name='नहीं' chunkType='child:VGF2' posn='130'>
+14	है	VM	<fs af='है,v,any,sg,3,,है,hE' drel='ccof:कि' name='है2' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='140'>
+15	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:है' name='।' chunkId='BLK' chunkType='head:BLK' posn='150'>
+</Sentence>
+
+<Sentence id='11'>
+1	अधिकारी	NN	<fs af='अधिकारी,n,m,sg,3,o,0_ने,0' drel='k1:बताया' vpos='vib_2' name='अधिकारी' chunkId='NP' chunkType='head:NP' posn='10'>
+2	ने	PSP	<fs af='ने,psp,,,,,,' drel='lwg__psp:अधिकारी' name='ने' chunkType='child:NP' posn='20'>
+3	बताया	VM	<fs af='बता,v,m,sg,any,,या,yA' name='बताया' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='30'>
+4	कि	CC	<fs af='कि,avy,,,,,,' drel='k2:बताया' name='कि' chunkId='CCP' chunkType='head:CCP' posn='40'>
+5	असम	NNP	<fs af='असम,n,m,sg,3,o,0,0' drel='ccof:और' name='असम' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	और	CC	<fs af='और,avy,,,,,,' drel='k7p:किया' name='और' chunkId='CCP2' chunkType='head:CCP2' posn='60'>
+7	त्रिपुरा	NNP	<fs af='त्रिपुरा,n,m,sg,3,o,0_में,0' drel='ccof:और' vpos='vib_2' name='त्रिपुरा' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:त्रिपुरा' name='में' chunkType='child:NP3' posn='80'>
+9	अंतर्राष्ट्रीय	JJ	<fs af='अंतर्राष्ट्रीय,adj,any,any,,o,,' drel='nmod__adj:सीमा' name='अंतर्राष्ट्रीय' chunkType='child:NP4' posn='90'>
+10	सीमा	NN	<fs af='सीमा,n,f,sg,3,o,0_को,0' drel='k2:किया' vpos='vib_3' name='सीमा' chunkId='NP4' chunkType='head:NP4' posn='100'>
+11	को	PSP	<fs af='को,psp,,,,,,' drel='lwg__psp:सीमा' name='को' chunkType='child:NP4' posn='110'>
+12	इन	DEM	<fs af='यह,pn,any,pl,3,o,,' drel='nmod__adj:सेंसरों' name='इन' chunkType='child:NP5' posn='120'>
+13	अत्याधुनिक	JJ	<fs af='अत्याधुनिक,adj,any,any,,o,,' drel='nmod__adj:सेंसरों' name='अत्याधुनिक' chunkType='child:NP5' posn='130'>
+14	सेंसरों	NN	<fs af='सेंसर,n,m,pl,3,o,0_से,0' drel='k3:किया' vpos='vib_4' name='सेंसरों' chunkId='NP5' chunkType='head:NP5' posn='140'>
+15	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:सेंसरों' name='से' chunkType='child:NP5' posn='150'>
+16	लैस	JJ	<fs af='लैस,adj,any,any,,,,' drel='pof:किया' name='लैस' chunkId='JJP' chunkType='head:JJP' posn='160'>
+17	किया	VM	<fs af='कर,v,m,sg,3,,या_जा_सक+ता_है,yA' drel='ccof:कि' vpos='tam_2_3_4' name='किया' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='passive' posn='170'>
+18	जा	VAUX	<fs af='जा,v,any,any,any,,0,0' drel='lwg__vaux:किया' name='जा' chunkType='child:VGF2' posn='180'>
+19	सकता	VAUX	<fs af='सक,v,m,sg,any,,ता,wA' drel='lwg__vaux_cont:जा' name='सकता' chunkType='child:VGF2' posn='190'>
+20	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:सकता' name='है' chunkType='child:VGF2' posn='200'>
+21	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:बताया' name='।' chunkId='BLK' chunkType='head:BLK' posn='210'>
+</Sentence>
+
+<Sentence id='12'>
+1	अधिकारी	NN	<fs af='अधिकारी,n,m,sg,3,o,0_ने,0' drel='k1:बताया' vpos='vib_2' name='अधिकारी' chunkId='NP' chunkType='head:NP' posn='10'>
+2	ने	PSP	<fs af='ने,psp,,,,,,' drel='lwg__psp:अधिकारी' name='ने' chunkType='child:NP' posn='20'>
+3	यह	PRP	<fs af='यह,pn,any,sg,3,d,0,0' drel='k2:बताया' name='यह' chunkId='NP2' chunkType='head:NP2' posn='30'>
+4	भी	RP	<fs af='भी,avy,,,,,,' drel='lwg__rp:यह' name='भी' chunkType='child:NP2' posn='40'>
+5	बताया	VM	<fs af='बता,v,m,sg,any,,या,yA' name='बताया' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='50'>
+6	कि	CC	<fs af='कि,avy,,,,,,' drel='rs:यह' name='कि' chunkId='CCP' chunkType='head:CCP' posn='60'>
+7	गृह	NNPC	<fs af='गृह,n,m,sg,3,d,0,0' drel='pof__cn:मंत्रालय' name='गृह' chunkType='child:NP3' posn='70'>
+8	मंत्रालय	NNP	<fs af='मंत्रालय,n,m,sg,3,d,0,0' drel='k1:चाहता' name='मंत्रालय' chunkId='NP3' chunkType='head:NP3' posn='80'>
+9	सीमा	NN	<fs af='सीमा,n,f,sg,3,o,0_का,0' drel='r6:इलाकों' vpos='vib_2' name='सीमा' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	के	PSP	<fs af='का,psp,m,pl,,o,,' drel='lwg__psp:सीमा' name='के' chunkType='child:NP4' posn='100'>
+11	उन	DEM	<fs af='वह,pn,any,pl,3,o,,' drel='nmod__adj:इलाकों' name='उन' chunkType='child:NP5' posn='110'>
+12	असुरक्षित	JJ	<fs af='असुरक्षित,adj,any,any,,o,,' drel='nmod__adj:इलाकों' name='असुरक्षित' chunkType='child:NP5' posn='120'>
+13	इलाकों	NN	<fs af='इलाका,n,m,pl,3,o,0_में,0' drel='k7p:लगाना' vpos='vib_4' name='इलाकों' chunkId='NP5' chunkType='head:NP5' posn='130'>
+14	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:इलाकों' name='में' chunkType='child:NP5' posn='140'>
+15	फ्लडलाइट	NN	<fs af='फ्लडलाइट,n,f,sg,3,d,0,0' drel='k2:लगाना' name='फ्लडलाइट' chunkId='NP6' chunkType='head:NP6' posn='150'>
+16	लगाना	VM	<fs af='लगा,v,any,any,any,d,ना,nA' drel='k2:चाहता' name='लगाना' chunkId='VGNN' chunkType='head:VGNN' posn='160'>
+17	चाहता	VM	<fs af='चाह,v,m,sg,3,,ता_है,wA' drel='ccof:कि' vpos='tam_2' name='चाहता' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='170'>
+18	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux:चाहता' name='है' chunkType='child:VGF2' posn='180'>
+19	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:चाहता' name=',' chunkType='child:VGF2' posn='190'>
+20	जहां	PRP	<fs af='जहाँ,pn,,,,o,0_से,' drel='k7p:होकर' vpos='vib_2' name='जहां' chunkId='NP7' chunkType='head:NP7' coref=':NP5' posn='200'>
+21	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:जहां' name='से' chunkType='child:NP7' posn='210'>
+22	होकर	VM	<fs af='हो,v,any,any,any,,कर,kara' drel='vmod:करते' name='होकर' chunkId='VGNF' chunkType='head:VGNF' posn='220'>
+23	रात	NN	<fs af='रात,n,f,sg,3,o,0_में,0' drel='k7t:करते' vpos='vib_2' name='रात' chunkId='NP8' chunkType='head:NP8' posn='230'>
+24	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:रात' name='में2' chunkType='child:NP8' posn='240'>
+25	घुसपैठिए	NN	<fs af='घुसपैठिया,n,m,pl,3,d,0,0' drel='k1:करते' name='घुसपैठिए' chunkId='NP9' chunkType='head:NP9' posn='250'>
+26	भारत	NNP	<fs af='भारत,n,m,sg,3,o,0_में,0' drel='k7p:करते' vpos='vib_2' name='भारत' chunkId='NP10' chunkType='head:NP10' posn='260'>
+27	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:भारत' name='में3' chunkType='child:NP10' posn='270'>
+28	प्रवेश	NN	<fs af='प्रवेश,n,m,sg,3,d,0,0' drel='pof:करते' name='प्रवेश' chunkId='NP11' chunkType='head:NP11' posn='280'>
+29	करते	VM	<fs af='कर,v,m,pl,3,,ता_रह+या_है,wA' drel='nmod__relc:इलाकों' vpos='tam_2_3' name='करते' chunkId='VGF3' chunkType='head:VGF3' stype='declarative' voicetype='active' posn='290'>
+30	रहे	VAUX	<fs af='रह,v,m,pl,any,,या,yA' drel='lwg__vaux:करते' name='रहे' chunkType='child:VGF3' posn='300'>
+31	हैं	VAUX	<fs af='है,v,any,pl,3,,है,hE' drel='lwg__vaux_cont:रहे' name='हैं' chunkType='child:VGF3' posn='310'>
+32	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:बताया' name='।' chunkId='BLK' chunkType='head:BLK' posn='320'>
+</Sentence>
+
+<Sentence id='13'>
+1	ऐसे	DEM	<fs af='ऐसा,pn,m,pl,any,o,,' drel='nmod__adj:इलाकों' name='ऐसे' chunkType='child:NP' posn='10'>
+2	सीमांत	JJ	<fs af='सीमांत,adj,any,any,,o,,' drel='nmod__adj:इलाकों' name='सीमांत' chunkType='child:NP' posn='20'>
+3	इलाकों	NN	<fs af='इलाका,n,m,pl,3,o,0_को,0' drel='k2:किया' vpos='vib_4' name='इलाकों' chunkId='NP' chunkType='head:NP' posn='30'>
+4	को	PSP	<fs af='को,psp,,,,,,' drel='lwg__psp:इलाकों' name='को' chunkType='child:NP' posn='40'>
+5	चिन्हित	JJ	<fs af='चिन्हित,adj,any,any,,,,' drel='pof:किया' name='चिन्हित' chunkId='JJP' chunkType='head:JJP' posn='50'>
+6	किया	VM	<fs af='कर,v,m,sg,3,,या_जा_रह+या_है,yA' vpos='tam_2_3_4' name='किया' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='passive' posn='60'>
+7	जा	VAUX	<fs af='जा,v,any,any,any,,0,0' drel='lwg__vaux:किया' name='जा' chunkType='child:VGF' posn='70'>
+8	रहा	VAUX	<fs af='रह,v,m,sg,any,,या,yA' drel='lwg__vaux_cont:जा' name='रहा' chunkType='child:VGF' posn='80'>
+9	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:रहा' name='है' chunkType='child:VGF' posn='90'>
+10	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:किया' name='।' chunkId='BLK' chunkType='head:BLK' posn='100'>
+</Sentence>
+
+<Sentence id='14'>
+1	पूर्वोत्तर	NN	<fs af='पूर्वोत्तर,n,m,sg,3,o,0_में,0' drel='k7p:बदलता' vpos='vib_2' name='पूर्वोत्तर' chunkId='NP' chunkType='head:NP' posn='10'>
+2	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:पूर्वोत्तर' name='में' chunkType='child:NP' posn='20'>
+3	बांग्लादेशी	JJ	<fs af='बांग्लादेशी,adj,any,any,,o,,' drel='nmod__adj:घुसपैठ' name='बांग्लादेशी' chunkType='child:NP2' posn='30'>
+4	घुसपैठ	NN	<fs af='घुसपैठ,n,f,sg,3,o,0_के_कारण,0' drel='rh:बदलता' vpos='vib_3_4' name='घुसपैठ' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	के	PSP	<fs af='के,psp,m,,,o,,' drel='lwg__psp:घुसपैठ' name='के' chunkType='child:NP2' posn='50'>
+6	कारण	PSP	<fs af='कारण,n,m,,,o,,' drel='lwg__psp:घुसपैठ' name='कारण' chunkType='child:NP2' posn='60'>
+7	जनसंख्या	NN	<fs af='जनसंख्या,n,f,sg,3,o,0_का,0' drel='r6:स्वरूप' vpos='vib_2' name='जनसंख्या' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	का	PSP	<fs af='का,psp,m,sg,,d,,' drel='lwg__psp:जनसंख्या' name='का' chunkType='child:NP3' posn='80'>
+9	स्वरूप	NN	<fs af='स्वरूप,n,m,sg,3,d,0,0' drel='k1:बदलता' name='स्वरूप' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	तेजी	NN	<fs af='तेजी,n,f,sg,3,o,0_से,0' drel='adv:बदलता' vpos='vib_2' name='तेजी' chunkId='NP5' chunkType='head:NP5' posn='100'>
+11	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:तेजी' name='से' chunkType='child:NP5' posn='110'>
+12	बदलता	VM	<fs af='बदल,v,m,sg,3,,ता_जा_रह+या_है,wA' vpos='tam_2_3_4' name='बदलता' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='120'>
+13	जा	VAUX	<fs af='जा,v,any,any,any,,0,0' drel='lwg__vaux:बदलता' name='जा' chunkType='child:VGF' posn='130'>
+14	रहा	VAUX	<fs af='रह,v,m,sg,any,,या,yA' drel='lwg__vaux_cont:जा' name='रहा' chunkType='child:VGF' posn='140'>
+15	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:रहा' name='है' chunkType='child:VGF' posn='150'>
+16	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:बदलता' name='।' chunkId='BLK' chunkType='head:BLK' posn='160'>
+</Sentence>
+
+<Sentence id='15'>
+1	बांग्लादेशी	JJ	<fs af='बांग्लादेशी,adj,any,any,,d,,' drel='nmod__adj:घुसपैठिए' name='बांग्लादेशी' chunkType='child:NP' posn='10'>
+2	घुसपैठिए	NN	<fs af='घुसपैठिया,n,m,pl,3,d,0,0' drel='k1:जुड़े' name='घुसपैठिए' chunkId='NP' chunkType='head:NP' posn='20'>
+3	पूर्वोत्तर	NN	<fs af='पूर्वोत्तर,n,m,sg,3,o,0_में,0' drel='k7p:जुड़े' vpos='vib_2' name='पूर्वोत्तर' chunkId='NP2' chunkType='head:NP2' posn='30'>
+4	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:पूर्वोत्तर' name='में' chunkType='child:NP2' posn='40'>
+5	रिक्शा	NNC	<fs af='रिक्शा,n,m,sg,3,d,0,0' drel='pof__cn:चालन' name='रिक्शा' chunkType='child:NP3' posn='50'>
+6	चालन	NN	<fs af='चालन,n,m,sg,3,d,0,0' drel='ccof:NULL' name='चालन' chunkId='NP3' chunkType='head:NP3' posn='60'>
+7	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:चालन' name=',' chunkType='child:NP3' posn='70'>
+8	भट्ठा	NN	<fs af='भट्ठा,n,m,sg,3,d,0,0' drel='ccof:NULL' name='भट्ठा' chunkId='NP4' chunkType='head:NP4' posn='80'>
+9	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:भट्ठा' name=',2' chunkType='child:NP4' posn='90'>
+10	NULL	CC	<fs af='null,unk,,,,,,' drel='nmod:उद्योगों' name='NULL' chunkId='NULL__CCP' chunkType='head:NULL__CCP' mtype='gap' troot='और'>
+11	कृषि	NN	<fs af='कृषि,n,f,sg,3,o,0_जैसा,0' drel='ccof:NULL' vpos='vib_RP_3' name='कृषि' chunkId='NP5' chunkType='head:NP5' posn='100'>
+12	आदि	RP	<fs af='आदि,avy,,,,,,' drel='lwg__rp:कृषि' name='आदि' chunkType='child:NP5' posn='110'>
+13	जैसे	PSP	<fs af='जैसा,psp,m,pl,,o,,' drel='lwg__psp:कृषि' name='जैसे' chunkType='child:NP5' posn='120'>
+14	उद्योगों	NN	<fs af='उद्योग,n,m,pl,3,o,0_से,0' drel='ras-k1:जुड़े' vpos='vib_2' name='उद्योगों' chunkId='NP6' chunkType='head:NP6' posn='130'>
+15	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:उद्योगों' name='से' chunkType='child:NP6' posn='140'>
+16	जुड़े	VM	<fs af='जुड,v,m,pl,3,,या_हो+या_है,yA' vpos='tam_2_3' name='जुड़े' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='150'>
+17	हुए	VAUX	<fs af='हो,v,m,pl,any,,या,yA' drel='lwg__vaux:जुड़े' name='हुए' chunkType='child:VGF' posn='160'>
+18	हैं	VAUX	<fs af='है,v,any,pl,3,,है,hE' drel='lwg__vaux_cont:हुए' name='हैं' chunkType='child:VGF' posn='170'>
+19	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:जुड़े' name='।' chunkId='BLK' chunkType='head:BLK' posn='180'>
+</Sentence>
+
+<Sentence id='16'>
+1	पूर्वोत्तर	NN	<fs af='पूर्वोत्तर,n,m,sg,3,o,0_में,0' drel='k7p:बनते' vpos='vib_2' name='पूर्वोत्तर' chunkId='NP' chunkType='head:NP' posn='10'>
+2	में	PSP	<fs af='में,psp,,,,,,' drel='lwg__psp:पूर्वोत्तर' name='में' chunkType='child:NP' posn='20'>
+3	कानून	NNC	<fs af='कानून,n,m,sg,3,d,0,0' drel='pof__cn:व्यवस्था' name='कानून' chunkType='child:NP2' posn='30'>
+4	व्यवस्था	NN	<fs af='व्यवस्था,n,f,sg,3,o,0_के_लिए,0' drel='rt:बनते' vpos='vib_3_4' name='व्यवस्था' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	के	PSP	<fs af='के,psp,,,,,,' drel='lwg__psp:व्यवस्था' name='के' chunkType='child:NP2' posn='50'>
+6	लिए	PSP	<fs af='लिए,psp,,,,,,' drel='lwg__psp:व्यवस्था' name='लिए' chunkType='child:NP2' posn='60'>
+7	वे	PRP	<fs af='वह,pn,any,pl,3,d,0,0' drel='k1:बनते' name='वे' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	चुनौती	NN	<fs af='चुनौती,n,f,sg,3,d,0,0' drel='k1s:बनते' name='चुनौती' chunkId='NP4' chunkType='head:NP4' posn='80'>
+9	भी	RP	<fs af='भी,avy,,,,,,' drel='lwg__rp:चुनौती' name='भी' chunkType='child:NP4' posn='90'>
+10	बनते	VM	<fs af='बन,v,m,pl,3,,ता_जा_रह+या_है,wA' vpos='tam_2_3_4' name='बनते' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='100'>
+11	जा	VAUX	<fs af='जा,v,any,any,any,,0,0' drel='lwg__vaux:बनते' name='जा' chunkType='child:VGF' posn='110'>
+12	रहे	VAUX	<fs af='रह,v,m,pl,any,,या,yA' drel='lwg__vaux_cont:जा' name='रहे' chunkType='child:VGF' posn='120'>
+13	हैं	VAUX	<fs af='है,v,any,pl,3,,है,hE' drel='lwg__vaux_cont:रहे' name='हैं' chunkType='child:VGF' posn='130'>
+14	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:बनते' name='।' chunkId='BLK' chunkType='head:BLK' posn='140'>
+</Sentence>
+

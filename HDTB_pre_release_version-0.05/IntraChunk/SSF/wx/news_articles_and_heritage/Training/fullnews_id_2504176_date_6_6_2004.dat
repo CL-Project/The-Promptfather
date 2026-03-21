@@ -1,0 +1,504 @@
+<Sentence id='1'>
+1	Apako	PRP	<fs af='Apa,pn,any,sg,3,o,ko,ko' drel='k1:ho' name='Apako' chunkId='NP' chunkType='head:NP' posn='10'>
+2	yaha	PRP	<fs af='yaha,pn,any,sg,3,d,0,0' drel='k2:jAnakara' name='yaha' chunkId='NP2' chunkType='head:NP2' posn='20'>
+3	jAnakara	VM	<fs af='jAna,v,any,any,any,,kara,kara' drel='vmod:ho' name='jAnakara' chunkId='VGNF' chunkType='head:VGNF' posn='30'>
+4	hErAnI	NN	<fs af='hErAnI,n,f,sg,3,d,0,0' drel='pof:ho' name='hErAnI' chunkId='NP3' chunkType='head:NP3' posn='40'>
+5	ho	VM	<fs af='ho,v,f,sg,3,,0_saka+wA_hE,0' vpos='tam_2_3' name='ho' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='50'>
+6	sakawI	VAUX	<fs af='saka,v,f,sg,any,,wA,wA' drel='lwg__vaux:ho' name='sakawI' chunkType='child:VGF' posn='60'>
+7	hE	VAUX	<fs af='hE,v,any,sg,3,,hE,hE' drel='lwg__vaux_cont:sakawI' name='hE' chunkType='child:VGF' posn='70'>
+8	ki	CC	<fs af='ki,avy,,,,,,' drel='rs:yaha' name='ki' chunkId='CCP' chunkType='head:CCP' posn='80'>
+9	eka	QC	<fs af='eka,num,any,any,,any,,' drel='nmod__adj:gAzva' name='eka' chunkType='child:NP4' posn='90'>
+10	EsA	DEM	<fs af='EsA,pn,m,sg,any,d,,' drel='nmod__adj:gAzva' name='EsA' chunkType='child:NP4' posn='100'>
+11	gAzva	NN	<fs af='gAzva,n,m,sg,3,d,0,0' drel='k1:hE2' name='gAzva' chunkId='NP4' chunkType='head:NP4' posn='110'>
+12	BI	RP	<fs af='BI,avy,,,,,,' drel='lwg__rp:gAzva' name='BI' chunkType='child:NP4' posn='120'>
+13	hE	VM	<fs af='hE,v,any,sg,3,,hE,hE' drel='ccof:ki' name='hE2' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='130'>
+14	jahAz	PRP	<fs af='jahAz,pn,,,,d,,' drel='k7t:howI' name='jahAz' chunkId='NP5' chunkType='head:NP5' coref='NP4' posn='140'>
+15	jZaharaKurAnoM	NN	<fs af='jZaharaKurAna,n,m,pl,3,o,0_kA,0' drel='r6:Pasala' vpos='vib_2' name='jZaharaKurAnoM' chunkId='NP6' chunkType='head:NP6' posn='150'>
+16	kI	PSP	<fs af='kA,psp,f,sg,,d,,' drel='lwg__psp:jZaharaKurAnoM' name='kI' chunkType='child:NP6' posn='160'>
+17	Pasala	NN	<fs af='Pasala,n,f,sg,3,d,0,0' drel='k1:howI' name='Pasala' chunkId='NP7' chunkType='head:NP7' posn='170'>
+18	wEyAra	JJ	<fs af='wEyAra,adj,any,any,,,,' drel='pof:howI' name='wEyAra' chunkId='JJP' chunkType='head:JJP' posn='180'>
+19	howI	VM	<fs af='ho,v,f,sg,3,,wA_hE,wA' drel='nmod__relc:gAzva' vpos='tam_2' name='howI' chunkId='VGF3' chunkType='head:VGF3' stype='declarative' voicetype='active' posn='190'>
+20	hE	VAUX	<fs af='hE,v,any,sg,3,,hE,hE' drel='lwg__vaux:howI' name='hE3' chunkType='child:VGF3' posn='200'>
+21	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:ho' name='.' chunkId='BLK' chunkType='head:BLK' posn='210'>
+</Sentence>
+
+<Sentence id='2'>
+1	isakA	PRP	<fs af='yaha,pn,m,sg,3,o,kA,kA' drel='r6:asara' name='isakA' chunkId='NP' chunkType='head:NP'>
+2	iwanA	QF	<fs af='iwanA,adj,m,sg,,,,' drel='nmod__adj:asara' name='iwanA' chunkType='child:NP2'>
+3	asara	NN	<fs af='asara,n,m,sg,3,d,0,0' drel='k1:hE' name='asara' chunkId='NP2' chunkType='head:NP2'>
+4	hE	VM	<fs af='hE,v,any,sg,3,,hE,hE' name='hE' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active'>
+5	ki	CC	<fs af='ki,avy,,,,,,' drel='rs:asara' name='ki' chunkId='CCP' chunkType='head:CCP'>
+6	AsapAsa	NST	<fs af='AsapAsa,nst,m,sg,3,o,0_ke,' drel='r6:gAzva' vpos='2' name='AsapAsa' chunkId='NP3' chunkType='head:NP3'>
+7	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:AsapAsa' name='ke' chunkType='child:NP3'>
+8	kaI	QF	<fs af='kaI,avy,,,,,,' drel='nmod__adj:gAzva' name='kaI' chunkType='child:NP4'>
+9	Ora	QF	<fs af='Ora,avy,,,,,,' drel='nmod__adj:gAzva' name='Ora' chunkType='child:NP4'>
+10	gAzva	NN	<fs af='gAzva,n,m,pl,3,d,0,0' drel='k1:cala' name='gAzva' chunkId='NP4' chunkType='head:NP4'>
+11	BI	RP	<fs af='BI,avy,,,,,,' drel='lwg__rp:gAzva' name='BI' chunkType='child:NP4'>
+12	isI	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:nakSekaxama' name='isI' chunkType='child:NP5'>
+13	nakSekaxama	NN	<fs af='nakSekaxama,n,m,sg,3,o,0_para,0' drel='k7:cala' vpos='vib_3' name='nakSekaxama' chunkId='NP5' chunkType='head:NP5'>
+14	para	PSP	<fs af='para,psp,,,,,,' drel='lwg__psp:nakSekaxama' name='para' chunkType='child:NP5'>
+15	cala	VM	<fs af='cala,v,m,pl,3,,0_pada+yA_hE,0' drel='ccof:ki' vpos='tam_2_3' name='cala' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active'>
+16	padZe	VAUX	<fs af='pada,v,m,pl,any,,yA,yA' drel='lwg__vaux:cala' name='padZe' chunkType='child:VGF2'>
+17	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux_cont:padZe' name='hEM' chunkType='child:VGF2'>
+18	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hE' name='.' chunkId='BLK' chunkType='head:BLK'>
+</Sentence>
+
+<Sentence id='3'>
+1	kama	QF	<fs af='kama,avy,,,,,,' drel='nmod__adj:mehanawa' name='kama' chunkType='child:NP' posn='10'>
+2	mehanawa	NN	<fs af='mehanawa,n,f,sg,3,o,0,0' drel='ccof:Ora' name='mehanawa' chunkId='NP' chunkType='head:NP' posn='20'>
+3	Ora	CC	<fs af='Ora,avy,,,,,,' drel='r6:XaMXA' name='Ora' chunkId='CCP' chunkType='head:CCP' posn='30'>
+4	aXika	QF	<fs af='aXika,avy,,,,,,' drel='nmod__adj:PAyaxe' name='aXika' chunkType='child:NP2' posn='40'>
+5	PAyaxe	NN	<fs af='PAyaxA,n,m,sg,3,o,0_kA,0' drel='ccof:Ora' vpos='vib_3' name='PAyaxe' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	kA	PSP	<fs af='kA,psp,m,sg,,d,,' drel='lwg__psp:PAyaxe' name='kA' chunkType='child:NP2' posn='60'>
+7	'	SYM	<fs af='SINGLE_QUOTE,punc,,,,,,' drel='rsym:XaMXA' chunkType='child:NP3' posn='70'>
+8	yaha	DEM	<fs af='yaha,pn,any,sg,3,d,,' drel='nmod__adj:XaMXA' name='yaha' chunkType='child:NP3' posn='80'>
+9	XaMXA	NN	<fs af='XaMXA,n,m,sg,3,d,0,0' drel='k1:luBA' name='XaMXA' chunkId='NP3' chunkType='head:NP3' posn='90'>
+10	'	SYM	<fs af='SINGLE_QUOTE,punc,,,,,,' drel='rsym:XaMXA' name='2' chunkType='child:NP3' posn='100'>
+11	hara	QF	<fs af='hara,avy,,,,,,' drel='nmod__adj:kisI' name='hara' chunkType='child:NP4' posn='110'>
+12	kisI	PRP	<fs af='koI,pn,any,sg,3,o,0_ko,0' drel='k4a:luBA' vpos='vib_3' name='kisI' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	ko	PSP	<fs af='ko,psp,,,,,,' drel='lwg__psp:kisI' name='ko' chunkType='child:NP4' posn='130'>
+14	luBA	VM	<fs af='luBA,v,m,sg,3,,0_raha+yA_hE,0' vpos='tam_2_3' name='luBA' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='140'>
+15	rahA	VAUX	<fs af='raha,v,m,sg,any,,yA,yA' drel='lwg__vaux:luBA' name='rahA' chunkType='child:VGF' posn='150'>
+16	hE	VAUX	<fs af='hE,v,any,sg,3,,hE,hE' drel='lwg__vaux_cont:rahA' name='hE' chunkType='child:VGF' posn='160'>
+17	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:luBA' name='.' chunkId='BLK' chunkType='head:BLK' posn='170'>
+</Sentence>
+
+<Sentence id='4'>
+1	ye	PRP	<fs af='yaha,pn,any,pl,3,d,0,0' drel='k1:raKawe' name='ye' chunkId='NP' chunkType='head:NP' posn='10'>
+2	trena	NN	<fs af='trena,n,f,sg,3,o,0_meM,0' drel='k7p:hone' vpos='vib_2' name='trena' chunkId='NP2' chunkType='head:NP2' posn='20'>
+3	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:trena' name='meM' chunkType='child:NP2' posn='30'>
+4	hone	VM	<fs af='ho,v,any,sg,any,o,nA_vAlA,nA' drel='nmod:aparAXa' vpos='tam_2' name='hone' chunkId='VGNN' chunkType='head:VGNN' posn='40'>
+5	vAle	PSP	<fs af='vAlA,psp,m,sg,,o,,' drel='lwg__psp:hone' name='vAle' chunkType='child:VGNN' posn='50'>
+6	hara	QF	<fs af='hara,avy,,,,,,' drel='nmod__adj:waraha' name='hara' chunkType='child:NP3' posn='60'>
+7	waraha	NN	<fs af='waraha,n,f,sg,3,o,0_kA,0' drel='r6:aparAXa' vpos='vib_3' name='waraha' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	ke	PSP	<fs af='kA,psp,m,sg,,o,,' drel='lwg__psp:waraha' name='ke' chunkType='child:NP3' posn='80'>
+9	aparAXa	NN	<fs af='aparAXa,n,m,sg,3,o,0_kA,0' drel='r6:hunara' vpos='vib_2' name='aparAXa' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	kA	PSP	<fs af='kA,psp,m,sg,,d,,' drel='lwg__psp:aparAXa' name='kA' chunkType='child:NP4' posn='100'>
+11	hunara	NN	<fs af='hunara,n,m,sg,3,d,0,0' drel='k2:raKawe' name='hunara' chunkId='NP5' chunkType='head:NP5' posn='110'>
+12	raKawe	VM	<fs af='raKa,v,m,pl,3,,wA_hE,wA' vpos='tam_2' name='raKawe' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='120'>
+13	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux:raKawe' name='hEM' chunkType='child:VGF' posn='130'>
+14	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:raKawe' name='.' chunkId='BLK' chunkType='head:BLK' posn='140'>
+</Sentence>
+
+<Sentence id='6'>
+1	yaxi	CC	<fs af='yaxi,avy,,,,,,' drel='vmod:hicakawe' name='yaxi' chunkId='CCP' chunkType='head:CCP' posn='10'>
+2	kisI	PRP	<fs af='koI,pn,any,sg,3,o,0_ne,0' drel='k1:kI2' vpos='vib_2' name='kisI' chunkId='NP' chunkType='head:NP' posn='20'>
+3	ne	PSP	<fs af='ne,psp,,,,,,' drel='lwg__psp:kisI' name='ne' chunkType='child:NP' posn='30'>
+4	viroXa	NN	<fs af='viroXa,n,m,sg,3,o,0_kA,0' drel='r6-k2:koSiSa' vpos='vib_2' name='viroXa' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	kI	PSP	<fs af='kA,psp,f,sg,,d,,' drel='lwg__psp:viroXa' name='kI' chunkType='child:NP2' posn='50'>
+6	koSiSa	NN	<fs af='koSiSa,n,f,sg,3,d,0,0' drel='pof:kI2' name='koSiSa' chunkId='NP3' chunkType='head:NP3' posn='60'>
+7	kI	VM	<fs af='kara,v,f,sg,any,,yA,yA' drel='ccof:yaxi' name='kI2' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='70'>
+8	wo	CC	<fs af='wo,avy,,,,,,' name='wo' chunkId='CCP2' chunkType='head:CCP2' posn='80'>
+9	kisI	PRP	<fs af='koI,pn,any,sg,3,d,0,0' drel='mod:haxa' name='kisI2' chunkType='child:NP4' posn='90'>
+10	BI	RP	<fs af='BI,avy,,,,,,' drel='lwg__rp:kisI2' name='BI' chunkType='child:NP4' posn='100'>
+11	haxa	NN	<fs af='haxa,n,f,sg,3,o,0_waka,0' drel='k7:hicakawe' vpos='vib_RP_vib_4' name='haxa' chunkId='NP4' chunkType='head:NP4' posn='110'>
+12	waka	PSP	<fs af='waka,psp,,,,,,' drel='lwg__psp:haxa' name='waka' chunkType='child:NP4' posn='120'>
+13	jAne	VM	<fs af='jA,v,any,any,any,o,nA_meM,nA' drel='k7:hicakawe' vpos='tam_2' name='jAne' chunkId='VGNN' chunkType='head:VGNN' posn='130'>
+14	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:jAne' name='meM' chunkType='child:VGNN' posn='140'>
+15	nahIM	NEG	<fs af='nahIM,avy,,,,,,' drel='lwg__neg:hicakawe' name='nahIM' chunkType='child:VGF2' posn='150'>
+16	hicakawe	VM	<fs af='hicaka,v,m,pl,any,,wA,wA' drel='ccof:wo' name='hicakawe' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='160'>
+17	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:wo' name='.' chunkId='BLK' chunkType='head:BLK' posn='170'>
+</Sentence>
+
+<Sentence id='7'>
+1	jeba	NN	<fs af='jeba,n,f,sg,3,d,0,0' drel='k2:kAtanA' name='jeba' chunkId='NP' chunkType='head:NP' posn='10'>
+2	kAtanA	VM	<fs af='kAta,v,any,any,any,o,nA,nA' drel='ccof:Ora' name='kAtanA' chunkId='VGNN' chunkType='head:VGNN' posn='20'>
+3	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:kAtanA' name=',' chunkType='child:VGNN' posn='30'>
+4	sAmAna	NN	<fs af='sAmAna,n,m,sg,3,d,0,0' drel='k2:kara' name='sAmAna' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	pAra	NN	<fs af='pAra,n,m,sg,3,d,0,0' drel='pof:kara' name='pAra' chunkId='NP3' chunkType='head:NP3' posn='50'>
+6	kara	VM	<fs af='kara,v,any,any,any,,0_xe+nA,0' drel='ccof:Ora' vpos='tam_2' name='kara' chunkId='VGNN2' chunkType='head:VGNN2' posn='60'>
+7	xenA	VAUX	<fs af='xe,v,any,any,any,o,nA,nA' drel='lwg__vaux:kara' name='xenA' chunkType='child:VGNN2' posn='70'>
+8	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:kara' name=',2' chunkType='child:VGNN2' posn='80'>
+9	jZaharaKurAnI	NN	<fs af='jZaharaKurAnI,n,f,sg,3,d,0,0' drel='ccof:Ora' name='jZaharaKurAnI' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	Ora	CC	<fs af='Ora,avy,,,,,,' drel='rs:jo' name='Ora' chunkId='CCP' chunkType='head:CCP' posn='100'>
+11	trena	NNC	<fs af='trena,n,f,sg,3,d,0,0' drel='pof__cn:dakEwI' name='trena' chunkType='child:NP5' posn='110'>
+12	dakEwI	NN	<fs af='dakEwI,n,f,sg,3,d,0,0' drel='ccof:Ora' name='dakEwI' chunkId='NP5' chunkType='head:NP5' posn='120'>
+13	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:dakEwI' name=',3' chunkType='child:NP5' posn='130'>
+14	jo	PRP	<fs af='jo,pn,any,sg,3,d,0,0' drel='k1:huA' name='jo' chunkId='NP6' chunkType='head:NP6' posn='140'>
+15	BI	RP	<fs af='BI,avy,,,,,,' drel='lwg__rp:jo' name='BI' chunkType='child:NP6' posn='150'>
+16	saMBava	JJ	<fs af='saMBava,adj,any,any,,,,' drel='pof:huA' name='saMBava' chunkId='JJP' chunkType='head:JJP' posn='160'>
+17	huA	VM	<fs af='ho,v,m,sg,any,,yA,yA' drel='vmod:kara2' name='huA' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='170'>
+18	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:huA' name=',4' chunkType='child:VGF' posn='180'>
+19	kara	VM	<fs af='kara,v,m,pl,3,,0_gujara+wA_hE,0' vpos='tam_2_3' name='kara2' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='190'>
+20	gujZarawe	VAUX	<fs af='gujara,v,m,pl,any,,wA,wA' drel='lwg__vaux:kara2' name='gujZarawe' chunkType='child:VGF2' posn='200'>
+21	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux_cont:gujZarawe' name='hEM' chunkType='child:VGF2' posn='210'>
+22	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:kara2' name='.' chunkId='BLK' chunkType='head:BLK' posn='220'>
+</Sentence>
+
+<Sentence id='8'>
+1	isa	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:gAzva' name='isa' chunkType='child:NP' posn='10'>
+2	gAzva	NN	<fs af='gAzva,n,m,sg,3,o,0_se,0' drel='k5:nikalawI' vpos='vib_3' name='gAzva' chunkId='NP' chunkType='head:NP' posn='20'>
+3	se	PSP	<fs af='se,psp,,,,,,' drel='lwg__psp:gAzva' name='se' chunkType='child:NP' posn='30'>
+4	xasa	QC	<fs af='xasa,num,any,any,,any,,' drel='nmod__adj:yuvakoM' name='xasa' chunkType='child:NP2' posn='40'>
+5	-	SYM	<fs af='-,punc,,,,,,' drel='rsym:xasa' name='-' chunkType='child:NP2' posn='50'>
+6	xasa	RDP	<fs af='xasa,num,any,any,,any,,' drel='pof__redup:xasa' name='xasa2' chunkType='child:NP2' posn='60'>
+7	yuvakoM	NN	<fs af='yuvaka,n,m,pl,3,o,0_kA,0' drel='r6:tImeM' vpos='vib_5' name='yuvakoM' chunkId='NP2' chunkType='head:NP2' posn='70'>
+8	kI	PSP	<fs af='kA,psp,f,pl,,d,,' drel='lwg__psp:yuvakoM' name='kI' chunkType='child:NP2' posn='80'>
+9	tImeM	NN	<fs af='tIma,n,f,pl,3,d,0,0' drel='k1:nikalawI' name='tImeM' chunkId='NP3' chunkType='head:NP3' posn='90'>
+10	apane	PRP	<fs af='apanA,pn,m,any,any,o,0,0' drel='r6:aBiyAna' name='apane' chunkId='NP4' chunkType='head:NP4' posn='100'>
+11	aBiyAna	NN	<fs af='aBiyAna,n,m,sg,3,o,0_para,0' drel='k7:nikalawI' vpos='vib_2' name='aBiyAna' chunkId='NP5' chunkType='head:NP5' posn='110'>
+12	para	PSP	<fs af='para,psp,,,,,,' drel='lwg__psp:aBiyAna' name='para' chunkType='child:NP5' posn='120'>
+13	nikalawI	VM	<fs af='nikala,v,f,pl,3,,wA_hE,wA' vpos='tam_2' name='nikalawI' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='130'>
+14	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux:nikalawI' name='hEM' chunkType='child:VGF' posn='140'>
+15	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:nikalawI' name='.' chunkId='BLK' chunkType='head:BLK' posn='150'>
+</Sentence>
+
+<Sentence id='9'>
+1	bujZurga	JJ	<fs af='bujurga,adj,any,any,,d,,' drel='nmod__adj:aparAXI' name='bujZurga' chunkType='child:NP' posn='10'>
+2	aparAXI	NN	<fs af='aparAXI,n,m,pl,3,d,0,0' drel='k1:lagAwe' name='aparAXI' chunkId='NP' chunkType='head:NP' posn='20'>
+3	baccoM	NN	<fs af='baccA,n,m,pl,3,o,0_ko,0' drel='k2:lagAwe' vpos='vib_2_RP' name='baccoM' chunkId='NP2' chunkType='head:NP2' posn='30'>
+4	ko	PSP	<fs af='ko,psp,,,,,,' drel='lwg__psp:baccoM' name='ko' chunkType='child:NP2' posn='40'>
+5	BI	RP	<fs af='BI,avy,,,,,,' drel='lwg__rp:baccoM' name='BI' chunkType='child:NP2' posn='50'>
+6	Cote	JJC	<fs af='CotA,adj,m,sg,,o,,' drel='mod:mote' name='Cote' chunkType='child:NP3' posn='60'>
+7	-	SYM	<fs af='-,punc,,,,,,' drel='rsym:mote' name='-' chunkType='child:NP3' posn='70'>
+8	mote	JJ	<fs af='motA,adj,m,sg,,o,,' drel='nmod__adj:aparAXa' name='mote' chunkType='child:NP3' posn='80'>
+9	aparAXa	NN	<fs af='aparAXa,n,m,sg,3,o,0_meM,0' drel='k7:lagAwe' vpos='vib_5' name='aparAXa' chunkId='NP3' chunkType='head:NP3' posn='90'>
+10	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:aparAXa' name='meM' chunkType='child:NP3' posn='100'>
+11	lagAwe	VM	<fs af='lagA,v,m,pl,3,,wA_hE,wA' vpos='tam_2' name='lagAwe' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='110'>
+12	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux:lagAwe' name='hEM' chunkType='child:VGF' posn='120'>
+13	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:lagAwe' name='.' chunkId='BLK' chunkType='head:BLK' posn='130'>
+</Sentence>
+
+<Sentence id='10'>
+1	hOsalA	NNC	<fs af='hOsalA,n,m,sg,3,d,0,0' drel='pof__cn:aPZajZAI' name='hOsalA' chunkType='child:NP' posn='10'>
+2	aPZajZAI	NN	<fs af='aPZajZAI,n,f,sg,3,o,0_ke_lie,0' drel='rt:xiyA' vpos='vib_3_4' name='aPZajZAI' chunkId='NP' chunkType='head:NP' posn='20'>
+3	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:aPZajZAI' name='ke' chunkType='child:NP' posn='30'>
+4	lie	PSP	<fs af='lie,psp,,,,,,' drel='lwg__psp:aPZajZAI' name='lie' chunkType='child:NP' posn='40'>
+5	rupaye	NNC	<fs af='rupayA,n,m,sg,3,d,0,0' drel='pof__cn:pEse' name='rupaye' chunkType='child:NP2' posn='50'>
+6	-	SYM	<fs af='-,punc,,,,,,' drel='rsym:pEse' name='-' chunkType='child:NP2' posn='60'>
+7	pEse	NN	<fs af='pEsA,n,m,sg,3,o,0_kA,0' drel='r6:lAlaca' vpos='vib_4' name='pEse' chunkId='NP2' chunkType='head:NP2' posn='70'>
+8	kA	PSP	<fs af='kA,psp,m,sg,,d,,' drel='lwg__psp:pEse' name='kA' chunkType='child:NP2' posn='80'>
+9	Dera	QFC	<fs af='Dera,avy,,,,,,' drel='mod:sArA' name='Dera' chunkType='child:NP3' posn='90'>
+10	sArA	QF	<fs af='sArA,adj,m,sg,,d,,' drel='nmod__adj:lAlaca' name='sArA' chunkType='child:NP3' posn='100'>
+11	lAlaca	NN	<fs af='lAlaca,n,m,sg,3,d,0,0' drel='pof:xiyA' name='lAlaca' chunkId='NP3' chunkType='head:NP3' posn='110'>
+12	xiyA	VM	<fs af='xe,v,m,sg,3,,yA_jA+wA_hE,yA' vpos='tam_2_3' name='xiyA' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='120'>
+13	jAwA	VAUX	<fs af='jA,v,m,sg,any,,wA,wA' drel='lwg__vaux:xiyA' name='jAwA' chunkType='child:VGF' posn='130'>
+14	hE	VAUX	<fs af='hE,v,any,sg,3,,hE,hE' drel='lwg__vaux_cont:jAwA' name='hE' chunkType='child:VGF' posn='140'>
+15	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:xiyA' name='.' chunkId='BLK' chunkType='head:BLK' posn='150'>
+</Sentence>
+
+<Sentence id='11'>
+1	xilaxAranagara	NNP	<fs af='xilaxAranagara,n,m,sg,3,d,0,0' drel='nmod__adj:steSana' name='xilaxAranagara' chunkType='child:NP' posn='10'>
+2	steSana	NN	<fs af='steSana,n,m,sg,3,o,0_ko,0' drel='k2:karawe' vpos='vib_vib_3' name='steSana' chunkId='NP' chunkType='head:NP' posn='20'>
+3	ko	PSP	<fs af='ko,psp,,,,,,' drel='lwg__psp:steSana' name='ko' chunkType='child:NP' posn='30'>
+4	bawOra	PSP	<fs af='bawOra,psp,,,,,,' drel='lwg__psp:pATaSAlA' name='bawOra' chunkType='child:NP2' posn='40'>
+5	pATaSAlA	NN	<fs af='pATaSAlA,n,f,sg,3,d,0_bawOra,0' drel='k2s:karawe' vpos='1_vib' name='pATaSAlA' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	iswemAla	NN	<fs af='iswemAla,n,m,sg,3,d,0,0' drel='pof:karawe' name='iswemAla' chunkId='NP3' chunkType='head:NP3' posn='60'>
+7	karawe	VM	<fs af='kara,v,m,pl,3,,wA_hE,wA' vpos='tam_2' name='karawe' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='70'>
+8	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux:karawe' name='hEM' chunkType='child:VGF' posn='80'>
+9	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:karawe' name='.' chunkId='BLK' chunkType='head:BLK' posn='90'>
+</Sentence>
+
+<Sentence id='12'>
+1	xillI	NNPC	<fs af='xillI,n,f,sg,3,d,0,0' drel='pof__cn:hAvadZA' name='xillI' chunkType='child:NP' posn='10'>
+2	-	SYM	<fs af='-,punc,,,,,,' drel='rsym:hAvadZA' name='-' chunkType='child:NP' posn='20'>
+3	hAvadZA	NNP	<fs af='hAvadZA,n,m,sg,3,d,0,0' drel='nmod__adj:rUta' name='hAvadZA' chunkType='child:NP' posn='30'>
+4	rUta	NN	<fs af='rUta,n,m,sg,3,o,0_para,0' drel='k7p:hE' vpos='vib_vib_5' name='rUta' chunkId='NP' chunkType='head:NP' posn='40'>
+5	para	PSP	<fs af='para,psp,,,,,,' drel='lwg__psp:rUta' name='para' chunkType='child:NP' posn='50'>
+6	mugalasarAya	NNP	<fs af='mugalasarAya,n,m,sg,3,o,0_se,0' drel='k5:hE' vpos='vib_2' name='mugalasarAya' chunkId='NP2' chunkType='head:NP2' posn='60'>
+7	se	PSP	<fs af='se,psp,,,,,,' drel='lwg__psp:mugalasarAya' name='se' chunkType='child:NP2' posn='70'>
+8	60	QC	<fs af='60,num,any,any,,any,,' drel='nmod__adj:kilomItara' name='60' chunkType='child:NP3' posn='80'>
+9	kilomItara	NN	<fs af='kilomItara,n,m,sg,3,d,0_Age,0' drel='k7p:hE' vpos='vib_3' name='kilomItara' chunkId='NP3' chunkType='head:NP3' posn='90'>
+10	Age	NST	<fs af='Age,nst,m,sg,3,d,,' drel='lwg__psp:kilomItara' name='Age' chunkType='child:NP3' posn='100'>
+11	patanA	NNP	<fs af='patanA,n,m,sg,3,o,0_kA_ora,0' drel='rd:hE' vpos='vib_2_3' name='patanA' chunkId='NP4' chunkType='head:NP4' posn='110'>
+12	kI	PSP	<fs af='kA,psp,f,sg,,d,,' drel='lwg__psp:patanA' name='kI' chunkType='child:NP4' posn='120'>
+13	ora	NST	<fs af='ora,nst,f,sg,3,d,,' drel='lwg__psp:patanA' name='ora' chunkType='child:NP4' posn='130'>
+14	xilaxAranagara	NNP	<fs af='xilaxAranagara,n,m,sg,3,d,0,0' drel='nmod__adj:steSana' name='xilaxAranagara' chunkType='child:NP5' posn='140'>
+15	steSana	NN	<fs af='steSana,n,m,sg,3,d,0,0' drel='k1:hE' name='steSana' chunkId='NP5' chunkType='head:NP5' posn='150'>
+16	hE	VM	<fs af='hE,v,any,any,3,,hE,hE' name='hE' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='160'>
+17	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hE' name='.' chunkId='BLK' chunkType='head:BLK' posn='170'>
+</Sentence>
+
+<Sentence id='13'>
+1	isI	PRP	<fs af='yaha,pn,any,sg,3,o,0_se,0' drel='k2:satA' vpos='vib_2' name='isI' chunkId='NP' chunkType='head:NP' posn='10'>
+2	se	PSP	<fs af='se,psp,,,,,,' drel='lwg__psp:isI' name='se' chunkType='child:NP' posn='20'>
+3	satA	VM	<fs af='sata,v,m,sg,3,,yA,yA' drel='nmod__k1inv:gAzva' name='satA' chunkId='VGNF' chunkType='head:VGNF' posn='30'>
+4	relave	NNC	<fs af='relave,n,m,sg,3,d,0,0' drel='pof__cn:lAina' name='relave' chunkType='child:NP2' posn='40'>
+5	lAina	NN	<fs af='lAina,n,f,sg,3,o,0_kA,0' drel='r6:kinAre' vpos='vib_3' name='lAina' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	ke	PSP	<fs af='kA,psp,m,sg,,o,,' drel='lwg__psp:lAina' name='ke' chunkType='child:NP2' posn='60'>
+7	TIka	RP	<fs af='TIka,avy,,,,,,' drel='lwg__rp:kinAre' name='TIka' chunkType='child:NP3' posn='70'>
+8	kinAre	NN	<fs af='kinArA,n,m,sg,3,d,0,0' drel='k7p:hE' name='kinAre' chunkId='NP3' chunkType='head:NP3' posn='80'>
+9	usiyA	NNP	<fs af='usiyA,n,m,sg,3,d,0,0' drel='nmod__adj:gAzva' name='usiyA' chunkType='child:NP4' posn='90'>
+10	gAzva	NN	<fs af='gAzva,n,m,sg,3,d,0,0' drel='k1:hE' name='gAzva' chunkId='NP4' chunkType='head:NP4' posn='100'>
+11	hE	VM	<fs af='hE,v,any,sg,3,,hE,hE' name='hE' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='110'>
+12	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hE' name='.' chunkId='BLK' chunkType='head:BLK' posn='120'>
+</Sentence>
+
+<Sentence id='14'>
+1	isa	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:gAzva' name='isa' chunkType='child:NP' posn='10'>
+2	gAzva	NN	<fs af='gAzva,n,m,sg,3,o,0_meM,0' drel='k7p:pahuzcawe' vpos='vib_3' name='gAzva' chunkId='NP' chunkType='head:NP' posn='20'>
+3	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:gAzva' name='meM' chunkType='child:NP' posn='30'>
+4	pahuzcawe	VM	<fs af='pahuzca,v,m,sg,3,any,wA,wA' drel='vmod:xiKAI' name='pahuzcawe' chunkId='VGNF' chunkType='head:VGNF' posn='40'>
+5	hI	RP	<fs af='hI,avy,,,,,,' drel='lwg__rp:pahuzcawe' name='hI' chunkType='child:VGNF' posn='50'>
+6	sannAtA	NN	<fs af='sannAtA,n,m,sg,3,o,0,0' drel='ccof:Ora' name='sannAtA' chunkId='NP2' chunkType='head:NP2' posn='60'>
+7	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:sannAtA' name=',' chunkType='child:NP2' posn='70'>
+8	BuKamarI	NN	<fs af='BuKamarI,n,f,sg,3,o,0,0' drel='ccof:Ora' name='BuKamarI' chunkId='NP3' chunkType='head:NP3' posn='80'>
+9	Ora	CC	<fs af='Ora,avy,,,,,,' drel='r6:AwaMka' name='Ora' chunkId='CCP' chunkType='head:CCP' posn='90'>
+10	aSikRA	NN	<fs af='aSikRA,n,f,sg,3,o,0_kA,0' drel='ccof:Ora' vpos='vib_2' name='aSikRA' chunkId='NP4' chunkType='head:NP4' posn='100'>
+11	kA	PSP	<fs af='kA,psp,m,sg,,d,,' drel='lwg__psp:aSikRA' name='kA' chunkType='child:NP4' posn='110'>
+12	AwaMka	NN	<fs af='AwaMka,n,m,sg,3,d,0,0' drel='k1:xiKAI' name='AwaMka' chunkId='NP5' chunkType='head:NP5' posn='120'>
+13	xiKAI	VM	<fs af='xiKA,v,any,sg,3,,yA_pada_jA+gA,yA' vpos='tam_2_3' name='xiKAI' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='130'>
+14	padZa	VAUX	<fs af='pada,v,any,any,any,,0,0' drel='lwg__vaux:xiKAI' name='padZa' chunkType='child:VGF' posn='140'>
+15	jAegA	VAUX	<fs af='jA,v,m,sg,3,,gA,gA' drel='lwg__vaux_cont:padZa' name='jAegA' chunkType='child:VGF' posn='150'>
+16	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:xiKAI' name='.' chunkId='BLK' chunkType='head:BLK' posn='160'>
+</Sentence>
+
+<Sentence id='15'>
+1	isa	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:gAzva' name='isa' chunkType='child:NP' posn='10'>
+2	gAzva	NN	<fs af='gAzva,n,m,sg,3,o,0_kA,0' drel='r6:vyavasAya' vpos='vib_3' name='gAzva' chunkId='NP' chunkType='head:NP' posn='20'>
+3	kA	PSP	<fs af='kA,psp,m,sg,,d,,' drel='lwg__psp:gAzva' name='kA' chunkType='child:NP' posn='30'>
+4	muKya	JJ	<fs af='muKya,adj,any,any,,d,,' drel='nmod__adj:vyavasAya' name='muKya' chunkType='child:NP2' posn='40'>
+5	vyavasAya	NN	<fs af='vyavasAya,n,m,sg,3,d,0,0' drel='k1:hE' name='vyavasAya' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	aparAXa	NN	<fs af='aparAXa,n,m,sg,3,d,0,0' drel='k1s:hE' name='aparAXa' chunkId='NP3' chunkType='head:NP3' posn='60'>
+7	hE	VM	<fs af='hE,v,any,sg,3,,hE,hE' name='hE' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='70'>
+8	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hE' name='.' chunkId='BLK' chunkType='head:BLK' posn='80'>
+</Sentence>
+
+<Sentence id='16'>
+1	mena	NNC	<fs af='mena,adj,any,any,,o,,' drel='pof__cn:rUta' name='mena' chunkType='child:NP' posn='10'>
+2	rUta	NN	<fs af='rUta,n,m,sg,3,o,0_kA,0' drel='r6:kinAre' vpos='vib_3' name='rUta' chunkId='NP' chunkType='head:NP' posn='20'>
+3	ke	PSP	<fs af='kA,psp,m,sg,,o,,' drel='lwg__psp:rUta' name='ke' chunkType='child:NP' posn='30'>
+4	kinAre	NN	<fs af='kinArA,n,m,sg,3,d,0,0' drel='k7p:hone' name='kinAre' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	gAzva	NN	<fs af='gAzva,n,m,sg,3,d,0,0' drel='k1:hone' name='gAzva' chunkId='NP3' chunkType='head:NP3' posn='50'>
+6	hone	VM	<fs af='ho,v,m,any,any,o,nA_ke_kAraNa,nA' drel='rh:hE' vpos='tam_2_3' name='hone' chunkId='VGNN' chunkType='head:VGNN' posn='60'>
+7	ke	PSP	<fs af='ke,psp,m,,,o,,' drel='lwg__psp:hone' name='ke2' chunkType='child:VGNN' posn='70'>
+8	kAraNa	PSP	<fs af='kAraNa,n,m,,,o,,' drel='lwg__psp:hone' name='kAraNa' chunkType='child:VGNN' posn='80'>
+9	inakA	PRP	<fs af='yaha,pn,m,sg,3,o,kA,kA' drel='r6:vixyAlaya' name='inakA' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	prAWamika	NNC	<fs af='prAWamika,adj,any,any,,d,,' drel='pof__cn:vixyAlaya' name='prAWamika' chunkType='child:NP5' posn='10'>
+11	vixyAlaya	NN	<fs af='vixyAlaya,n,m,sg,3,d,0,0' drel='nmod:steSana' name='vixyAlaya' chunkId='NP5' chunkType='head:NP5' posn='110'>
+12	xilaxAranagara	NNP	<fs af='xilaxAranagara,n,m,sg,3,d,0,0' drel='nmod__adj:steSana' name='xilaxAranagara' chunkType='child:NP6' posn='120'>
+13	steSana	NN	<fs af='steSana,n,m,sg,3,d,0,0' drel='k1:hE' name='steSana' chunkId='NP6' chunkType='head:NP6' posn='130'>
+14	hE	VM	<fs af='hE,v,any,sg,3,,hE,hE' name='hE' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='140'>
+15	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hE' name='.' chunkId='BLK' chunkType='head:BLK' posn='150'>
+</Sentence>
+
+<Sentence id='17'>
+1	wakarIbana	RP	<fs af='wakarIbana,avy,,,,,,' drel='lwg__rp:pacAsa' name='wakarIbana' chunkType='child:NP' posn='10'>
+2	pacAsa	QC	<fs af='pacAsa,num,any,any,,any,,' drel='nmod__adj:sAla' name='pacAsa' chunkType='child:NP' posn='20'>
+3	sAla	NN	<fs af='sAla,n,m,sg,3,o,0_se,0' drel='k5:hEM' vpos='vib_4' name='sAla' chunkId='NP' chunkType='head:NP' posn='30'>
+4	se	PSP	<fs af='se,psp,,,,,,' drel='lwg__psp:sAla' name='se' chunkType='child:NP' posn='40'>
+5	yahAz	PRP	<fs af='yahAz,pn,,,,o,0_kA,' drel='r6:loga' vpos='vib_2' name='yahAz' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	ke	PSP	<fs af='kA,psp,m,pl,,d,,' drel='lwg__psp:yahAz' name='ke' chunkType='child:NP2' posn='60'>
+7	loga	NN	<fs af='loga,n,m,pl,3,d,0,0' drel='k1:hEM' name='loga' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	trenoM	NN	<fs af='trena,n,f,pl,3,o,0_meM,0' drel='k7:hone' vpos='vib_2' name='trenoM' chunkId='NP4' chunkType='head:NP4' posn='80'>
+9	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:trenoM' name='meM' chunkType='child:NP4' posn='90'>
+10	hone	VM	<fs af='ho,v,any,pl,any,o,nA_vAlA,nA' drel='nmod:aparAXoM' vpos='tam_2' name='hone' chunkId='VGNN' chunkType='head:VGNN' posn='100'>
+11	vAle	PSP	<fs af='vAlA,psp,m,pl,,o,,' drel='lwg__psp:hone' name='vAle' chunkType='child:VGNN' posn='110'>
+12	aparAXoM	NN	<fs af='aparAXa,n,m,pl,3,o,0_meM,0' drel='k7:hEM' vpos='vib_2' name='aparAXoM' chunkId='NP5' chunkType='head:NP5' posn='120'>
+13	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:aparAXoM' name='meM2' chunkType='child:NP5' posn='130'>
+14	pravqwwa	JJ	<fs af='pravqwwa,adj,any,any,,,,' drel='k1s:hEM' name='pravqwwa' chunkId='JJP' chunkType='head:JJP' posn='140'>
+15	hEM	VM	<fs af='hE,v,any,pl,3,,hE,hE' name='hEM' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='150'>
+16	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hEM' name='.' chunkId='BLK' chunkType='head:BLK' posn='160'>
+</Sentence>
+
+<Sentence id='18'>
+1	ye	PRP	<fs af='yaha,pn,any,pl,3,d,,' drel='k1:howe' name='ye' chunkId='NP' chunkType='head:NP' posn='10'>
+2	trenoM	NN	<fs af='trena,n,f,pl,3,o,0_meM,0' drel='k7:hone' vpos='vib_2' name='trenoM' chunkId='NP2' chunkType='head:NP2' posn='20'>
+3	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:trenoM' name='meM' chunkType='child:NP2' posn='30'>
+4	hone	VM	<fs af='ho,v,any,sg,any,o,nA_vAlA,nA' drel='nmod:aparAXoM' vpos='tam_2' name='hone' chunkId='VGNN' chunkType='head:VGNN' posn='40'>
+5	vAle	PSP	<fs af='vAlA,psp,m,sg,,o,,' drel='lwg__psp:hone' name='vAle' chunkType='child:VGNN' posn='50'>
+6	saBI	QF	<fs af='saBI,avy,,,,,,' drel='nmod__adj:waraha' name='saBI' chunkType='child:NP3' posn='60'>
+7	waraha	NN	<fs af='waraha,n,f,sg,3,o,0_kA,0' drel='r6:aparAXoM' vpos='vib_3' name='waraha' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	ke	PSP	<fs af='kA,psp,m,pl,,o,,' drel='lwg__psp:waraha' name='ke' chunkType='child:NP3' posn='80'>
+9	aparAXoM	NN	<fs af='aparAXa,n,m,pl,3,o,0_meM,0' drel='k7:howe' vpos='vib_2' name='aparAXoM' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:aparAXoM' name='meM2' chunkType='child:NP4' posn='100'>
+11	mAhira	JJ	<fs af='mAhira,adj,any,any,,,,' drel='pof:howe' name='mAhira' chunkId='JJP' chunkType='head:JJP' posn='110'>
+12	howe	VM	<fs af='ho,v,m,pl,3,,wA_hE,wA' vpos='tam_2' name='howe' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='120'>
+13	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux:howe' name='hEM' chunkType='child:VGF' posn='130'>
+14	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:howe' name='.' chunkId='BLK' chunkType='head:BLK' posn='140'>
+</Sentence>
+
+<Sentence id='19'>
+1	ve	PRP	<fs af='vaha,pn,any,pl,3,d,0,0' drel='k1:judZe' name='ve' chunkId='NP' chunkType='head:NP' posn='10'>
+2	isa	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:XaMXe' name='isa' chunkType='child:NP2' posn='20'>
+3	gZErakZAnUnI	JJ	<fs af='gZErakZAnUnI,adj,any,any,,o,,' drel='nmod__adj:XaMXe' name='gZErakZAnUnI' chunkType='child:NP2' posn='30'>
+4	XaMXe	NN	<fs af='XaMXA,n,m,sg,3,o,0_meM,0' drel='k7:judZe' vpos='vib_4' name='XaMXe' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:XaMXe' name='meM' chunkType='child:NP2' posn='50'>
+6	kaI	QF	<fs af='kaI,avy,,,,,,' drel='nmod__adj:pIDZiyoM' name='kaI' chunkType='child:NP3' posn='60'>
+7	pIDZiyoM	NN	<fs af='pIDI,n,f,pl,3,o,0_se,0' drel='k5:judZe' vpos='vib_3' name='pIDZiyoM' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	se	PSP	<fs af='se,psp,,,,,,' drel='lwg__psp:pIDZiyoM' name='se' chunkType='child:NP3' posn='80'>
+9	judZe	VM	<fs af='juda,v,m,pl,3,,yA_hE,yA' vpos='tam_2' name='judZe' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='90'>
+10	hEM	VAUX	<fs af='hE,v,any,pl,3,,hE,hE' drel='lwg__vaux:judZe' name='hEM' chunkType='child:VGF' posn='100'>
+11	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:judZe' name='.' chunkId='BLK' chunkType='head:BLK' posn='110'>
+</Sentence>
+
+<Sentence id='20'>
+1	relave	NNC	<fs af='relave,n,m,sg,3,d,0,0' drel='pof__cn:pulisa' name='relave' chunkType='child:NP' posn='10'>
+2	pulisa	NN	<fs af='pulisa,n,f,sg,3,o,0_ke_anusAra,0' drel='k7a:ho' vpos='vib_3_4' name='pulisa' chunkId='NP' chunkType='head:NP' posn='20'>
+3	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:pulisa' name='ke' chunkType='child:NP' posn='30'>
+4	anusAra	PSP	<fs af='anusAra,psp,,,,,,' drel='lwg__psp:pulisa' name='anusAra' chunkType='child:NP' posn='40'>
+5	varwamAna	NN	<fs af='varwamAna,n,m,sg,3,o,0_meM,0' drel='k7t:ho' vpos='vib_2' name='varwamAna' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:varwamAna' name='meM' chunkType='child:NP2' posn='60'>
+7	gAzva	NN	<fs af='gAzva,n,m,sg,3,o,0_kA,0' drel='r6:yuvaka' vpos='vib_2' name='gAzva' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	kA	PSP	<fs af='kA,psp,m,sg,,d,,' drel='lwg__psp:gAzva' name='kA' chunkType='child:NP3' posn='80'>
+9	SAyaxa	RB	<fs af='SAyaxa,adv,,,,,,' drel='adv:ho' name='SAyaxa' chunkId='RBP' chunkType='head:RBP' posn='90'>
+10	hI	RP	<fs af='hI,avy,,,,,,' drel='lwg__rp:SAyaxa' name='hI' chunkType='child:RBP' posn='100'>
+11	koI	PRP	<fs af='koI,pn,any,sg,3,d,0,0' drel='mod:yuvaka' name='koI' chunkType='child:NP4' posn='110'>
+12	yuvaka	NN	<fs af='yuvaka,n,m,sg,3,d,0,0' drel='k1:ho' name='yuvaka' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	ho	VM	<fs af='ho,v,any,any,any,,0,0' name='ho' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='130'>
+14	jo	PRP	<fs af='jo,pn,any,sg,3,d,0,0' drel='nmod:yuvaka' name='jo' chunkId='NP5' chunkType='head:NP5' coref='NP4' posn='140'>
+15	jurma	NN	<fs af='jurma,n,m,sg,3,o,0_kA,0' drel='r6:xuniyA' vpos='vib_2' name='jurma' chunkId='NP6' chunkType='head:NP6' posn='150'>
+16	kI	PSP	<fs af='kA,psp,f,sg,,o,,' drel='lwg__psp:jurma' name='kI' chunkType='child:NP6' posn='160'>
+17	xuniyA	NN	<fs af='xuniyA,n,f,sg,3,o,0_se,0' drel='ras-k2:raKawA' vpos='vib_2' name='xuniyA' chunkId='NP7' chunkType='head:NP7' posn='170'>
+18	se	PSP	<fs af='se,psp,,,,,,' drel='lwg__psp:xuniyA' name='se' chunkType='child:NP7' posn='180'>
+19	vAswA	NN	<fs af='vAswA,n,m,sg,3,d,0,0' drel='pof:raKawA' name='vAswA' chunkId='NP8' chunkType='head:NP8' posn='190'>
+20	na	NEG	<fs af='na,avy,,,,,,' drel='lwg__neg:raKawA' name='na' chunkType='child:VGF2' posn='200'>
+21	raKawA	VM	<fs af='raKa,v,m,any,any,,wA_ho,wA' drel='ccof:jo' vpos='tam_3' name='raKawA' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='210'>
+22	ho	VAUX	<fs af='ho,v,any,any,any,,0,0' drel='lwg__vaux:raKawA' name='ho2' chunkType='child:VGF2' posn='220'>
+23	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:ho' name='.' chunkId='BLK' chunkType='head:BLK' posn='230'>
+</Sentence>
+
+<Sentence id='21'>
+1	inheM	PRP	<fs af='yaha,pn,any,pl,3,o,ko,ko' drel='k1:hE' name='inheM' chunkId='NP' chunkType='head:NP' posn='10'>
+2	apane	PRP	<fs af='apanA,pn,m,any,any,o,0,0' drel='r6:XaMXe' name='apane' chunkId='NP2' chunkType='head:NP2' posn='20'>
+3	kAle	JJ	<fs af='kAlA,adj,m,sg,,o,,' drel='nmod__adj:XaMXe' name='kAle' chunkType='child:NP3' posn='30'>
+4	XaMXe	NN	<fs af='XaMXA,n,m,sg,3,o,0_ke_prawi,0' drel='rd:hE' vpos='vib_3_4' name='XaMXe' chunkId='NP3' chunkType='head:NP3' posn='40'>
+5	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:XaMXe' name='ke' chunkType='child:NP3' posn='50'>
+6	prawi	PSP	<fs af='prawi,psp,,,,,,' drel='lwg__psp:XaMXe' name='prawi' chunkType='child:NP3' posn='60'>
+7	koI	PRP	<fs af='koI,pn,any,sg,3,d,0,0' drel='mod:hayA' name='koI' chunkType='child:NP4' posn='70'>
+8	Sarma	NNC	<fs af='Sarma,n,f,sg,3,d,0,0' drel='pof__cn:hayA' name='Sarma' chunkType='child:NP4' posn='80'>
+9	-	SYM	<fs af='-,punc,,,,,,' drel='rsym:hayA' name='-' chunkType='child:NP4' posn='90'>
+10	hayA	NN	<fs af='hayA,n,f,sg,3,d,0,0' drel='k1s:hE' name='hayA' chunkId='NP4' chunkType='head:NP4' posn='100'>
+11	nahIM	NEG	<fs af='nahIM,avy,,,,,,' drel='lwg__neg:hE' name='nahIM' chunkType='child:VGF' posn='110'>
+12	hE	VM	<fs af='hE,v,any,sg,3,,hE,hE' name='hE' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='120'>
+13	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hE' name='.' chunkId='BLK' chunkType='head:BLK' posn='130'>
+</Sentence>
+
+<Sentence id='23'>
+1	pulisa	NN	<fs af='pulisa,n,f,sg,3,o,0_kA,0' drel='k1:CodZie' vpos='vib_2_RP' name='pulisa' chunkId='NP' chunkType='head:NP' posn='10'>
+2	kI	PSP	<fs af='kA,psp,f,sg,,d,,' drel='lwg__psp:pulisa' name='kI' chunkType='child:NP' posn='20'>
+3	wo	RP	<fs af='wo,avy,,,,,,' drel='lwg__rp:pulisa' name='wo' chunkType='child:NP' posn='30'>
+4	CodZie	VM	<fs af='Coda,v,any,sg,2h,,eM,eM' drel='vmod:jutA' name='CodZie' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='40'>
+5	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:CodZie' name=',' chunkType='child:VGF' posn='50'>
+6	yahAz	PRP	<fs af='yahAz,pn,,,,d,,' drel='k7:jutA' name='yahAz' chunkId='NP2' chunkType='head:NP2' posn='60'>
+7	suXAra	NN	<fs af='suXAra,n,m,sg,3,o,0_ke_lie,0' drel='rt:jutA' vpos='vib_2_3' name='suXAra' chunkId='NP3' chunkType='head:NP3' posn='70'>
+8	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:suXAra' name='ke' chunkType='child:NP3' posn='80'>
+9	lie	PSP	<fs af='lie,psp,,,,,,' drel='lwg__psp:suXAra' name='lie' chunkType='child:NP3' posn='90'>
+10	koI	PRP	<fs af='koI,pn,any,sg,3,d,0,0' drel='mod:saMsWA' name='koI' chunkType='child:NP4' posn='100'>
+11	BI	RP	<fs af='BI,avy,,,,,,' drel='lwg__rp:koI' name='BI' chunkType='child:NP4' posn='110'>
+12	saMsWA	NN	<fs af='saMsWA,n,f,sg,3,d,0,0' drel='k1:jutA' name='saMsWA' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	himmawa	NN	<fs af='himmawa,n,f,sg,3,d,0,0' drel='pof:jutA' name='himmawa' chunkId='NP5' chunkType='head:NP5' posn='130'>
+14	nahIM	NEG	<fs af='nahIM,avy,,,,,,' drel='lwg__neg:jutA' name='nahIM' chunkType='child:VGF2' posn='140'>
+15	jutA	VM	<fs af='jutA,v,any,sg,any,,0_pA+yA,0' vpos='tam_3' name='jutA' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='150'>
+16	pAI	VAUX	<fs af='pA,v,f,sg,any,,yA,yA' drel='lwg__vaux:jutA' name='pAI' chunkType='child:VGF2' posn='160'>
+17	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:jutA' name='.' chunkId='BLK' chunkType='head:BLK' posn='170'>
+</Sentence>
+
+<Sentence id='24'>
+1	esapI	NN	<fs af='esapI,n,m,sg,3,d,0,0' drel='nmod__adj:relave' name='esapI' chunkType='child:NP' posn='10'>
+2	relave	NN	<fs af='relave,n,m,sg,3,d,0,0' drel='nmod__adj:rOYya' name='relave' chunkType='child:NP' posn='20'>
+3	esa	NNPC	<fs af='esa,n,m,sg,3,d,0,0' drel='pof__cn:rOYya' name='esa' chunkType='child:NP' posn='30'>
+4	ke	NNPC	<fs af='ke,n,m,sg,3,d,0,0' drel='pof__cn:rOYya' name='ke' chunkType='child:NP' posn='40'>
+5	rOYya	NNP	<fs af='rOYya,n,m,sg,3,o,0_ke_anusAra,0' drel='k7a:baDZa' vpos='vib_vib_vib_6_7' name='rOYya' chunkId='NP' chunkType='head:NP' posn='50'>
+6	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:rOYya' name='ke2' chunkType='child:NP' posn='60'>
+7	anusAra	PSP	<fs af='anusAra,psp,,,,,,' drel='lwg__psp:rOYya' name='anusAra' chunkType='child:NP' posn='70'>
+8	usiyA	NNP	<fs af='usiyA,n,m,sg,3,o,0_ke_alAvA,0' drel='vmod:baDZa' vpos='vib_2_3' name='usiyA' chunkId='NP2' chunkType='head:NP2' posn='80'>
+9	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:usiyA' name='ke3' chunkType='child:NP2' posn='90'>
+10	alAvA	PSP	<fs af='alAvA,psp,,,,,,' drel='lwg__psp:usiyA' name='alAvA' chunkType='child:NP2' posn='100'>
+11	xilaxAranagara	NNP	<fs af='xilaxAranagara,n,m,sg,3,o,0_meM,0' drel='k7p:baDZa' vpos='vib_2_RP' name='xilaxAranagara' chunkId='NP3' chunkType='head:NP3' posn='110'>
+12	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:xilaxAranagara' name='meM' chunkType='child:NP3' posn='120'>
+13	BI	RP	<fs af='BI,avy,,,,,,' drel='lwg__rp:xilaxAranagara' name='BI' chunkType='child:NP3' posn='130'>
+14	isa	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:waraha' name='isa' chunkType='child:NP4' posn='140'>
+15	waraha	NN	<fs af='waraha,n,f,sg,3,o,0_kA,0' drel='r6:aparAXiyoM' vpos='vib_3' name='waraha' chunkId='NP4' chunkType='head:NP4' posn='150'>
+16	ke	PSP	<fs af='kA,psp,m,pl,,o,,' drel='lwg__psp:waraha' name='ke4' chunkType='child:NP4' posn='160'>
+17	aparAXiyoM	NN	<fs af='aparAXI,n,m,pl,3,o,0_kA,0' drel='r6:wAxAxa' vpos='vib_2' name='aparAXiyoM' chunkId='NP5' chunkType='head:NP5' posn='170'>
+18	kI	PSP	<fs af='kA,psp,f,sg,,d,,' drel='lwg__psp:aparAXiyoM' name='kI' chunkType='child:NP5' posn='180'>
+19	wAxAxa	NN	<fs af='wAxAxa,n,f,sg,3,d,0,0' drel='pof:baDZa' name='wAxAxa' chunkId='NP6' chunkType='head:NP6' posn='190'>
+20	baDZa	VM	<fs af='baDa,v,f,sg,3,,0_raha+yA_hE,0' vpos='tam_2_3' name='baDZa' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='200'>
+21	rahI	VAUX	<fs af='raha,v,f,sg,any,,yA,yA' drel='lwg__vaux:baDZa' name='rahI' chunkType='child:VGF' posn='210'>
+22	hE	VAUX	<fs af='hE,v,any,sg,3,,hE,hE' drel='lwg__vaux_cont:rahI' name='hE' chunkType='child:VGF' posn='220'>
+23	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:baDZa' name='.' chunkId='BLK' chunkType='head:BLK' posn='230'>
+</Sentence>
+
+<Sentence id='25'>
+1	syorAI	NNP	<fs af='syorAI,n,m,sg,3,o,0,0' drel='ccof:Ora' name='syorAI' chunkId='NP' chunkType='head:NP' posn='10'>
+2	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:syorAI' name=',' chunkType='child:NP' posn='20'>
+3	jamaniyA	NNP	<fs af='jamaniyA,n,m,sg,3,o,0,0' drel='ccof:Ora' name='jamaniyA' chunkId='NP2' chunkType='head:NP2' posn='30'>
+4	Ora	CC	<fs af='Ora,avy,,,,,,' drel='nmod:gAMva' name='Ora' chunkId='CCP' chunkType='head:CCP' posn='40'>
+5	DInA	NNP	<fs af='DInA,n,m,sg,3,o,0,0' drel='ccof:Ora' name='DInA' chunkId='NP3' chunkType='head:NP3' posn='50'>
+6	gAMva	NN	<fs af='gAzva,n,m,sg,3,o,0_kA,0' drel='r6:pIDZI' vpos='vib_2' name='gAMva' chunkId='NP4' chunkType='head:NP4' posn='60'>
+7	kI	PSP	<fs af='kA,psp,f,sg,,d,,' drel='lwg__psp:gAMva' name='kI' chunkType='child:NP4' posn='70'>
+8	yuvA	JJ	<fs af='yuvA,adj,any,any,,o,,' drel='nmod__adj:pIDZI' name='yuvA' chunkType='child:NP5' posn='80'>
+9	pIDZI	NN	<fs af='pIDI,n,f,sg,3,o,0_meM,0' drel='k7:baDZA' vpos='vib_3' name='pIDZI' chunkId='NP5' chunkType='head:NP5' posn='90'>
+10	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:pIDZI' name='meM' chunkType='child:NP5' posn='100'>
+11	isa	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:aparAXa' name='isa' chunkType='child:NP6' posn='110'>
+12	aparAXa	NN	<fs af='aparAXa,n,m,sg,3,o,0_ke_prawi,0' drel='rd:baDZA' vpos='vib_3_4' name='aparAXa' chunkId='NP6' chunkType='head:NP6' posn='120'>
+13	ke	PSP	<fs af='ke,psp,,,,,,' drel='lwg__psp:aparAXa' name='ke' chunkType='child:NP6' posn='130'>
+14	prawi	PSP	<fs af='prawi,psp,,,,,,' drel='lwg__psp:aparAXa' name='prawi' chunkType='child:NP6' posn='140'>
+15	ruJAna	NN	<fs af='ruJAna,n,m,sg,3,d,0,0' drel='pof:baDZA' name='ruJAna' chunkId='NP7' chunkType='head:NP7' posn='150'>
+16	baDZA	VM	<fs af='baDa,v,m,sg,3,,yA_hE,yA' vpos='tam_2' name='baDZA' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='160'>
+17	hE	VAUX	<fs af='hE,v,any,sg,3,,hE,hE' drel='lwg__vaux:baDZA' name='hE' chunkType='child:VGF' posn='170'>
+18	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:baDZA' name='.' chunkId='BLK' chunkType='head:BLK' posn='180'>
+</Sentence>
+
+<Sentence id='26'>
+1	xilaxAranagara	NNP	<fs af='xilaxAranagara,n,m,sg,3,d,0,0' drel='nmod__adj:steSana' name='xilaxAranagara' chunkType='child:NP' posn='10'>
+2	steSana	NN	<fs af='steSana,n,m,sg,3,o,0_para,0' drel='k7p:cUkA' vpos='vib_vib_3_RP' name='steSana' chunkId='NP' chunkType='head:NP' posn='20'>
+3	para	PSP	<fs af='para,psp,,,,,,' drel='lwg__psp:steSana' name='para' chunkType='child:NP' posn='30'>
+4	wo	RP	<fs af='wo,avy,,,,,,' drel='lwg__rp:steSana' name='wo' chunkType='child:NP' posn='40'>
+5	yAwrI	NN	<fs af='yAwrI,n,m,sg,3,d,0,0' drel='k1:cUkA' name='yAwrI' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	cUkA	VM	<fs af='cUka,v,m,sg,any,,yA,yA' drel='ccof:ki' name='cUkA' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='60'>
+7	nahIM	NEG	<fs af='nahIM,avy,,,,,,' drel='lwg__neg:cUkA' name='nahIM' chunkType='child:VGF' posn='70'>
+8	ki	CC	<fs af='ki,avy,,,,,,' name='ki' chunkId='CCP' chunkType='head:CCP' posn='80'>
+9	sAmAna	NN	<fs af='sAmAna,n,m,sg,3,d,0,0' drel='k1:NULL' name='sAmAna' chunkId='NP3' chunkType='head:NP3' posn='90'>
+10	pAra	NN	<fs af='pAra,n,m,sg,3,d,0,0' drel='pof:NULL' name='pAra' chunkId='NP4' chunkType='head:NP4' posn='90'>
+11	NULL	VM	<fs af='NULL,v,,,,,,' drel='ccof:ki' name='NULL' chunkId='VGF2' chunkType='head:VGF2' mtype='gap' troot='हो' stype='declarative' voicetype='active'>
+12	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:ki' name='.' chunkId='BLK' chunkType='head:BLK' posn='110'>
+</Sentence>
+
+<Sentence id='28'>
+1	relave	NNC	<fs af='relave,n,m,sg,3,d,0,0' drel='pof__cn:pulisa' name='relave' chunkType='child:NP' posn='10'>
+2	pulisa	NN	<fs af='pulisa,n,f,sg,3,d,0,0' drel='k1:hE' name='pulisa' chunkId='NP' chunkType='head:NP' posn='20'>
+3	isa	DEM	<fs af='yaha,pn,any,sg,3,o,,' drel='nmod__adj:gAzva' name='isa' chunkType='child:NP2' posn='30'>
+4	gAzva	NN	<fs af='gAzva,n,m,sg,3,o,0_meM,0' drel='k7p:hE' vpos='vib_3' name='gAzva' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:gAzva' name='meM' chunkType='child:NP2' posn='50'>
+6	SikaMjA	NN	<fs af='SikaMjA,n,m,sg,3,d,0,0' drel='pof:kasane' name='SikaMjA' chunkId='NP3' chunkType='head:NP3' posn='60'>
+7	kasane	VM	<fs af='kasa,v,any,sg,any,o,nA_kA,nA' drel='r6:PirAka' vpos='tam_2' name='kasane' chunkId='VGNN' chunkType='head:VGNN' posn='70'>
+8	kI	PSP	<fs af='kA,psp,f,sg,,o,,' drel='lwg__psp:kasane' name='kI' chunkType='child:VGNN' posn='80'>
+9	PirAka	NN	<fs af='PirAka,n,f,sg,3,o,0_meM,0' drel='k7:hE' vpos='vib_2' name='PirAka' chunkId='NP4' chunkType='head:NP4' posn='90'>
+10	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:PirAka' name='meM2' chunkType='child:NP4' posn='100'>
+11	hE	VM	<fs af='hE,v,any,sg,3,,hE,hE' name='hE' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='110'>
+12	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hE' name='.' chunkId='BLK' chunkType='head:BLK' posn='120'>
+</Sentence>
+
+<Sentence id='29'>
+1	eka	QC	<fs af='eka,num,any,any,,any,,' drel='nmod__adj:sAla' name='eka' chunkType='child:NP' posn='10'>
+2	sAla	NN	<fs af='sAla,n,m,sg,3,d,0_pahale_waka,0' drel='k7t:rahe' vpos='vib_3_4' name='sAla' chunkId='NP' chunkType='head:NP' posn='20'>
+3	pahale	NST	<fs af='pahale,nst,m,sg,3,o,,' drel='lwg__psp:sAla' name='pahale' chunkType='child:NP' posn='30'>
+4	waka	PSP	<fs af='waka,psp,,,,,,' drel='lwg__psp:pahale' name='waka' chunkType='child:NP' posn='40'>
+5	jIArapI	NNP	<fs af='jIArapI,n,m,sg,3,d,0,0' drel='nmod:iMcArja' name='jIArapI' chunkId='NP2' chunkType='head:NP2' posn='50'>
+6	usiyA	NNP	<fs af='usiyA,n,m,sg,3,d,0,0' drel='nmod__adj:iMcArja' name='usiyA' chunkType='child:NP3' posn='60'>
+7	cOkI	NNC	<fs af='cOkI,n,f,sg,3,d,0,0' drel='pof__cn:iMcArja' name='cOkI' chunkType='child:NP3' posn='70'>
+8	iMcArja	NN	<fs af='iMcArja,n,m,sg,3,d,0,0' drel='k1:rahe' name='iMcArja' chunkId='NP3' chunkType='head:NP3' posn='80'>
+9	rahe	VM	<fs af='raha,v,any,sg,3h,,yA,yA' drel='nmod__k1inv:SuklA' name='rahe' chunkId='VGNF' chunkType='head:VGNF' posn='90'>
+10	esa	NNPC	<fs af='esa,n,m,sg,3,d,0,0' drel='pof__cn:SuklA' name='esa' chunkType='child:NP4' posn='100'>
+11	ena	NNPC	<fs af='ena,n,m,sg,3,d,0,0' drel='pof__cn:SuklA' name='ena' chunkType='child:NP4' posn='110'>
+12	SuklA	NNP	<fs af='SuklA,n,m,sg,3,d,0,0' drel='k1:hEM' name='SuklA' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	ilAhAbAxa	NNP	<fs af='ilAhAbAxa,n,m,sg,3,d,0,0' drel='nmod__adj:jaMkSana' name='ilAhAbAxa' chunkType='child:NP5' posn='130'>
+14	jaMkSana	NN	<fs af='jaMkSana,n,m,sg,3,o,0_meM,0' drel='k7p:hEM' vpos='vib_vib_3' name='jaMkSana' chunkId='NP5' chunkType='head:NP5' posn='140'>
+15	meM	PSP	<fs af='meM,psp,,,,,,' drel='lwg__psp:jaMkSana' name='meM' chunkType='child:NP5' posn='150'>
+16	esaesaAI	NNP	<fs af='esaesaAI,n,m,sg,3,d,0,0' drel='k1s:hEM' name='esaesaAI' chunkId='NP6' chunkType='head:NP6' posn='160'>
+17	hEM	VM	<fs af='hE,v,any,sg,3h,,hE,hE' name='hEM' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='170'>
+18	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:hEM' name='.' chunkId='BLK' chunkType='head:BLK' posn='180'>
+</Sentence>
+
+<Sentence id='30'>
+1	vaha	PRP	<fs af='vaha,pn,any,sg,3,d,0,0' drel='k1:bawAwe' name='vaha' chunkId='NP' chunkType='head:NP' posn='10'>
+2	bawAwe	VM	<fs af='bawA,v,m,sg,3h,,wA_hE,wA' vpos='tam_2' name='bawAwe' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='20'>
+3	hEM	VAUX	<fs af='hE,v,any,sg,3h,,hE,hE' drel='lwg__vaux:bawAwe' name='hEM' chunkType='child:VGF' posn='30'>
+4	ki	CC	<fs af='ki,avy,,,,,,' drel='k2:bawAwe' name='ki' chunkId='CCP' chunkType='head:CCP' posn='40'>
+5	jahAz	RB	<fs af='jahAz,adv,,,,,,' drel='sent-adv:hoM' name='jahAz' chunkId='RBP' chunkType='head:RBP' coref='RBP2' posn='50'>
+6	gAzva	NN	<fs af='gAzva,n,m,pl,3,d,0,0' drel='nmod__adj:gAzva2' name='gAzva' chunkType='child:NP2' posn='60'>
+7	ke	RP	<fs af='kA,avy,,,,,,' drel='lwg__rp:gAzva' name='ke' chunkType='child:NP2' posn='70'>
+8	gAzva	NN	<fs af='gAzva,n,m,pl,3,d,0,0' drel='k7p:hoM' name='gAzva2' chunkId='NP2' chunkType='head:NP2' posn='80'>
+9	cora	NN	<fs af='cora,n,m,sg,3,d,0,0' drel='k1:hoM' name='cora' chunkId='NP3' chunkType='head:NP3' posn='90'>
+10	hoM	VM	<fs af='ho,v,any,any,,any,0,0' drel='rbmod__relc:vahAz' name='hoM' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='100'>
+11	vahAz	RB	<fs af='vahAz,adv,,,,,,' drel='sent-adv:howA' name='vahAz' chunkId='RBP2' chunkType='head:RBP2' posn='110'>
+12	SikaMjA	NN	<fs af='SikaMjA,n,m,sg,3,d,0,0' drel='pof:kasanA' name='SikaMjA' chunkId='NP4' chunkType='head:NP4' posn='120'>
+13	kasanA	VM	<fs af='kasa,v,any,any,any,o,nA,nA' drel='k1:howA' name='kasanA' chunkId='VGNN' chunkType='head:VGNN' posn='130'>
+14	muSkila	JJ	<fs af='muSkila,adj,any,any,,,,' drel='pof:howA' name='muSkila' chunkId='JJP' chunkType='head:JJP' posn='140'>
+15	howA	VM	<fs af='ho,v,m,sg,3,,wA_hE,wA' drel='ccof:ki' vpos='tam_2' name='howA' chunkId='VGF3' chunkType='head:VGF3' stype='declarative' voicetype='active' posn='150'>
+16	hE	VAUX	<fs af='hE,v,any,sg,3,,hE,hE' drel='lwg__vaux:howA' name='hE' chunkType='child:VGF3' posn='160'>
+17	.	SYM	<fs af='।,punc,,,,,,' drel='rsym:bawAwe' name='.' chunkId='BLK' chunkType='head:BLK' posn='170'>
+</Sentence>
+

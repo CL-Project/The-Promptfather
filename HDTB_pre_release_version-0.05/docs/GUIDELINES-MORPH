@@ -1,0 +1,534 @@
+﻿Guidelines  For Morph Analayser
+--------------------------------------------------
+A Morph analyser gives multiple outputs, if a word is ambiguous. For example 'chair' in English is ambiguous having the properties of a noun and a verb. A morph analyser will give both the possibilities. The ambiguities can be within the same category. example Hindi word: 'लड़के'. 'लड़के' in Hindi It is a noun which has two possible interpretations - n,sg,o and n,pl,d. The analyser will provide both these possibilities.   Like any other automatic processing, morph analyser may also make errors therefore the out put of the morph analyser needs to be manually corrected for preparing any GOLD STANDART DATA which includes morph analysis.
+  The task of manually correcting morph output requires the following efforts. Checking of morph feature attributes and values for a given word.
+1. General: In morph analysis for a given word eight values are assigned. 
+1. root, 2. lexical categories, 3. gender, 4. number, 5.person, 6.case, 7. a) case ( in case of noun) /b) TAM(for verbs) marker.
+According to this the analysis for a given word will be,as follows:
+
+    <fs af='root,lcat,gen,num,person,case,case/TAMmarker'>
+
+Examples, If we take Hindi words
+
+noun-  लड़का, लड़के, लड़कों root is लड़का
+
+pronoun- इसका, इसकी, इसके root is यह
+
+postposition- का, की, के root is का
+
+adjective- अच्छा, अच्छी, अच्छे root is अच्छा
+
+verb- खा, खाता, खाया, खाए root is खा
+
+
+If the given word is a noun eg. लड़का
+                                          -----------
+check its
+--------
+1. gender- masculine, feminine.
+
+Test- अच्छा लड़का & अच्छी लड़की
+
+In the above eg. लड़का masculine & लड़की feminine.
+
+
+2. number- singular-sg, plural-pl
+
+Test- एक लड़का & दो लड़के
+
+3. person-1,2,3
+
+Test-1st- मैं, हम,   2nd-  तू, तुम, आप,   3rd- वह, वो  वे (pronoun)
+
+1st- हूँ, 2nd- हो, 3rd- है, हैं
+
+4. case- direct-d, oblique-o
+
+If a noun/pronoun/nst is followed by a postpostion its oblique or else its direct 
+
+eg: 1. लड़का खड़ा है ।  --In this लड़का is direct.
+
+2. लड़के ने खाना खाया । -- In this लड़के is oblique.
+
+case marker- In case of noun & pronoun & TAM ( tense aspect modality ) in case of verbs.
+
+If a given word is noun then last values will be marked 0, 0 & if it is a verb then its tense aspect modality will be assigned.
+
+2. Contextual:
+
+For Noun : If the given  word is noun the analyser will give all possible features as outputs.
+
+<fs af='root,n,m,sg,3,d,0,0'>/<fs af='root,n,m,sg,3,o,0,0'>/<fs af='root,n,m,pl,3,d,0,0'>/ <fs af='root,n,m,pl,3,o,0,0'>/<fs af='root,n,f,sg,3,d,0,0'>/<fs af='root,n,f,sg,3,o,0,0'>/ <fs af='root,n,f,pl,3,d,0,0'>/ <fs af='root,n,f,pl,3,o,0,0'>
+
+1. <fs af='लड़का,n,m,sg,3,d,0,0'>/<fs af='काम,n,m,sg,3,d,0,0'>
+
+eg: लड़का खड़ा है ।/ काम अच्छा हुआ ।
+
+2. <fs af='लड़का,n,m,sg,3,o,0,0'>/<fs af='काम,n,m,sg,3,o,0,0'>
+
+लड़के ने खाना खाया ।/ अच्छे काम में देरी नहीं होनी चाहिए ।
+
+3. <fs af='लड़का,n,m,pl,3,d,0,0'>/<fs af='काम,n,m,pl,3,d,0,0'>
+
+वहाँ पर कुछ लड़के खड़े हैं ।/अच्छे काम करने पर अच्छा फल मिलता है ।
+
+4. <fs af='लड़का,n,m,pl,3,o,0,0'>/<fs af='काम,n,m,pl,3,o,0,0'>
+
+लड़कों ने खाना खाया ।/ अच्छे कामों का फल अच्छा होता है ।
+
+
+5. <fs af='लड़की ,n,f,sg,3,d,0,0'>
+
+eg: लड़की खड़ी है ।
+
+6. <fs af='लड़की,n,f,sg,3,o,0,0'>
+
+लड़की ने खाना खाया । 
+
+7. <fs af='लड़की,n,f,pl,3,d,0,0'>
+
+वहाँ पर कुछ लड़कियाँ खड़ी हैं ।
+
+8. <fs af='लड़की,n,f,pl,3,o,0,0'>
+
+लड़कियों ने खाना खाया ।
+
+
+
+Some Cases:
+----------------
+1. If a noun is a compound word / proper name 
+
+eg: गंगा नदी / अटल बिहारी वाजपयी then POS tag will be NNP NN / NNPC NNPC NNP here  all the compound word / proper name  (NNP ,NNPC ,NNC ) will also be marked as noun in morph analysis and all the attribute values will be default entries.
+
+<fs af='root,n,m,sg,3,d,0,0'>/<fs af='root,n,f,sg,3,d,0,0'> accordingly
+
+But if compound word is noun and combination of 2 different categories like : विश्व-प्रसिद्ध  then even though in POS tag it is marked JJC JJ but in morph  the 2 words will have their own analysis. 
+     
+     विश्व-'विश्व,n,m,sg,3,d,0,0'>
+     प्रसिद्ध- 'प्रसिद्ध,any,any,,d,,'>
+
+
+2. Since the word NST can also occur independently and behave like a noun  therefore all NSTs will be treated as noun and will be given feature structure accordingly
+
+eg:  1. पहले नहा लो फिर खाना खा लेना ।
+
+      2.  राम के पहले मैं जाऊंगा ।
+
+In  eg.(1) पहले  is noun and (2) it is part of complex postposition. But for both cases पहले will have this feature structure:<fs af='पहले,nst,m,sg,3,d,,'> 
+
+
+
+
+3. For Pronoun:- In Hindi these can be of 2 types one which change forms and other which does not change forms.
+
+The one which does not change forms like अब, यहाँ, वहाँ, etc will have the following feature structure, in which the sixth field will be marked for d/o .
+
+<fs af='root,pn,,,,d,,'>/<fs af='root,pn,,,,o,,'>
+
+eg. 1.अब से पहले ऐसा कभी नहीं हुआ था ।
+    
+     2. अब यह काम मुझ से नहीं होगा ।
+
+ In the above examples eg.1 will have this feature structure:<fs af='अब,pn,,,,o,,'> and eg.2 will have this feature structure:<fs af='अब,pn,,,,d,,'>
+
+
+The one which change forms like इसका, इसकी, इसके etc the morph output will vary accordingly.
+*  
+यह =fs af='यह,pn,any,sg,3,d,,'> 
+
+वह=<fs af='वह,pn,any,sg,3,d,,'>
+
+इसका= <fs af='यह,pn,m,sg,3,o,का,kA'>
+
+इसकी=<fs af='यह,pn,f,sg,3,o,का,kA'>
+
+इसके=<fs af='यह,pn,m,sg,3,o,का,kA'>/<fs af='यह,pn,m,sg,3,o,के,ke'>
+
+eg 1.इसका यह मतलब है ।
+
+feature structure for इसका: <fs af='यह,pn,m,sg,3,o,का,kA'>
+
+2. इसकी जांच शुरू हो चुकी है।
+
+feature structure for इसकी: <fs af='यह,pn,f,sg,3,o,का,kA'>
+
+3.a) इसके घर पर मेहमान आने वाले हैं 
+
+feature structure for इसके: <fs af='यह,pn,m,sg,3,o,का,kA'>
+
+b) इसके अलावा वह देर से आया
+
+feature structure for इसके: <fs af='यह,pn,any,sg,3,o,के,ke'>
+
+*All the derivative pn's like इस,उस, will be in oblique form. In such pronouns all the features will be of pronoun only the gender will be according to postpositon and as there are only eight
+                      ---------------------------------------    
+fields the feature structure of postposition will not be shown here.  
+
+
+
+4. For adjective: In Hindi these are of 2 types .
+Type I: Does not chage its form like सुंदर, पेश, स्थित etc. The root word will be same and the feature structure will be
+
+<fs af='root,adj,any,any,,d,,'>/<fs af='root,adj,any,any,,o,,'>/<fs af='root,adj,any,any,,,,'>
+
+eg1. सुंदर लड़की खेल रही है।<fs af='सुंदर,adj,any,any,,d,,'>
+
+2.सुंदर लड़की ने कहा।<fs af='सुंदर,adj,any,any,,o,,'>
+
+3. लड़की सुंदर है।<fs af='सुंदर,adj,any,any,,,,'>
+
+
+Type II: Change its forms like अच्छा, अच्छी ,अच्छे; पिछला, पिछली, पिछले etc the root will be the first form 
+
+अच्छा can have following feature structures:
+
+<fs af='अच्छा,adj,m,sg,,d,,'>
+
+eg:1.अच्छा काम करने से अच्छा ही होता है।<fs af='अच्छा,adj,m,sg,,d,,'>
+
+अच्छी can have following feature structures:
+
+<fs af='अच्छा,adj,f,sg,,d,,'>, <fs af='अच्छा,adj,f,sg,,o,,'>,<fs af='अच्छा,adj,f,pl,,d,,'>, <fs af='अच्छा,adj,f,pl,,o,,'>
+
+
+2.a) अच्छी करनी का फल अच्छा होता है।<fs af='अच्छा,adj,f,sg,,o,,'>
+
+b) सीता अच्छी लड़की है । <fs af='अच्छा,adj,f,sg,,d,,'>
+
+c) अच्छी लड़कियाँ वहाँ खड़ी हैं। <fs af='अच्छा,adj,f,pl,,d,,'>
+
+d) अच्छी लड़कियों ने खाना खाया। <fs af='अच्छा,adj,f,pl,,o,,'>
+
+अच्छे can have following feature structures:
+
+<fs af='अच्छा,adj,m,sg,,o,,'>, <fs af='अच्छा,adj,m,pl,,d,,'>, <fs af='अच्छा,adj,m,pl,,o,,'>
+
+3.a) अच्छे काम करने चाहिए ।<fs af='अच्छा,adj,m,pl,,d,,'>
+
+b)अच्छे कामों में देर नहीं होनी चाहिए।<fs af='अच्छा,adj,m,pl,,o,,'>
+
+
+
+5. Hidden postpostion:
+-----------------------
+
+eg. अगले माह बैठक होगी।<fs af='अगले,adj,m,sg,,o,,'> 
+
+In this eg. we have to assume a hidden vibhakti(postpostion) after the noun and mark this as oblique and following noun will also be marked as oblique. The reason is अगले will never be sg/d.
+
+
+6. For Quntifier : 
+------------------
+
+There will be one feature structure 
+<fs af='root,avy,,,,,,'> 
+
+But if  it  change forms like  an adjectiv eg. a) थोड़ा,  b) थोड़ी,  c) थोड़े  then it will be marked as  adjectiv and all the feature structures will be given accordingly.
+
+a) will have this feature structure:<fs af='root,adj,m,sg,,d,,'>
+
+b) will have this feature structure:<fs af='root,adj,f,sg,,d,,'>, <fs af='root,adj,f,sg,,o,,'>,<fs af='root,adj,f,pl,,d,,'>, <fs af='root,adj,f,pl,,o,,'>
+
+c)will have this feature structure: <fs af='root,adj,m,sg,,o,,'>, <fs af='root,adj,m,pl,,d,,'>, <fs af='root,adj,m,pl,,o,,'>
+
+
+
+6. For adverbs: 
+------------------
+
+There will be one feature structure 
+<fs af='root,adv,,,,,,'>
+
+7. For Number: 
+---------------
+
+1.When tag is QC
+-----------------
+
+When a number is followed by a noun then the feature structure for this will be
+<fs af='root,num,any,any,,any,,'> 
+
+eg:1. छह इंच मोटी परत।<fs af='छह,num,any,any,,any,,'>
+
+And if  it  is followed by a postposition/vibhakti or has clear agreement with verb then it will be treated as noun and will be given all the feature structure of noun.
+
+
+2. एक और एक दो होते हैं ।
+
+एक=<fs af='एक,n,m,sg,3,d,0,0'>
+
+दो= <fs af='दो,n,m,pl,3,d,0,0'>
+
+
+3. 4-6 से हराया ।( there is a vibhakti both numbers will be treated as nouns)
+
+4. 25 एक साथ चिल्ला उठे।( Here the agreement is visible with the verb so 25 will be treated as noun)
+
+   QC 25<fs af='25,n,m,pl,3,d,0,0'>
+
+5. चार बज रहें हैं।
+
+     QC चार=<fs af='चार,n,m,pl,3,d,0,0'>
+
+2. When Tag is QO :-These are  of 2 types. 
+
+Type-I: QO which change forms like दूसरा, दूसरी, दूसरे
+ 
+दूसरा can have following feature structures:
+
+<fs af='दूसरा,num,m,sg,,d,,'>
+
+दूसरी can have following feature structures:
+
+<fs af='दूसरा,num,f,sg,,d,,'>, <fs af='दूसरा,num,f,sg,,o,,'>,<fs af='दूसरा,num,f,pl,,d,,'>, <fs af='दूसरा,num,f,pl,,o,,'>
+
+ दूसरेcan have following feature structures:
+
+<fs af=',दूसरा,num,m,sg,,o,,'>, <fs af='दूसरा,num,m,pl,,d,,'>, <fs af='दूसरा,num,m,pl,,o,,'>
+
+
+ Type-II: QO which does not change forms like प्रथम, द्वितीय, तृतीय etc. 
+<fs af='root,num,any,any,,any,,'>
+
+
+
+9.For postpostion: 
+-----------------
+
+In Hindi these can be of 2 types like का, की, के (Type-I) which chage forms and other से, में, पर,etc (Type-II) . 
+
+
+Type-I : These will have attribute values according to the following noun
+का =<fs af='का,psp,m,sg,,d,,'>
+
+eg: 1 राम का बेटा आया ।
+
+की=<fs af='का,psp,f,sg,,d,,'>|<fs af='का,psp,f,sg,,o,,'>|<fs af='का,psp,f,pl,,d,,'>|<fs af='का,psp,f,pl,,o,,'>
+
+eg:1. राम की बेटी आयी । <fs af='का,psp,f,sg,,d,,'>
+
+2. राम की बेटी ने  खाना खाया । <fs af='का,psp,f,sg,,o,,'>
+
+3. राम की तीन बेटियाँ हैं ।<fs af='का,psp,f,pl,,d,,'>
+
+4.राम की तीनों बेटियों ने खाना खाया । <fs af='का,psp,f,pl,,o,,'>
+
+
+के=<fs af='का,psp,m,sg,,o,,'>|<fs af='का,psp,m,pl,,d,,'>|<fs af='का,psp,m,pl,,o,,'>|<fs af='के,psp,,,,,,'>
+
+Case1:-eg:1.राम के बेटे ने खाना खाया ।/ भारत के प्रधानमंत्री ने ऐसा कहा ।<fs af='का,psp,m,sg,,o,,'>
+
+2. राम के बेटे आये । <fs af='का,psp,m,pl,,d,,'>
+
+3.राम के बेटों ने खाना खाया ।<fs af='का,psp,m,pl,,o,,'>
+
+4.भारत के प्रधान मंत्री आये ।<fs af='का,psp,m,sg,3h,d,,'>( here के  is used for respect)
+
+5.इसी धूल के मिलने से यह साबित हुआ ।<fs af='का,psp,,,,o,,'>
+
+
+Case2:- When के come before a psp like के लिए, के द्वारा, के कारण etc or nst के बाद, के ओर etc then it 
+will have the following feature structure.
+
+5. राम के द्वारा मुझे यह पता चला ।<fs af='के,psp,,,,,,'>
+
+6. राम के बाद में श्याम आया ।<fs af='के,psp,,,,,,'>
+
+List of complex PSP words. These will have following feature structure.
+
+के <fs af='के,psp,,,,,,'>अलावा <fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> अधीन <fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>अंतर्गत<fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>कारण<fs af='root,n,m,,,o,,'>
+
+के <fs af='के,psp,,,,,,'>समय<fs af='root,n,m,,,o,,'>
+
+के <fs af='के,psp,,,,,,'>बजाय<fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> संबध <fs af='root,psp,,,,,,'> में <fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>लिय<fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> मुताबिक<fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>तहत<fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>खिलाफ<fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>विरुद्ध <fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> प्रति <fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>विपरीत<fs af='root,adj,any,any,,,,'>
+
+के <fs af='के,psp,,,,,,'>अनुसार<fs af='root,n,m,,,o,,'>
+
+की<fs af='की,psp,,,,,,'> वजह <fs af='root,n,m,,,o,,'>से <fs af='से,psp,,,,,,'>
+
+की <fs af='की,psp,,,,,,'>बदौलत <fs af='root,psp,,,,,,'>
+
+की <fs af='की,psp,,,,,,'>भांति <fs af='root,n,f,,,o,,'>
+
+के <fs af='के,psp,,,,,,'>चलते <fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> नाते <fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> मद्देनजर <fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>अनुरूप <fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>बदले <fs af='root,psp,,,,,,'>में <fs af='में,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>बावजूद <fs af='root,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>बारे <fs af='root,psp,,,,,,'>में <fs af='में,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>परे <fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> ऐवज  <fs af='root,psp,,,,,,'>में<fs af='में,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>रूप <fs af='root,psp,,,,,,'>में <fs af='में,psp,,,,,,'>
+
+के <fs af='के,psp,,,,,,'>तौर <fs af='root,n,m,,,o,,'>पर <fs af='पर,psp,,,,,,'>
+
+से <fs af='के,psp,,,,,,'>परे <fs af='root,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> परे <fs af='root,psp,,,,,,'> 
+
+के <fs af='के,psp,,,,,,'>हवाले <fs af='root,psp,,,,,,'>से <fs af='से,psp,,,,,,'>
+
+के<fs af='के,psp,,,,,,'> उल्टे <fs af='root,psp,,,,,,'> 
+
+के<fs af='के,psp,,,,,,'> बहाने<fs af='root,n,m,,,o,,'>
+ 
+के<fs af='के,psp,,,,,,'> मारे<fs af='root,avy,,,,,,'> 
+
+के<fs af='के,psp,,,,,,'>बूते<fs af='root,psp,,,,,,'>
+ 
+के<fs af='के,psp,,,,,,'>स्वरूप <fs af='root,n,m,,,o,,'>
+
+के<fs af='के,psp,,,,,,'>फलस्वरूप<fs af='root,avy,,,,,,'>
+
+के<fs af='के,psp,,,,,,'>परिणामस्वरूप<fs af='root,avy,,,,,,'>
+
+
+Type-II: This will have one feature structure.
+ 
+<fs af='root,psp,,,,,,'>
+
+eg1. राम ने मोहन से कहा ।
+
+ने=<fs af='ने,psp,,,,,,'>
+
+से =<fs af='से ,psp,,,,,,'>
+
+
+
+10. For Verbs
+------------
+
+When the verb has 'कर' suffix like खाकर, मिलकर etc the feature structure will be
+
+<fs af='कर,v,any,any,any,,0,0'>
+
+Words  हुआ, हुई, हुए will have feature structure accordingly.
+
+हुआ=<fs af='हो,v,m,sg,any,,एं,eM'>|<fs af='हो,v,m,sg,any,,या,yA'>
+
+हुई=<fs af='हो,v,f,sg,any,,एं,eM'>|<fs af='हो,v,f,pl,any,,एं,eM'>|<fs af='हो,v,f,sg,any,,या,yA'>/हुई=<fs af='हो,v,f,pl,any,,या,yA'>
+
+हुए =<fs af='हो,v,m,pl,any,,एं,eM'>|<fs af='हो,v,m,sg,any,,एं,eM'>|<fs af='हो,v,m,pl,3,,या,yA'>|<fs af='हो,v,m,sg,3h,,या,yA'>
+
+1. आज बज़ार में बम धमाका हुआ ।
+
+हुआ=<fs af='हो,v,m,sg,any,,या,yA'>
+
+
+2. लड़की /लड़कियाँ गाती हुई आई ।
+
+गाती=<fs af='गा,v,f,sg,any,,ता,wA'>/<fs af='गा,v,f,pl,any,,ता,wA'>
+
+हुई=<fs af='हो,v,f,sg,any,,या,yA'>/हुई=<fs af='हो,v,f,pl,any,,या,yA'>
+
+
+b) रास्ते में गाड़ी बंद पड़ने से सबको परेशानी हुई ।
+
+हुई=<fs af='हो,v,f,sg,any,,या,yA'>
+
+
+बच्चे से गलतियाँ हुई हैं ।
+
+हुई=<fs af='हो,v,f,pl,any,,या,yA'>
+
+हैं=<fs af='है,v,any,pl,3,,है,hE'>
+
+
+3 .लड़के गाते हुए आए ।
+
+गाते=<fs af='गा,v,m,pl,any,,ता,wA'>
+
+हुए =<fs af='हो,v,m,pl,any,,या,yA'>
+
+
+4.a) गाते हुए लड़के ने कहा ।
+
+गाते=<fs af='गा,v,m,sg,any,,ता,wA'>
+
+हुए =<fs af='हो,v,m,sg,,,या,yA'>
+
+
+
+5. When Tag is VGNN the feature structure will be
+
+<fs af='root,v,any,any,any,o,ना,nA'>|<fs af='root,v,any,any,any,d,ना,nA'>
+
+Eg: राम घूमने के लिए बाहर जा रहा है ।
+
+  घूमने=<fs af='घूम,v,any,any,any,0,ना,nA'>
+  के <fs af='के,psp,,,,,,'>
+  लिय<fs af='लिय,psp,,,,,,'>
+
+  है=<fs af='है,v,any,sg,3,,है,hE'>
+
+
+
+6.Words  चहिए, चाहे will have feature structure accordingly.
+
+चहिए=<fs af='चाह,v,any,any,any,,ए,e'>|
+
+चहिए=<fs af='चाहिए,v,any,any,any,,0,0'>
+
+
+चाहे=<fs af='चाह,v,any,sg,3,,ए,e'>
+
+
+7. when Honorific words
+
+भारत के प्रधान मंत्री आये ।
+
+आये=<fs af='आ,v,m,sg,3h,,या,yA'>
+
+ 
+Special Cases:-
+-------------
+
+In the following examples though the adjectives change their forms , still they have not changed their forms according to the noun.
+
+1. सरकार को नेपाल की ताजा स्थिति की जानकारी देंगे ।
+                            ---------
+
+२. बाढ़ से कई मकान एवं पुल तो बह ही गए अकेले खेती तथा बगवानी को करीब डेढ़ करोड़ के नुकसान का अनुसान है । 
+                                                  ----------------
+
+३. अमेरिका के नेतृत्व वाले गठबंधन सेना के हाथों मारे गए ।
+                  -------------------
+
+In  following example though the number is giving the plural sens still as घंटे is followed by a post position we have to mark घंटे singular.
+
+१. उसकी मृत्यु के ४८ घंटे के बाद ही अंग को निकाला जा सकता है ।
+
+

@@ -1,0 +1,123 @@
+<Sentence id='1'>
+1	यदि	CC	<fs af='यदि,avy,,,,,,' drel='vmod:हो' name='यदि' chunkId='CCP' chunkType='head:CCP' posn='10'>
+2	आप	PRP	<fs af='आप,pn,any,sg,2h,d,0,0' drel='k1:करते' name='आप' chunkId='NP' chunkType='head:NP' posn='20'>
+3	मोबाइल	NNC	<fs af='मोबाइल,adj,any,any,,o,,' drel='pof__cn:फोन' name='मोबाइल' chunkType='child:NP2' posn='30'>
+4	फोन	NN	<fs af='फोन,n,m,sg,3,o,0_का,0' drel='r6-k2:इस्तेमाल' vpos='vib_3' name='फोन' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	का	PSP	<fs af='का,psp,m,sg,,d,,' drel='lwg__psp:फोन' name='का' chunkType='child:NP2' posn='50'>
+6	इस्तेमाल	NN	<fs af='इस्तेमाल,n,m,sg,3,d,0,0' drel='pof:करते' name='इस्तेमाल' chunkId='NP3' chunkType='head:NP3' posn='60'>
+7	करते	VM	<fs af='कर,v,m,sg,2h,,ता_है,wA' drel='ccof:यदि' vpos='tam_2' name='करते' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='70'>
+8	हैं	VAUX	<fs af='है,v,any,sg,2h,,है,hE' drel='lwg__vaux:करते' name='हैं' chunkType='child:VGF' posn='80'>
+9	,	SYM	<fs af='COMMA,punc,,,,,,' drel='rsym:करते' name=',' chunkType='child:VGF' posn='90'>
+10	तो	CC	<fs af='तो,avy,,,,,,' name='तो' chunkId='CCP2' chunkType='head:CCP2' posn='100'>
+11	सतर्क	JJ	<fs af='सतर्क,adj,any,any,,,,' drel='pof:हो' name='सतर्क' chunkId='JJP' chunkType='head:JJP' posn='110'>
+12	हो	VM	<fs af='हो,v,any,sg,2h,,0_जा+एं,0' drel='ccof:तो' vpos='tam_2' name='हो' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='120'>
+13	जाएं	VAUX	<fs af='जा,v,any,sg,2h,,एं,eM' drel='lwg__vaux:हो' name='जाएं' chunkType='child:VGF2' posn='130'>
+14	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:तो' name='।' chunkId='BLK' chunkType='head:BLK' posn='140'>
+</Sentence>
+
+<Sentence id='2'>
+1	आपके	PRP	<fs af='आप,pn,m,sg,2h,o,का,kA' drel='r6:सेलफोन' name='आपके' chunkId='NP' chunkType='head:NP' posn='10'>
+2	सेलफोन	NN	<fs af='सेलफोन,n,m,sg,3,o,0_पर,0' drel='k7:कर' vpos='vib_2' name='सेलफोन' chunkId='NP2' chunkType='head:NP2' posn='20'>
+3	पर	PSP	<fs af='पर,psp,,,,,,' drel='lwg__psp:सेलफोन' name='पर' chunkType='child:NP2' posn='30'>
+4	वायरस	NN	<fs af='वायरस,n,m,pl,3,d,0,0' drel='k1:कर' name='वायरस' chunkId='NP3' chunkType='head:NP3' posn='40'>
+5	हमला	NN	<fs af='हमला,n,m,sg,3,d,0,0' drel='pof:कर' name='हमला' chunkId='NP4' chunkType='head:NP4' posn='50'>
+6	कर	VM	<fs af='कर,v,m,pl,3,,0_सक+ता_है,0' vpos='tam_2_3' name='कर' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='60'>
+7	सकते	VAUX	<fs af='सक,v,m,pl,any,,ता,wA' drel='lwg__vaux:कर' name='सकते' chunkType='child:VGF' posn='70'>
+8	हैं	VAUX	<fs af='है,v,any,pl,3,,है,hE' drel='lwg__vaux_cont:सकते' name='हैं' chunkType='child:VGF' posn='80'>
+9	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:कर' name='।' chunkId='BLK' chunkType='head:BLK' posn='90'>
+</Sentence>
+
+<Sentence id='3'>
+1	मोबाइल	NNC	<fs af='मोबाइल,adj,any,any,,o,,' drel='pof__cn:फोन' name='मोबाइल' chunkType='child:NP' posn='10'>
+2	फोन	NN	<fs af='फोन,n,m,sg,3,o,0_का,0' drel='r6:स्क्रीन' vpos='vib_3' name='फोन' chunkId='NP' chunkType='head:NP' posn='20'>
+3	की	PSP	<fs af='का,psp,f,sg,,o,,' drel='lwg__psp:फोन' name='की' chunkType='child:NP' posn='30'>
+4	स्क्रीन	NN	<fs af='स्क्रीन,n,f,sg,3,o,0_पर,0' drel='k7:पहुंचा' vpos='vib_2' name='स्क्रीन' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	पर	PSP	<fs af='पर,psp,,,,,,' drel='lwg__psp:स्क्रीन' name='पर' chunkType='child:NP2' posn='50'>
+6	फ्लैश	UNK	<fs af='फ्लैश,unk,,,,,,' drel='pof:होने' name='फ्लैश' chunkId='BLK' chunkType='head:BLK' posn='60'>
+7	होने	VM	<fs af='हो,v,any,pl,any,o,ना_वाला,nA' drel='nmod:अनबिलिवेबल' vpos='tam_2' name='होने' chunkId='VGNN' chunkType='head:VGNN' posn='70'>
+8	वाले	PSP	<fs af='वाला,n,m,pl,,d,,' drel='lwg__psp:होने' name='वाले' chunkType='child:VGNN' posn='80'>
+9	'	SYM	<fs af='SINGLE_QUOTE,punc,,,,,,' drel='rsym:अनबिलिवेबल' chunkType='child:NP3' posn='90'>
+10	अनबिलिवेबल	NNP	<fs af='अनबिलिवेबल,n,m,sg,3,d,0,0' drel='ccof:और' name='अनबिलिवेबल' chunkId='NP3' chunkType='head:NP3' posn='100'>
+11	'	SYM	<fs af='SINGLE_QUOTE,punc,,,,,,' drel='rsym:अनबिलिवेबल' name='2' chunkType='child:NP3' posn='110'>
+12	और	CC	<fs af='और,avy,,,,,,' drel='nmod:नाम' name='और' chunkId='CCP' chunkType='head:CCP' posn='120'>
+13	'	SYM	<fs af='SINGLE_QUOTE,punc,,,,,,' drel='rsym:ऐस' name='3' chunkType='child:NP4' posn='130'>
+14	ऐस	NNP	<fs af='ऐस,n,m,sg,3,d,0,0' drel='ccof:और' name='ऐस' chunkId='NP4' chunkType='head:NP4' posn='140'>
+15	'	SYM	<fs af='SINGLE_QUOTE,punc,,,,,,' drel='rsym:ऐस' name='4' chunkType='child:NP4' posn='150'>
+16	नाम	NN	<fs af='नाम,n,m,sg,3,o,0_का,0' drel='r6:वायरस' vpos='vib_2' name='नाम' chunkId='NP5' chunkType='head:NP5' posn='160'>
+17	के	PSP	<fs af='का,psp,m,pl,,d,,' drel='lwg__psp:नाम' name='के' chunkType='child:NP5' posn='170'>
+18	ये	DEM	<fs af='यह,pn,any,pl,3,d,,' drel='nmod__adj:वायरस' name='ये' chunkType='child:NP6' posn='180'>
+19	वायरस	NN	<fs af='वायरस,n,m,pl,3,d,0,0' drel='k1:पहुंचा' name='वायरस' chunkId='NP6' chunkType='head:NP6' posn='190'>
+20	आपके	PRP	<fs af='आप,pn,m,sg,2h,o,का,kA' drel='r6:हैंडसेट' name='आपके' chunkId='NP7' chunkType='head:NP7' posn='200'>
+21	हैंडसेट	NN	<fs af='हैंडसेट,n,m,sg,3,o,0_को,0' drel='k2:पहुंचा' vpos='vib_2' name='हैंडसेट' chunkId='NP8' chunkType='head:NP8' posn='210'>
+22	को	PSP	<fs af='को,psp,,,,,,' drel='lwg__psp:हैंडसेट' name='को' chunkType='child:NP8' posn='220'>
+23	क्षति	NN	<fs af='क्षति,n,f,sg,3,d,0,0' drel='pof:पहुंचा' name='क्षति' chunkId='NP9' chunkType='head:NP9' posn='230'>
+24	पहुंचा	VM	<fs af='पहुंच,v,m,pl,3,,या_सक+ता_है,yA' vpos='tam_2_3' name='पहुंचा' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='240'>
+25	सकते	VAUX	<fs af='सक,v,m,pl,any,,ता,wA' drel='lwg__vaux:पहुंचा' name='सकते' chunkType='child:VGF' posn='250'>
+26	हैं	VAUX	<fs af='है,v,any,pl,3,,है,hE' drel='lwg__vaux_cont:सकते' name='हैं' chunkType='child:VGF' posn='260'>
+27	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:पहुंचा' name='।' chunkId='BLK2' chunkType='head:BLK2' posn='270'>
+</Sentence>
+
+<Sentence id='4'>
+1	भारतीय	JJ	<fs af='भारतीय,adj,any,any,,o,,' drel='nmod__adj:एजेंसियों' name='भारतीय' chunkType='child:NP' posn='10'>
+2	सुरक्षा	NNC	<fs af='सुरक्षा,n,f,sg,3,d,0,0' drel='pof__cn:एजेंसियों' name='सुरक्षा' chunkType='child:NP' posn='20'>
+3	एजेंसियों	NN	<fs af='एजेंसी,n,f,pl,3,o,0_ने,0' drel='k1:कहा' vpos='vib_4' name='एजेंसियों' chunkId='NP' chunkType='head:NP' posn='30'>
+4	ने	PSP	<fs af='ने,psp,,,,,,' drel='lwg__psp:एजेंसियों' name='ने' chunkType='child:NP' posn='40'>
+5	यह	DEM	<fs af='यह,pn,any,sg,3,d,,' drel='nmod__adj:चेतावनी' name='यह' chunkType='child:NP2' posn='50'>
+6	चेतावनी	NN	<fs af='चेतावनी,n,f,sg,3,d,0,0' drel='k2:करते' name='चेतावनी' chunkId='NP2' chunkType='head:NP2' posn='60'>
+7	जारी	JJ	<fs af='जारी,adj,any,any,,,,' drel='pof:करते' name='जारी' chunkId='JJP' chunkType='head:JJP' posn='70'>
+8	करते	VM	<fs af='कर,v,m,sg,any,,ता_हो+या,wA' drel='vmod:कहा' vpos='tam_2' name='करते' chunkId='VGNF' chunkType='head:VGNF' posn='80'>
+9	हुए	VAUX	<fs af='हो,v,m,sg,any,,या,yA' drel='lwg__vaux:करते' name='हुए' chunkType='child:VGNF' posn='90'>
+10	कहा	VM	<fs af='कह,v,m,sg,any,,या,yA' name='कहा' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='100'>
+11	कि	CC	<fs af='कि,avy,,,,,,' drel='k2:कहा' name='कि' chunkId='CCP' chunkType='head:CCP' posn='110'>
+12	नए	JJ	<fs af='नया,adj,m,sg,,o,,' drel='nmod__adj:फोन' name='नए' chunkType='child:NP3' posn='120'>
+13	मोबाइल	NNC	<fs af='मोबाइल,adj,any,any,,o,,' drel='pof__cn:फोन' name='मोबाइल' chunkType='child:NP3' posn='130'>
+14	फोन	NN	<fs af='फोन,n,m,sg,3,o,0_पर,0' drel='k7p:आने' vpos='vib_4' name='फोन' chunkId='NP3' chunkType='head:NP3' posn='140'>
+15	पर	PSP	<fs af='पर,psp,,,,,,' drel='lwg__psp:फोन' name='पर' chunkType='child:NP3' posn='150'>
+16	वायरस	NN	<fs af='वायरस,n,m,sg,3,o,0_से,0' drel='k5:आने' vpos='vib_2' name='वायरस' chunkId='NP4' chunkType='head:NP4' posn='160'>
+17	से	PSP	<fs af='से,psp,,,,,,' drel='lwg__psp:वायरस' name='से' chunkType='child:NP4' posn='170'>
+18	आने	VM	<fs af='आ,v,any,sg,any,o,ना_वाला,nA' drel='nmod:कॉल' vpos='tam_2' name='आने' chunkId='VGNN' chunkType='head:VGNN' posn='180'>
+19	वाली	PSP	<fs af='वाला,n,f,sg,,d,,' drel='lwg__psp:आने' name='वाली' chunkType='child:VGNN' posn='190'>
+20	ऐसी	DEM	<fs af='ऐसा,pn,f,sg,any,d,,' drel='nmod__adj:कॉल' name='ऐसी' chunkType='child:NP5' posn='200'>
+21	कॉल	NN	<fs af='कॉल,n,f,sg,3,d,0,0' drel='k1:पहुंचा' name='कॉल' chunkId='NP5' chunkType='head:NP5' posn='210'>
+22	,	SYM	<fs af='COMMA,,,,,,,' drel='rsym:कॉल' name=',' chunkType='child:NP5' posn='220'>
+23	हैंडसेट	NN	<fs af='हैंडसेट,n,m,sg,3,o,0_को,0' drel='k2:पहुंचा' vpos='vib_2' name='हैंडसेट' chunkId='NP6' chunkType='head:NP6' posn='230'>
+24	को	PSP	<fs af='को,psp,,,,,,' drel='lwg__psp:हैंडसेट' name='को' chunkType='child:NP6' posn='240'>
+25	क्षति	NN	<fs af='क्षति,n,f,sg,3,d,0,0' drel='pof:पहुंचा' name='क्षति' chunkId='NP7' chunkType='head:NP7' posn='250'>
+26	पहुंचा	VM	<fs af='पहुंच,v,f,pl,3,,या_सक+ता_है,yA' drel='ccof:कि' vpos='tam_2_3' name='पहुंचा' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='260'>
+27	सकती	VAUX	<fs af='सक,v,f,sg,any,,ता,wA' drel='lwg__vaux:पहुंचा' name='सकती' chunkType='child:VGF2' posn='270'>
+28	हैं	VAUX	<fs af='है,v,any,pl,3,,है,hE' drel='lwg__vaux_cont:सकती' name='हैं' chunkType='child:VGF2' posn='280'>
+29	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:कहा' name='।' chunkId='BLK' chunkType='head:BLK' posn='290'>
+</Sentence>
+
+<Sentence id='5'>
+1	सूत्रों	NN	<fs af='सूत्र,n,m,pl,3,o,0_का,0' drel='k1:कहना' vpos='vib_2' name='सूत्रों' chunkId='NP' chunkType='head:NP' posn='10'>
+2	का	PSP	<fs af='का,psp,m,sg,,d,,' drel='lwg__psp:सूत्रों' name='का' chunkType='child:NP' posn='20'>
+3	कहना	VM	<fs af='कह,v,any,any,any,d,ना,nA' drel='k1:है' name='कहना' chunkId='VGNN' chunkType='head:VGNN' posn='30'>
+4	है	VM	<fs af='है,v,any,sg,3,,है,hE' name='है' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='40'>
+5	कि	CC	<fs af='कि,avy,,,,,,' drel='k2:कहना' name='कि' chunkId='CCP' chunkType='head:CCP' posn='50'>
+6	मोबाइल	NNC	<fs af='मोबाइल,adj,any,any,,o,,' drel='pof__cn:उपभोक्ताओं' name='मोबाइल' chunkType='child:NP2' posn='60'>
+7	फोन	NNC	<fs af='फोन,n,m,sg,3,d,0,0' drel='pof__cn:उपभोक्ताओं' name='फोन' chunkType='child:NP2' posn='70'>
+8	उपभोक्ताओं	NN	<fs af='उपभोक्ता,n,m,pl,3,o,0_को,0' drel='k1:लेनी' vpos='vib_4' name='उपभोक्ताओं' chunkId='NP2' chunkType='head:NP2' posn='80'>
+9	को	PSP	<fs af='को,psp,,,,,,' drel='lwg__psp:उपभोक्ताओं' name='को' chunkType='child:NP2' posn='90'>
+10	१२	QC	<fs af='१२,num,any,any,,any,,' drel='nmod__adj:अंकों' name='१२' chunkType='child:NP3' posn='100'>
+11	अंकों	NN	<fs af='अंक,n,m,pl,3,o,0_वाला,0' drel='nmod:कॉल' vpos='vib_3' name='अंकों' chunkId='NP3' chunkType='head:NP3' posn='110'>
+12	वाली	PSP	<fs af='वाला,psp,f,sg,,d,,' drel='lwg__psp:अंकों' name='वाली' chunkType='child:NP3' posn='120'>
+13	कॉल	NN	<fs af='कॉल,n,f,sg,3,d,0,0' drel='k2:लेनी' name='कॉल' chunkId='NP4' chunkType='head:NP4' posn='130'>
+14	भी	RP	<fs af='भी,avy,,,,,,' drel='lwg__rp:कॉल' name='भी' chunkType='child:NP4' posn='140'>
+15	नहीं	NEG	<fs af='नहीं,avy,,,,,,' drel='lwg__neg:लेनी' name='नहीं' chunkType='child:VGF2' posn='150'>
+16	लेनी	VM	<fs af='ले,v,f,any,any,,ना_चाहिए,nA' drel='ccof:कि' vpos='tam_3' name='लेनी' chunkId='VGF2' chunkType='head:VGF2' stype='declarative' voicetype='active' posn='160'>
+17	चाहिए	VAUX	<fs af='चाहिए,v,any,any,any,,0,0' drel='lwg__vaux:लेनी' name='चाहिए' chunkType='child:VGF2' posn='170'>
+18	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:है' name='।' chunkId='BLK' chunkType='head:BLK' posn='180'>
+</Sentence>
+
+<Sentence id='6'>
+1	यह	PRP	<fs af='यह,pn,any,sg,3,d,0,0' drel='k1:हो' name='यह' chunkId='NP' chunkType='head:NP' posn='10'>
+2	भी	RP	<fs af='भी,avy,,,,,,' drel='lwg__rp:यह' name='भी' chunkType='child:NP' posn='20'>
+3	फोन	NNC	<fs af='फोन,n,m,sg,3,d,0,0' drel='pof__cn:वायरस' name='फोन' chunkType='child:NP2' posn='30'>
+4	वायरस	NN	<fs af='वायरस,n,m,sg,3,d,0,0' drel='k1s:हो' name='वायरस' chunkId='NP2' chunkType='head:NP2' posn='40'>
+5	हो	VM	<fs af='हो,v,m,sg,3,,0_सक+ता_है,0' vpos='tam_2_3' name='हो' chunkId='VGF' chunkType='head:VGF' stype='declarative' voicetype='active' posn='50'>
+6	सकता	VAUX	<fs af='सक,v,m,sg,any,,ता,wA' drel='lwg__vaux:हो' name='सकता' chunkType='child:VGF' posn='60'>
+7	है	VAUX	<fs af='है,v,any,sg,3,,है,hE' drel='lwg__vaux_cont:सकता' name='है' chunkType='child:VGF' posn='70'>
+8	।	SYM	<fs af='।,punc,,,,,,' drel='rsym:हो' name='।' chunkId='BLK' chunkType='head:BLK' posn='80'>
+</Sentence>
+

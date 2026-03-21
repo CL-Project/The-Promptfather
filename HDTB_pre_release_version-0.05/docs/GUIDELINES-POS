@@ -1,0 +1,360 @@
+﻿Noun(NN)
+noun test 
+------------
+किताब
+If the given word can be changed to plural 
+eg: किताबे
+
+If a post position can be added after the given word
+eg: किताबों में ज्ञान का सागर होता है।
+
+If a pronoun can be added before the given word
+eg: मेरी किताब राम के पास है।
+
+But some words likeपार will not pass this test.
+
+
+NNP:  All person names( Sita,Ram ),   institute names( Kendriya Vidhalay ),  post names
+( Prime Minister),  country names( India ) ,  state names( Andhra-Pradesh ),  natural things( Himalaya ) & abrivations of proper name ( IIIT )
+
+
+compound words like 
+-----------------------
+1.When compound word is a combination of proper noun and a general noun in which the 2nd word is head word( uttar pada) then tagging will be as follows
+
+  रविवार रात - [रविवार NNP रात NN] NP- रविवार की रात
+
+  अंबानी परिवार-[अंबानी NNP परिवार NN] NP-अंबानी का परिवार
+
+  मोबाईल सेवा- [मोबाईल NNC सेवा NN] NP-मोबाईल की सेवा
+
+  मोबाईल फोन-[ मोबाईल NNC  फोन NN] NP
+
+  राम मंदिर- [राम NNP मंदिर NN] NP- राम का मंदिर
+
+  नई दिल्ली जिला पुलिस आयुक्त अनिता रॉय -[नई NNC दिल्ली NNP जिला NNC पुलिस NNC आयुक्त NN अनिता NNPC रॉय NNP] NP
+
+
+2.When compound word is a noun , noun combination which has no head word( ubhay pada) then tagging will be as follows
+ मर्द बच्चा- [मर्द NN बच्चा NN] NP
+ आज रात-[आजNN रातNN]NP
+  देर रात- [देरNN रातNN]NP
+
+3.purva pada examples--
+
+
+4. दिल्ली शहर [दिल्ली NNP शहर NN] NP ; गंगा नदी [ गंगा NNP नदी NN] NP
+
+*The reason for not treating दिल्ली शहर as compound word is:
+
+[दिल्ली NNP ,SYM] NP [पूना NNP] NP [व CC] CCP [मुंबंई NNP] NP  [शहरों NN में PSP]NP [बाढ़ NN] NP [आई VM . SYM] VGF  here we can see  शहरों is plural, so therefore this is not 1 entity
+
+5.*मोबाईल अस्पताल-[मोबाईल JJ अस्पताल NN ] NP( this not a compound word)
+
+
+other compound words
+--------------------
+1. प्रधान मंत्री मनमोहन सिंह [ प्रधानमंत्री NNP मनमोहन NNPC सिंह NNP] NP
+
+2.केन्द्रिय सरकार- [केन्द्रिय NNPC सरकार NNP] NP
+
+3.भारतीय वायु सेना-[भारतीय NNPC वायु NNPC सेना NNP] NP
+
+4.भारतीय सेना-[भारतीय NNPC सेना NNP] NP
+
+5. भारत-पाक वार्ता - [भारत NNPC -SYM पाक NNPC वार्ता NNP] NP
+
+6. इलाहबाद-बनारस ऊंचाहार एक्सप्रेस - [इलाहबाद NNP- SYM बनारस NNP] NP 
+     [ऊंचाहार NNPC  एक्सप्रेस NNP] NP
+
+7. वर्ष २००९ -  [वर्ष NNPC २००९ NNP]NP
+
+8. आंध्रप्रदेश सरकार [ आंध्रप्रदेश NNPC सरकार NNP ]
+
+1. All gases & elements NN (gold, iron)
+
+2. All degrees NNP (BA, PhD)
+
+3. All language NNP ( Hindi, German )
+
+4.All planets & stars  NNP ( expect Sun & Moon-NN)
+
+5. All units NN (Kilogram)
+
+6.All birds, trees, fruits & flowers NN (Elephant,parrot,,mango,rose)
+
+7.All weekdays & months NNP ( Monday, January)
+
+8. All festivals NNP (Holi,ID)
+
+9. All titles NNC (captain, shrimati,chief marshal)
+
+10. All subject NNP ( physics, chemistry)
+
+11. All diseases NNP ( AIDS ,migraine)
+
+12. All titles hereafter will be given a separate tag NNC (doctor, chief Justice, Captain etc)
+
+13. Abrivations of proper name will be NNP and abrivations of general noun will be NN. 
+
+
+
+NST:-
+--------------
+Examples -to show ओर is nst.
+
+[राम NNP की PSP ओर NST से PSP ] NP [कोई PRP ] NP [नहीं NEG बोला VM ।SYM] VGF
+
+[दूसरी QO ओर NST से PSP ] NP [उनका PRP] NP [बुलावा NN] NP [आया VM ।SYM] VGF
+
+
+Pronoun(PRP):-
+
+
+DEM
+-----------
+[हम DEM सब  NN] NP
+
+[आप DEM सब NN] NP ( eg:[आप DEM  सब NN ] NP 
+
+[थोड़े QF - SYM थोड़े RDP गहने NN] NP [मुझे  PRP] NP [दे VM सकते VAUX हैं VAUX । SYM] VGF
+
+{आप DEM दोनों NN] NP
+
+{हम DEM दोनों NN] NP( eg: [हम DEM दोनों NN] NP [मोटर NN पर PSP] NP [जा VM बैठे VAUX । SYM] VGF )
+
+
+Adjective(JJ):-
+------------------
+adjective test
+--------------------
+
+If a noun can be added after the given word.
+तैयार माल
+
+QC:
+--------
+All cardinal numbers will be marked as QC except when it is a part of NNP
+
+1.आज का तापमान अंबाला में १२ अमृतसर में ७ और चंडीगढ़ में ५ रहा ।
+
+2.[२४ QC से  PSP] NP [पचास QCC हजार QC रुपये NP तक PSP ] NP [खर्च NN]NP [किये VM। SYM] VGF
+
+3.[दोनों QC पक्षों NN के PSP बीच NST] NP [बातचीत NN] NP [चल VM रही VAUX है VAUX ।SYM] VGF
+
+
+4. [२ NNPC मई NNPC २००७ NNP को PSP] NP [काम NN] NP [संपन्न JJ] JJP [हुआ VM । SYM] VGF
+    -----------
+
+
+QO:
+----------
+All ordinal numbers will be marked as QO, if they are followed by a noun. 
+
+[दूसरे QC नेताओं NN ने PSP] NP [कहा VM ।SYM] VGF
+
+All ordinal numbers will be marked as NP, if  they are followed by a postpositions.
+
+[पहले NN ने PSP] NP [दूसरे NN से PSP] NP [कहा VM ।SYM] VGF
+
+*{If  an ordinal number (QO) comes alone in a chunk then chunk would be JJP chunk.}
+
+
+
+QF: 
+------------
+[पौने QF चार QC लाख QC] NP [खर्च NN] NP [हुए VM ।SYM] VGF
+
+When QF occurs before a verb then its chunk will be JJP.
+
+Adverb(RB):-
+Only manner adverbs will be marked as RB
+
+Verb :-
+verb test
+--------------
+If a word is verb then it should take a subject & object as its arguments.
+
+eg:(खाना) --- मै रोज सेब खाना पसंद करता हूँ.
+
+कहना, मानना, सोचना, समझना will not be taken as part of finite verb these words will be chunked separately as VGNN.
+
+To distingwish between 'vAlA' as a  verb vaux and 'vAlA' as adjective
+ When 'vAlA' is verb vaux 
+eg. अगले कुछ महीनों तक मैं दिल्ली में रहने वाला हूँ ।(I am going to stay in Dehili for next few months) 
+
+[अगलेJJ कुछQF महीनोंNN तकPSP]NP [मैं PRP]NP [दिल्ली NNPमेंPSP]NP [रहनेVM वालाVAUX हूँVAUX ।SYM]VGF
+
+When 'vAlA' is adjective
+मैं दिल्ली का रहने वाला हूँ । (I am a resident of Dehili.)
+eg. [मैंPRP]NP [दिल्ली NNP काPSP]NP [रहनेVM वालाPSP]VGNN [हूँ VM ।SYM]VGF
+
+
+Difference between मार गिराया और मार भगाया
+
+मार गिराया  will be chunked together
+
+eg. पुलिस ने आतंकी को मार गिराया ।
+
+[पुलिसNN नेPSP]NP [आतंकीNN कोPSP]NP [मारVM गिरायाVAUX ।SYM]VGF
+मार भगाया will be  2 different chunks
+
+eg. राम ने चोर को मार भगाया ।
+
+[राम ने]NP [चोर को]NP [मारVM]VGNF [भगायाVM ।SYM]VGF
+
+
+Post position:-
+
+complex PSP words
+-------------------------
+के अलावा 	के अधीन
+के अंतर्गत 	के कारण
+के समय		के बजाय
+के संबध में	के लिय
+के मुताबिक	के तहत
+के खिलाफ	के विरुद्ध 
+के प्रति 		के विपरीत
+के अनुसार	की वजह से
+की बदौलत 	की भांति
+के चलते		के बूते	
+के नाते		के मद्देनजर
+के अनुरूप	के बदले में
+के बावजूद	के बारे में
+के बहाने 	के ऐवज में
+के रूप में		के तौर पर
+से परे		के परे
+के हवाले से 	के उल्टे  	
+के फलस्वरूप	के स्वरूप	
+के मारे		
+
+words those are not complex PSP words
+-------------------------------------------------
+प्रगति के बिना- [प्रगति NN के PSP बिना NEG] NP
+
+प्रगति के बगैर-[प्रगति NN के PSP बगैर NEG] NP
+
+प्रगति के सिवाय-[प्रगति NN के PSP सिवाय NEG] NP
+
+देश के समक्ष--[देश NN के PSP समक्ष NST] NP
+
+तट के करीब- [तट NN के PSP करीब NST] NP
+
+राम की तरफ-[राम NN की PSP तरफ NST] NP
+
+राम की ओर-[राम NN की PSP ओर NST] NP
+
+देश  के सामने- [देश NN  के PSP  सामने NST] NP
+
+ambiguous words
+-----------------
+एकत्र
+[एकत्र JJ भीड़ NN ने PSP] NP  कहा ।
+
+लोग [एकत्र RB] RBP हुए।
+
+तक--
+[मैं] [तक RP] [यह] [नहीं जानती हूँ ।] 
+
+[मेरे] [भाई के]  [बच्चों तक PSP] [यह बात] [पहुंच गई।]
+
+
+प्रत्येक
+.[`प्रत्येक' NN में PSP] NP [नेत्रहीन JJ] JJP [व CC] CCP [शय्याग्रस्त JJ] JJP [विकलांग JJ] JJP [व्यक्ति NP भी RP] NP [शामिल JJ] JJP [है VM । SYM] VGF
+
+[प्रत्येक JJ लड़की NN] NP [भाग NN] NP [लेगी VM] VGF
+
+
+RULES Forऔर'---
+1.Mostly `और'-is `CC'(conjunct)
+
+2.When it comes before a noun and tells its quantity then `और 'is `QF'.(eg:- कुछ और विचार; वे हमें और भी दुःख देते हैं.)
+
+3.When it comes before a verb then `और 'is `RB'.(eg:- और भी भड़का दिया.)
+
+4.When it comes before an adjective then  `और' is `INTF'.(eg:- और भी भयानक हो गया.)
+
+5. When it comes before a noun then`और' is `JJ'(eg:- मेरे और भी बच्चे हैं)
+
+6. When a postposition comes after `और' it is noun`NN'  (eg:- औरों ने कहा )
+
+7. It can be a noun without a post position  (eg:- उन्होंने ईश्नर से कुछ और नहीं मांगा है ।)
+
+
+rules for `जैसा'
+
+1.when two things are being compared then `जैसा' is PSP . (eg:- पहाड़ जैसा आदमी; घर जैसा खाना)
+
+2. `जैसा' as RP:- प्रवचन में दर्द जैसे साकार हो उठा.; सारा जापान जैसे(RP?)गमले में सजाया हुआ कोई फूल हो.
+                                                                              ( जैसे=मानों )
+
+3.`जैसे' as conjunct CC  (वह सब लोग ऐसे बैठे थे जैसे कि कोई काम न हो.)
+
+4.`जैसे' as PRP  (उसके बाद जैसा कि होता था, सब लोग चंदा और भेंट ले आये.)
+
+5.`जैसा'as DEM  (आज जैसी स्थिति है) 
+
+6. `जैसे`as RB (खिलाड़ी जैसे ही मैदान में पहुंचे)
+
+इसलिए
+-----------
+[ऐसे DEM उद्योग NN] NP [बाजार NN के PSP सामने NST]  NP [इसलिए PRP] NP [स्थापित JJ] JJP [होंगे VM] VGF [क्योंकि CC] CCP [इससे PRP] NP [आय NN में PSP] [वृद्धि NN] NP [होगी VM] VGF
+
+[कल NN] NP [बहुत INTF तेज़ JJ बारिश NN] NP [हो VM रही VAUX थी VAUX] VGF [इसलिए PRP] CCP [मैं PRP]NP [नहीं NEG आ VM पाई VAUX ।SYM] VGF
+
+अन्य
+------
+[वहाँ PRP] NP [राजा NP के PSP साथ NST] NP  [अन्य JJ लोग NN  भी RP] NP [खड़े JJ] JJP [थे VM। SYM]
+
+[अन्यों NN के PSP साथ NST] NP [मिल VMC बैठ VM कर VAUX] VGNF [उसे PRP] NP [बाँटना VM] VGNN [कभी PRP] NP [उचित JJ] JJP [नहीं NEG माना VGF । SYM] VGF
+
+
+Exceptional Chunking Cases
+-----------------------------------
+
+दिल्ली स्थित कुतुबमीनार -- [दिल्ली NNP] NP [ स्थित JJ] JJP [कुतूबमीनार NNP] NP
+
+सुनामी प्रभावित क्षेत्र-- [सुनामी NNP] NP [प्रभावित JJ] JJP [क्षेत्र NN] NP
+
+[चंद्रभान NNP] NP [नामक JJ ] JJP [कैदी NN] NP
+
+[प्रकृति NP ने PSP] NP [बनाया VM ही RP] VGF [ऐसा PRP] NP [है  VAUX] FRGP
+
+[उन्होंने PRP] NP [अमेरिका NN की PSP] NP [" SYM डंडा VMC चलाओ VM " SYS वाली PSP] VGNN 
+
+[नीति NN का PSP] NP [परित्याग NN] NP [किया VM । SYM] VGF
+
+[डॉलर NN] NP [पुराने JJ कर्ज NN] NP [चुकाने VM के PSP] VGNN [क्रम NN में PSP] NP [लौट RBC 
+फिर RBC कर RB] RBP [अमेरिका NNP ही RP] NP [पहुँचने VM लगा VAUX । SYM] VGF
+
+[कांची NNPC शंकराचार्य NNP]NP [विजयंद्र NNPC सरस्वति NNP ने PSP] NP [कहा VM । SYM] VGF
+
+[खाने VM के PSP समय PSP] VGNN [मुझसे PRP ] NP [बात NN ] NP [मत NEG करो VM । SYM] VGF
+
+[इनमें PRP से PSP] NP [एक NN] NP [संदिग्ध JJ हमलावर NN] NP [और CC] CCP [दूसरा NN NP [गार्ड NN] NP [था VM] VGF
+ 
+
+कौन, कब, कहाँ will be always chunked as NP
+
+क्यों, कैसे will be always chunked as RBP
+
+क्या will be chunked as RBP if the answer is yes or no
+
+[क्याWQ] RBP [तुम PRP] NP [घूमने VM जाओगे VAUX] VGF
+
+क्या will be chunked as NP when the answer is objective.
+
+[क्याWQ]NP [खायाVM]VGF
+
+New Change
+------------
+1. Government Of America
+अमेरीकी सरकार -- [अमेरीकी NNPC सरकार  NNP] NP
+
+2. a)मुगल सम्राट जहाँगीर--[मुगल NNC सम्राट NNC जहाँगीर NNP] NP
+ 
+b) सुर  सम्राज्ञी लता मंगेशकर --[सुर NNC सम्राज्ञी NNC लता NNPC मंगेशकर NNP] NP   
+  {NNC is the new tag introduced for titles}
+
+3.मुगल साम्राज्य --[मुगल NNC साम्राज्य NN] NP
+
