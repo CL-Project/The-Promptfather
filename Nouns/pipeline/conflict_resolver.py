@@ -71,12 +71,12 @@ for cls, count in dist.most_common():
     print(f"  {cls}: {count}")
 
 # Save the conflict log for your error analysis section
-with open('conflict_log.txt', 'w', encoding='utf-8') as f:
+with open('./data/conflict_log.txt', 'w', encoding='utf-8') as f:
     for word, c1, c2 in remaining_conflicts:
         f.write(f"{word}\t{c1}\t{c2}\n")
 
 # Save the final merged lexicon
-with open('noun_lexicon_merged.tsv', 'w', encoding='utf-8') as f:
+with open('./data/noun_lexicon_merged.tsv', 'w', encoding='utf-8') as f:
     f.write("word\tparadigm_class\n")
     for word, cls in sorted(merged.items()):
         f.write(f"{word}\t{cls}\n")

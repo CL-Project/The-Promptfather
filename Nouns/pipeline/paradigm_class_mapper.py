@@ -84,7 +84,7 @@ for cls, count in sorted(dist.items()):
     print(f"  {cls}: {count}")
 
 # Save final lexicon
-with open('noun_lexicon_final.tsv', 'w', encoding='utf-8') as f:
+with open('./data/noun_lexicon_final.tsv', 'w', encoding='utf-8') as f:
     f.write("word\tparadigm_class\n")
     for word, cls in sorted(final_lexicon.items()):
         f.write(f"{word}\t{cls}\n")
