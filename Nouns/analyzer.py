@@ -2,52 +2,6 @@ import csv
 import unicodedata
 from noun_paradigm_templates import PARADIGM_TABLES
 
-def analyze(surface_form, lexicon_lookup, lexicon_display, paradigm_tables):
-    """
-    Given a surface form, return all valid (lemma, features) analyses.
-    
-    Strategy:
-    1. For each paradigm class and each rule in that class,
-       check if the surface form ends in the rule's suffix
-    2. If it does, recover the candidate lemma by stripping
-       the surface suffix and adding back the lemma suffix
-    3. Check if that candidate lemma exists in the lexicon
-       with the matching paradigm class
-    4. If yes, it's a valid analysis — add to results
-    """
-    results = []
-    
-    for paradigm_class, rules in paradigm_tables.items():
-        for (surface_suffix, lemma_suffix, gender, number, case) in rules:
-            
-            if surface_suffix:
-                if not surface_form.endswith(surface_suffix):
-                    continue
-                stem = surface_form[:-len(surface_suffix)]
-            else:
-                stem = surface_form
-            
-            candidate_lemma = stem + lemma_suffix
-            
-            if candidate_lemma in lexicon_lookup and \
-               lexicon_lookup[candidate_lemma] == paradigm_class:
-                results.append({
-                    'lemma': lexicon_display[candidate_lemma],  # original form
-                    'gender': gender,
-                    'number': number,
-                    'case': case,
-                    'paradigm': paradigm_class
-                })
-    
-    seen = set()
-    unique_results = []
-    for r in results:
-        key = (r['lemma'], r['gender'], r['number'], r['case'])
-        if key not in seen:
-            seen.add(key)
-            unique_results.append(r)
-    
-    return unique_results
 
 def normalize_hindi(text):
     """
@@ -59,21 +13,78 @@ def normalize_hindi(text):
        and the MorpHIN lexicon is inconsistent about nukta usage.
     """
     text = unicodedata.normalize('NFC', text)
-    # Strip nukta after ड and ढ to normalize spelling variants
     text = text.replace('\u0921\u093c', '\u0921')  # ड़ → ड
     text = text.replace('\u0922\u093c', '\u0922')  # ढ़ → ढ
     return text
 
-# And normalize every input before analysis
-def analyze_verbose(surface_form, lexicon_lookup, lexicon_display, paradigm_tables):
+
+def analyze(surface_form, lexicon_lookup, lexicon_display, lexicon_confidence, paradigm_tables):
+    """
+    Given a surface form, return all valid (lemma, features) analyses.
+
+    Fix 1: normalize_hindi is now applied here, not just in analyze_verbose.
+           This means all callers (including the evaluator) get correct behavior.
+
+    Fix 2: each result now includes a 'confidence' field ('certain' or 'heuristic')
+           so the evaluator can separate errors on gold-classified words from
+           errors on heuristically-classified ones.
+
+    Strategy:
+    1. For each paradigm class and each rule in that class,
+       check if the surface form ends in the rule's suffix
+    2. If it does, recover the candidate lemma by stripping
+       the surface suffix and adding back the lemma suffix
+    3. Check if that candidate lemma exists in the lexicon
+       with the matching paradigm class
+    4. If yes, it's a valid analysis — add to results
+    """
+    # FIX 1: normalize at the entry point of analyze() itself
+    surface_form = normalize_hindi(surface_form)
+
+    results = []
+
+    for paradigm_class, rules in paradigm_tables.items():
+        for (surface_suffix, lemma_suffix, gender, number, case) in rules:
+
+            if surface_suffix:
+                if not surface_form.endswith(surface_suffix):
+                    continue
+                stem = surface_form[:-len(surface_suffix)]
+            else:
+                stem = surface_form
+
+            candidate_lemma = stem + lemma_suffix
+
+            if candidate_lemma in lexicon_lookup and \
+               lexicon_lookup[candidate_lemma] == paradigm_class:
+                results.append({
+                    'lemma': lexicon_display[candidate_lemma],
+                    'gender': gender,
+                    'number': number,
+                    'case': case,
+                    'paradigm': paradigm_class,
+                    # FIX 2: propagate confidence so evaluator can stratify errors
+                    'confidence': lexicon_confidence[candidate_lemma],
+                })
+
+    seen = set()
+    unique_results = []
+    for r in results:
+        key = (r['lemma'], r['gender'], r['number'], r['case'])
+        if key not in seen:
+            seen.add(key)
+            unique_results.append(r)
+
+    return unique_results
+
+
+def analyze_verbose(surface_form, lexicon_lookup, lexicon_display, lexicon_confidence, paradigm_tables):
     """
     Pretty-print wrapper around analyze() for testing.
+    normalize_hindi no longer needs to be called here — analyze() handles it.
     """
-    original_input = surface_form  # save original for display
-    surface_form = normalize_hindi(surface_form)
-    results = analyze(surface_form, lexicon_lookup, lexicon_display, paradigm_tables)
-    print(f"\nInput: {original_input}")  # print original, not stripped
-    # rest stays the same
+    results = analyze(surface_form, lexicon_lookup, lexicon_display, lexicon_confidence, paradigm_tables)
+    print(f"\nInput: {surface_form}")
     if not results:
         print("  No analysis found")
     else:
@@ -82,94 +93,67 @@ def analyze_verbose(surface_form, lexicon_lookup, lexicon_display, paradigm_tabl
                   f"[{r['paradigm']}, "
                   f"{r['gender']}, "
                   f"{r['number']}, "
-                  f"{r['case']}]")
+                  f"{r['case']}, "
+                  f"conf={r['confidence']}]")
     return results
 
 
+def load_lexicon(tsv_path):
+    """
+    Load noun_lexicon_expanded.tsv and return three dicts keyed by
+    nukta-stripped NFC form:
+      lexicon_lookup     → paradigm class
+      lexicon_display    → original spelling (with nuktas)
+      lexicon_confidence → 'certain' or 'heuristic'
+    """
+    lexicon_lookup = {}
+    lexicon_display = {}
+    lexicon_confidence = {}
 
-# Load lexicon with two versions
-lexicon_lookup = {}   # nukta-stripped keys → paradigm class
-lexicon_display = {}  # nukta-stripped keys → original form with nuktas
+    with open(tsv_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f, delimiter='\t')
+        for row in reader:
+            original = unicodedata.normalize('NFC', row['word'])
+            stripped = normalize_hindi(original)
+            lexicon_lookup[stripped] = row['paradigm_class']
+            lexicon_display[stripped] = original
+            # FIX 2: read confidence column
+            lexicon_confidence[stripped] = row.get('confidence', 'certain')
 
-with open('noun_lexicon_expanded.tsv', 'r', encoding='utf-8') as f:
-    reader = csv.DictReader(f, delimiter='\t')
-    for row in reader:
-        original = unicodedata.normalize('NFC', row['word'])
-        stripped = normalize_hindi(original)
-        lexicon_lookup[stripped] = row['paradigm_class']
-        lexicon_display[stripped] = original
-
-print(f"Loaded {len(lexicon_lookup)} lemmas")
-
-# Test suite — one word from each class, testing multiple forms
-test_words = [
-    # M1 tests
-    'लड़का',    # M1 SG DIR
-    'लड़के',    # M1 PL DIR / SG OBL (should return 2 analyses)
-    'लड़कों',   # M1 PL OBL
-    
-    # M2 tests
-    'घर',       # M2 SG DIR / PL DIR / SG OBL (3 analyses)
-    'घरों',     # M2 PL OBL
-    
-    # M3 tests
-    'आदमियों',  # M3 PL OBL
-
-    # M4 tests (आलू class — masculine -ū final)
-    'आलू',      # M4 SG DIR / PL DIR / SG OBL (3 analyses — invariant)
-    'आलुओं',    # M4 PL OBL
-    
-    # F1 tests
-    'लड़की',    # F1 SG DIR / SG OBL (2 analyses)
-    'लड़कियाँ', # F1 PL DIR
-    'लड़कियों', # F1 PL OBL
-    
-    # F2 tests
-    'आशाएँ',   # F2 PL DIR
-    'आशाओं',   # F2 PL OBL
-    
-    # F3 tests
-    'रातें',    # F3 PL DIR
-    'रातों',    # F3 PL OBL
-
-    # F4 tests (शान्ति class — feminine -i final)
-    'शान्ति',   # F4 SG DIR / SG OBL (2 analyses)
-    'शान्तियाँ', # F4 PL DIR
-    'शान्तियों', # F4 PL OBL
-
-    # F5 tests (ऋतु class — feminine -u final)
-    'ऋतु',      # F5 SG DIR / SG OBL (2 analyses)
-    'ऋतुएँ',    # F5 PL DIR
-    'ऋतुओं',    # F5 PL OBL
-    
-    # Unknown word test
-    'किताबों',  # should find no analysis (ex_noun in lexicon)
-]
-
-additional_tests = [
-    'कमरों',    # कमरा — M1, should give PL OBL
-    'किसानों',  # किसान — M2, should give PL OBL  
-    'नदियाँ',   # नदी — F1, should give PL DIR
-    'सड़कों',   # सड़क — F3, should give PL OBL
-    'खिड़कियों', # खिड़की — F1, should give PL OBL
-    'बातें',    # बात — F3, should give PL DIR
-]
+    return lexicon_lookup, lexicon_display, lexicon_confidence
 
 
-print("=== Core test suite ===")
-for word in test_words:
-    analyze_verbose(word, lexicon_lookup, lexicon_display, PARADIGM_TABLES)
+# ---------------------------------------------------------------------------
+# Test harness (only runs when executing this file directly)
+# ---------------------------------------------------------------------------
+if __name__ == '__main__':
+    import os
 
-print("\n=== Additional tests ===")
-for word in additional_tests:
-    analyze_verbose(word, lexicon_lookup, lexicon_display, PARADIGM_TABLES)
+    tsv_path = os.path.join(os.path.dirname(__file__), 'data', 'noun_lexicon_expanded.tsv')
+    lexicon_lookup, lexicon_display, lexicon_confidence = load_lexicon(tsv_path)
+    print(f"Loaded {len(lexicon_lookup)} lemmas")
 
-# # Check what's actually stored in the lexicon for खिड़की variants
-# target = unicodedata.normalize('NFC', 'खिड़की')
-# print("Looking for:", [hex(ord(c)) for c in target])
+    test_words = [
+        'लड़का', 'लड़के', 'लड़कों',
+        'घर', 'घरों',
+        'आदमियों',
+        'आलू', 'आलुओं',
+        'लड़की', 'लड़कियाँ', 'लड़कियों',
+        'आशाएँ', 'आशाओं',
+        'रातें', 'रातों',
+        'शान्ति', 'शान्तियाँ', 'शान्तियों',
+        'ऋतु', 'ऋतुएँ', 'ऋतुओं',
+        'किताबों',
+    ]
 
-# # Search for anything resembling खिड़की in the lexicon
-# for word in lexicon:
-#     if 'खि' in word and 'की' in word:
-#         print(f"Found: {word} → {[hex(ord(c)) for c in word]} → {lexicon[word]}")
+    additional_tests = [
+        'कमरों', 'किसानों', 'नदियाँ', 'सड़कों', 'खिड़कियों', 'बातें',
+    ]
 
+    print("=== Core test suite ===")
+    for word in test_words:
+        analyze_verbose(word, lexicon_lookup, lexicon_display, lexicon_confidence, PARADIGM_TABLES)
+
+    print("\n=== Additional tests ===")
+    for word in additional_tests:
+        analyze_verbose(word, lexicon_lookup, lexicon_display, lexicon_confidence, PARADIGM_TABLES)
