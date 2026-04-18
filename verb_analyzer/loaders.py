@@ -16,6 +16,9 @@ load_flag_map           VERB_STEM/SUFFIX_FLAG_MAP     → {morpheme: flag}
 from __future__ import annotations
 
 from collections import defaultdict
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 # ── Low-level helper ──────────────────────────────────────────────────────────
@@ -56,6 +59,7 @@ def load_suffix_rules(
     """
     rules: list[tuple[str, str, str]] = []
     seen:  set[tuple[str, str, str]]  = set()
+    INVALID_ADDBACKS = {"ै", "ो"}
 
     for path in paths:
         with _open(path) as fh:
@@ -71,6 +75,8 @@ def load_suffix_rules(
                     continue
                 suffix   = parts[1].strip()
                 add_back = parts[2].strip()
+                if add_back in INVALID_ADDBACKS:
+                    continue  # skip entirely
                 if not suffix or add_back.lower() == "nil":
                     continue
                 key = (paradigm, suffix, add_back)

@@ -47,6 +47,7 @@ class VerbAnalysis:
     irregular:  bool = False
     auxiliary:  Optional[str] = None   # vector/aux verb root detected in stem
     aux_flag:   Optional[str] = None   # MorpHIN flag for that component
+    confidence: str = "low"
 
     def __str__(self) -> str:
         tag = "[IRREG] " if self.irregular else ""

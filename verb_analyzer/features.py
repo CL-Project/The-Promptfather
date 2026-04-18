@@ -27,6 +27,7 @@ Priority order (the critical design decision)
 """
 
 from __future__ import annotations
+import unicodedata
 
 from .models import VerbFeatures
 from .feature_tables import (
@@ -40,6 +41,7 @@ from .feature_tables import (
     _SUBJUNCTIVE_SUFFIXES,
     _INFINITIVE_MAP,
     _FLAG_TO_FEATURE,
+    _AMBIGUOUS_SUFFIXES,
 )
 
 
@@ -51,11 +53,17 @@ def extract_features(suffix: str, suffix_flag_map: dict[str, str]) -> list[VerbF
 
     The list is ordered from most-specific to least-specific.
     """
+    suffix = unicodedata.normalize('NFC', suffix.strip())
+    
     suffix = suffix.strip()
 
     # ── 1. Infinitive (unambiguous) ───────────────────────────────────────────
     if suffix in _INFINITIVE_MAP:
         return [VerbFeatures(**_INFINITIVE_MAP[suffix])]
+    
+    # ── 1b. Explicitly ambiguous suffixes ────────────────────────────────────
+    if suffix in _AMBIGUOUS_SUFFIXES:
+        return [VerbFeatures(**kwargs) for kwargs in _AMBIGUOUS_SUFFIXES[suffix]]
 
     f = VerbFeatures()
     extra_interpretations: list[VerbFeatures] = []
@@ -121,24 +129,7 @@ def extract_features(suffix: str, suffix_flag_map: dict[str, str]) -> list[VerbF
         elif f.aspect in ("perfective", "imperfective"):
             f.verbal_type = "participle"
 
-    # ── 6. Ambiguous bare suffixes — generate extra interpretations ───────────
-    # 'े' alone: could be perfective-M-P  OR  subjunctive-2-S/P
-    if suffix == "े" and f.verbal_type == "participle":
-        alt = VerbFeatures(mood="subjunctive", person="2", verbal_type="finite")
-        extra_interpretations.append(alt)
-
-    # 'ें' alone: could be subjunctive-S or subjunctive-P
-    if suffix == "ें":
-        alt1 = VerbFeatures(mood="subjunctive", number="S", verbal_type="finite")
-        alt2 = VerbFeatures(mood="subjunctive", number="P", verbal_type="finite")
-        extra_interpretations.extend([alt1, alt2])
-
-    # 'ए' alone: perfective-M-P  OR  subjunctive-3-S
-    if suffix == "ए":
-        alt = VerbFeatures(mood="subjunctive", person="3", number="S", verbal_type="finite")
-        extra_interpretations.append(alt)
-
-    return [f] + extra_interpretations
+    return [f]
 
 
 def _infer_irregular_features(word: str) -> VerbFeatures:

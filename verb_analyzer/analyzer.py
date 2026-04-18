@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import os
 from typing import Optional
+import unicodedata
 
 from .models import VerbAnalysis, VerbFeatures
 from .loaders import (
@@ -79,6 +80,25 @@ class VerbAnalyzer:
         self._aux_sorted        = sorted(self.aux_verbs,   key=len, reverse=True)
         self._stem_flags_sorted = sorted(self.stem_flags,  key=len, reverse=True)
 
+    def _deduplicate(self, results: list[VerbAnalysis]) -> list[VerbAnalysis]:
+        seen = set()
+        out = []
+        for r in results:
+            key = (r.lemma, r.suffix, r.paradigm, str(r.features))
+            if key not in seen:
+                seen.add(key)
+                out.append(r)
+        return out
+        
+    def _is_plausible_lemma(self, lemma: str, suffix: str) -> bool:
+        # Reject empty or single-character lemmas
+        if len(lemma) < 2:
+            return False
+        # If a verb stem lexicon is loaded, use it as a gate
+        if self.verb_lexicon is not None and lemma not in self.verb_lexicon:
+            return False
+        return True
+
     # ── Public API ─────────────────────────────────────────────────────────────
 
     def analyze(self, word: str) -> list[VerbAnalysis]:
@@ -89,6 +109,8 @@ class VerbAnalyzer:
         doesn't look like a verb according to this analyzer's resources.
         Results are ordered: irregulars first, then longest-suffix matches.
         """
+        word = unicodedata.normalize('NFC', word.strip())
+
         word = word.strip()
         results: list[VerbAnalysis] = []
         seen:    set[tuple]         = set()   # (lemma, suffix, paradigm, features) dedup key
@@ -104,6 +126,7 @@ class VerbAnalyzer:
                 features=features, irregular=True,
                 auxiliary=aux[0] if aux else None,
                 aux_flag=aux[1]  if aux else None,
+                confidence="high",
             ))
             # Don't return early — the same word might also match suffix rules
             # (rare but possible for highly regular irregulars)
@@ -116,6 +139,9 @@ class VerbAnalyzer:
             stem_base = word[: len(word) - len(suffix)]
             lemma     = stem_base + add_back     # add_back may be empty string
 
+            if not self._is_plausible_lemma(lemma, suffix):
+                continue
+
             if not lemma:
                 continue
 
@@ -123,20 +149,24 @@ class VerbAnalyzer:
             feat_list = extract_features(suffix, self.suffix_flags)
 
             for features in feat_list:
-                key = (lemma, suffix, paradigm, str(features))
+                key = (lemma, suffix, paradigm)
                 if key in seen:
                     continue
                 seen.add(key)
 
                 aux = self._detect_aux(lemma)
+                conf = "medium" if len(suffix) >= 3 else "low"
                 results.append(VerbAnalysis(
                     surface=word, lemma=lemma,
                     suffix=suffix, paradigm=paradigm,
                     features=features, irregular=False,
                     auxiliary=aux[0] if aux else None,
                     aux_flag=aux[1]  if aux else None,
+                    confidence=conf,
                 ))
 
+        results = self._deduplicate(results)
+        results.sort(key=lambda a: {"high": 0, "medium": 1, "low": 2}[a.confidence])
         return results
 
     def analyze_batch(self, words: list[str]) -> dict[str, list[VerbAnalysis]]:
@@ -164,7 +194,7 @@ class VerbAnalyzer:
         then falls back to VERB_AUXILIARY_LIST.
         """
         for morph in self._stem_flags_sorted:
-            if morph in stem:
+            if stem == morph or stem.endswith(morph) or stem.startswith(morph):
                 return (morph, self.stem_flags[morph])
         for aux in self._aux_sorted:
             if stem == aux or stem.endswith(aux):

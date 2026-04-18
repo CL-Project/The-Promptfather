@@ -18,6 +18,9 @@ _SUBJUNCTIVE_SUFFIXES
 _INFINITIVE_MAP       suffix → full VerbFeatures kwargs  (unambiguous)
 _FLAG_TO_FEATURE      MorpHIN flag → partial feature dict
 """
+import unicodedata
+
+_nfc = lambda s: unicodedata.normalize('NFC', s)
 
 # ── Terminal morpheme → gender/number ────────────────────────────────────────
 # Ordered longest-first so the greedy match works correctly.
@@ -63,7 +66,7 @@ _PERSON_PREFIXES: list[tuple[str, str]] = [
 
 # ── Suffix membership sets for aspect / mood ─────────────────────────────────
 
-_FUTURE_SUFFIXES: frozenset[str] = frozenset([
+_FUTURE_SUFFIXES: frozenset[str] = frozenset(_nfc(s) for s in [
     "ूंगा",  "ूँगा",  "ूंगी",  "ूँगी",
     "ऊंगा",  "ऊँगा",  "ऊंगी",  "ऊँगी",
     "ेगा",   "ेगी",   "ेंगे",  "ेंगी",
@@ -73,9 +76,9 @@ _FUTURE_SUFFIXES: frozenset[str] = frozenset([
     "ोंगे",  "ोंगी",
 ])
 
-_IMPERFECTIVE_SUFFIXES: frozenset[str] = frozenset(["ता", "ती", "ते", "तीं"])
+_IMPERFECTIVE_SUFFIXES: frozenset[str] = frozenset(_nfc(s) for s in ["ता", "ती", "ते", "तीं"])
 
-_PERFECTIVE_SUFFIXES: frozenset[str] = frozenset([
+_PERFECTIVE_SUFFIXES: frozenset[str] = frozenset(_nfc(s) for s in [
     "या",  "यी",  "ये",  "यीं",  "यें",
     "ई",   "ईं",
     "िया",
@@ -84,12 +87,12 @@ _PERFECTIVE_SUFFIXES: frozenset[str] = frozenset([
     "ा",   "ी",   "े",   "ीं",
 ])
 
-_IMPERATIVE_SUFFIXES: frozenset[str] = frozenset([
+_IMPERATIVE_SUFFIXES: frozenset[str] = frozenset(_nfc(s) for s in [
     "ो",  "ओ",   "िए",  "िये", "इए",  "इये",
     "जिये", "जिए",
 ])
 
-_SUBJUNCTIVE_SUFFIXES: frozenset[str] = frozenset([
+_SUBJUNCTIVE_SUFFIXES: frozenset[str] = frozenset(_nfc(s) for s in [
     "ए", "एँ", "ये", "यें",
     "ूँ", "ऊँ", "ूं", "ऊं",
     "ों", "ें",
@@ -110,4 +113,20 @@ _FLAG_TO_FEATURE: dict[str, dict] = {
     "ne": {"verbal_type": "infinitive", "case": "O"},
     "ni": {"verbal_type": "infinitive", "gender": "F"},
     "y":  {"aspect": "perfective"},    # ya / ye / e / i perfective markers
+}
+
+_AMBIGUOUS_SUFFIXES: dict[str, list[dict]] = {
+    "ए": [
+        {"aspect": "perfective", "verbal_type": "participle", "gender": "M", "number": "P"},
+        {"mood": "subjunctive", "verbal_type": "finite"},
+        {"mood": "subjunctive", "verbal_type": "finite", "person": "3", "number": "S"},
+    ],
+    "े": [
+        {"aspect": "perfective", "verbal_type": "participle", "gender": "M", "number": "P"},
+        {"mood": "subjunctive", "verbal_type": "finite", "person": "2"},
+    ],
+    "ें": [
+        {"mood": "subjunctive", "verbal_type": "finite", "number": "S"},
+        {"mood": "subjunctive", "verbal_type": "finite", "number": "P"},
+    ],
 }
