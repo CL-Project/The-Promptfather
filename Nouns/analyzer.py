@@ -129,7 +129,7 @@ def load_lexicon(tsv_path):
 if __name__ == '__main__':
     import os
 
-    tsv_path = os.path.join(os.path.dirname(__file__), 'data', 'noun_lexicon_expanded.tsv')
+    tsv_path = os.path.join(os.path.dirname(__file__), 'data', 'noun_lexicon_complete.tsv')
     lexicon_lookup, lexicon_display, lexicon_confidence = load_lexicon(tsv_path)
     print(f"Loaded {len(lexicon_lookup)} lemmas")
 
