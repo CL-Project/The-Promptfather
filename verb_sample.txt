@@ -1,0 +1,1035 @@
+VERB ANALYZER — STRATIFIED ERROR SAMPLE
+200 tokens, stratified by verbal type
+================================================================
+
+  1. [no_analysis]  surface=टूटकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2580829_date_8_7_2004.dat line 89
+     GOLD:      lemma=टूट  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+  2. [no_analysis]  surface=रह  vtype=unknown/conf=none  cpos=VM
+     file-andhe_ki_lathi-1507111038.dat line 19
+     GOLD:      lemma=रह  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+  3. [no_analysis]  surface=आकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2628342_date_27_7_2004.dat line 173
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+  4. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2561779_date_1_7_2004.dat line 99
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+  5. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2527096_date_15_6_2004.dat line 83
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+  6. [wrong_lemma]  surface=पड़ता  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2508813_date_8_6_2004.dat line 88
+     GOLD:      lemma=पड  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='पड़'        suf='ता'       aspect:imperfective, verbal_type:participle, number:S, gender:M  compound(पड़)
+     PREDICTED: lemma='पड़त'       suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M  compound(पड़)
+
+  7. [wrong_lemma]  surface=आने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2504145_date_5_6_2004.dat line 172
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='आन'         suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(आ)
+
+  8. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2522686_date_13_6_2004.dat line 284
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+  9. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2511319_date_9_6_2004.dat line 32
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 10. [wrong_features]  surface=बरती  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2600214_date_16_7_2004.dat line 64
+     GOLD:      lemma=बरत  asp=None  ten=None  mood=None  gen=F  num=P  per=None
+     PREDICTED: lemma='बर'         suf='ती'       aspect:imperfective, verbal_type:participle, number:S, gender:F
+     PREDICTED: lemma='बरत'        suf='ी'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+ 11. [wrong_features]  surface=देते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2522690_date_13_6_2004.dat line 43
+     GOLD:      lemma=दे  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='दे'         suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(दे)
+     PREDICTED: lemma='देत'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(दे)
+
+ 12. [no_analysis]  surface=लपेट  vtype=unknown/conf=none  cpos=VM
+     file-rishthey_ka_dhaag-0807112232.dat line 966
+     GOLD:      lemma=लपेट  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 13. [no_analysis]  surface=जुट  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2491791_date_31_5_2004.dat line 159
+     GOLD:      lemma=जुट  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 14. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2578407_date_7_7_2004.dat line 137
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 15. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2583215_date_9_7_2004.dat line 77
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 16. [no_analysis]  surface=आकर  vtype=unknown/conf=none  cpos=VM
+     1070621056_2.dat line 86
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 17. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2504128_date_5_6_2004.dat line 130
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 18. [wrong_features]  surface=चाहते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2499325_date_3_6_2004.dat line 58
+     GOLD:      lemma=चाह  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='चाह'        suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(चाह)
+     PREDICTED: lemma='चाहत'       suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(चाह)
+
+ 19. [wrong_lemma]  surface=आने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2489463_date_30_5_2004.dat line 208
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='आन'         suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(आ)
+
+ 20. [no_analysis]  surface=बन  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2477212_date_26_5_2004.dat line 81
+     GOLD:      lemma=बन  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 21. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2529450_date_16_6_2004.dat line 131
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 22. [wrong_lemma]  surface=पकड़ा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2559039_date_29_6_2004.dat line 133
+     GOLD:      lemma=पकड  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='पकड़'       suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+ 23. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     file-tyaag-1507111040.dat line 973
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 24. [no_analysis]  surface=उतरकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2496821_date_2_6_2004.dat line 149
+     GOLD:      lemma=उतर  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 25. [wrong_lemma]  surface=करके  vtype=participle/conf=low  cpos=VM
+     file-sapna-0707111503.dat line 1086
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: lemma='करक'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+ 26. [no_analysis]  surface=NULL  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2496840_date_2_6_2004.dat line 152
+     GOLD:      lemma=null  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 27. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2554956_date_28_6_2004.dat line 238
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 28. [no_analysis]  surface=ढूंढ़  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2531916_date_17_6_2004.dat line 76
+     GOLD:      lemma=ढूंढ़  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 29. [wrong_lemma]  surface=उड़ाओ  vtype=finite/conf=low  cpos=VM
+     file-rishthey_ka_dhaag-0807112232.dat line 784
+     GOLD:      lemma=उडा  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='उड़ा'       suf='ओ'        mood:imperative, verbal_type:finite, person:2
+
+ 30. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2578375_date_7_7_2004.dat line 150
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 31. [no_analysis]  surface=तोड़मरोड़  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2543493_date_22_6_2004.dat line 128
+     GOLD:      lemma=तोड़मरोड़  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 32. [no_analysis]  surface=बन  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2527125_date_16_6_2004.dat line 24
+     GOLD:      lemma=बन  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 33. [wrong_lemma]  surface=दिखा  vtype=participle/conf=low  cpos=VM
+     1070829029_2.dat line 155
+     GOLD:      lemma=दिखा  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='दिख'        suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+ 34. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2580823_date_8_7_2004.dat line 173
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 35. [no_analysis]  surface=आए  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2561792_date_1_7_2004.dat line 105
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 36. [no_analysis]  surface=रह  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2513700_date_9_6_2004.dat line 118
+     GOLD:      lemma=रह  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 37. [wrong_features]  surface=पहुँचाई  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2536769_date_19_6_2004.dat line 97
+     GOLD:      lemma=पहुँचा  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: lemma='पहुँचा'     suf='ई'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+ 38. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2518275_date_12_6_2004.dat line 46
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 39. [wrong_features]  surface=चाहो  vtype=finite/conf=low  cpos=VM
+     file-parithyaag-0707111503.dat line 980
+     GOLD:      lemma=चाह  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='चाह'        suf='ो'        mood:imperative, verbal_type:finite, person:2  compound(चाह)
+
+ 40. [wrong_features]  surface=साधते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2522690_date_13_6_2004.dat line 184
+     GOLD:      lemma=साध  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='साध'        suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M
+     PREDICTED: lemma='साधत'       suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 41. [no_analysis]  surface=लेकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2561779_date_1_7_2004.dat line 400
+     GOLD:      lemma=ले  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 42. [no_analysis]  surface=चढकर  vtype=unknown/conf=none  cpos=VM
+     file-yes-sir-0707111505.dat line 1092
+     GOLD:      lemma=चढ  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 43. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     file-khadi_ka_kurtha-0807112238.dat line 568
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 44. [wrong_features]  surface=करते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_3254639_date_6_5_2005.dat line 102
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='कर'         suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(कर)
+     PREDICTED: lemma='करत'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+ 45. [wrong_lemma]  surface=हुई  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2516268_date_10_6_2004.dat line 43
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='हु'         suf='ई'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+ 46. [no_analysis]  surface=कह  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2573519_date_6_7_2004.dat line 201
+     GOLD:      lemma=कह  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 47. [wrong_features]  surface=दिए  vtype=irregular/conf=high  cpos=VM
+     fullnews_id_2499650_date_4_6_2004.dat line 244
+     GOLD:      lemma=दे  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: [IRREG] lemma='दे'         suf='(irregular)' aspect:perfective, verbal_type:participle, number:P, gender:M  compound(दे)
+     PREDICTED: lemma='दि'         suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 48. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2628341_date_27_7_2004.dat line 27
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 49. [no_analysis]  surface=आई  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2536761_date_19_6_2004.dat line 64
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 50. [wrong_features]  surface=करते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2479662_date_27_5_2004.dat line 236
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='कर'         suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(कर)
+     PREDICTED: lemma='करत'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+ 51. [no_analysis]  surface=छीन  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2522687_date_13_6_2004.dat line 7
+     GOLD:      lemma=छीन  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 52. [no_analysis]  surface=चल  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2543565_date_23_6_2004.dat line 263
+     GOLD:      lemma=चल  asp=None  ten=None  mood=None  gen=F  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 53. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2494318_date_1_6_2004.dat line 67
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 54. [no_analysis]  surface=था  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2575975_date_7_7_2004.dat line 352
+     GOLD:      lemma=था  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 55. [no_analysis]  surface=बन  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2561783_date_1_7_2004.dat line 9
+     GOLD:      lemma=बन  asp=None  ten=None  mood=None  gen=M  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 56. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2504176_date_6_6_2004.dat line 266
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 57. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2554866_date_27_6_2004.dat line 88
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 58. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2568812_date_3_7_2004.dat line 111
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 59. [wrong_lemma]  surface=हुए  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2580803_date_8_7_2004.dat line 61
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: lemma='हू'         suf='ुए'       aspect:perfective, verbal_type:participle, number:P, gender:M
+     PREDICTED: lemma='हु'         suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 60. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2534461_date_18_6_2004.dat line 95
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 61. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2494335_date_1_6_2004.dat line 147
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 62. [wrong_features]  surface=होने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2504143_date_5_6_2004.dat line 119
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: lemma='हो'         suf='ने'       verbal_type:infinitive, number:S, gender:M, case:O
+     PREDICTED: lemma='होन'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 63. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2575932_date_6_7_2004.dat line 70
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 64. [wrong_features]  surface=करें  vtype=finite/conf=low  cpos=VM
+     fullnews_id_2580819_date_8_7_2004.dat line 49
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: lemma='कर'         suf='ें'       mood:subjunctive, verbal_type:finite, number:S  compound(कर)
+
+ 65. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     file-udhaar-0707111504.dat line 1151
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 66. [no_analysis]  surface=NULL  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2561811_date_1_7_2004.dat line 207
+     GOLD:      lemma='  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 67. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2620695_date_24_7_2004.dat line 93
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 68. [no_analysis]  surface=थे  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2522727_date_14_6_2004.dat line 120
+     GOLD:      lemma=था  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 69. [no_analysis]  surface=कहकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2491821_date_1_6_2004.dat line 196
+     GOLD:      lemma=कह  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 70. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2612815_date_21_7_2004.dat line 334
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 71. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2534555_date_19_6_2004.dat line 142
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 72. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2583219_date_9_7_2004.dat line 63
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 73. [no_analysis]  surface=आ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2527122_date_16_6_2004.dat line 151
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 74. [wrong_lemma]  surface=होगा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2615522_date_23_7_2004.dat line 63
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='होग'        suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+ 75. [no_analysis]  surface=हुआ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2554867_date_27_6_2004.dat line 89
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 76. [wrong_lemma]  surface=बनवाया  vtype=participle/conf=low  cpos=VM
+     1070425031_1.dat line 116
+     GOLD:      lemma=बन  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='बनवा'       suf='या'       aspect:perfective, verbal_type:participle, number:S, gender:M  compound(बन)
+     PREDICTED: lemma='बनवाय'      suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M  compound(बन)
+
+ 77. [no_analysis]  surface=पड़  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2513716_date_9_6_2004.dat line 21
+     GOLD:      lemma=पड़  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 78. [no_analysis]  surface=काट  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2501753_date_5_6_2004.dat line 202
+     GOLD:      lemma=काट  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 79. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2564263_date_1_7_2004.dat line 71
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 80. [no_analysis]  surface=बेचकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2499655_date_4_6_2004.dat line 155
+     GOLD:      lemma=बेच  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+ 81. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_3351953_date_17_6_2005.dat line 112
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 82. [wrong_lemma]  surface=बढ़ाए  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2504164_date_6_6_2004.dat line 189
+     GOLD:      lemma=बढा  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='बढ़ा'       suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 83. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2543493_date_22_6_2004.dat line 188
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 84. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2580827_date_8_7_2004.dat line 62
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 85. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2516264_date_10_6_2004.dat line 164
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 86. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2520573_date_13_6_2004.dat line 23
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 87. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2575966_date_7_7_2004.dat line 110
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 88. [wrong_features]  surface=पूछे  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2518183_date_11_6_2004.dat line 33
+     GOLD:      lemma=पूछ  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='पूछ'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 89. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     file-khadi_ka_kurtha-0807112238.dat line 873
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 90. [wrong_lemma]  surface=हुए  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2531910_date_17_6_2004.dat line 25
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: lemma='हू'         suf='ुए'       aspect:perfective, verbal_type:participle, number:P, gender:M
+     PREDICTED: lemma='हु'         suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 91. [wrong_lemma]  surface=निपटा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2556988_date_29_6_2004.dat line 245
+     GOLD:      lemma=निपटा  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='निपट'       suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+ 92. [wrong_features]  surface=करते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2554875_date_27_6_2004.dat line 46
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='कर'         suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(कर)
+     PREDICTED: lemma='करत'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+ 93. [wrong_features]  surface=करने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2516296_date_11_6_2004.dat line 117
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: lemma='कर'         suf='ने'       verbal_type:infinitive, number:S, gender:M, case:O  compound(कर)
+     PREDICTED: lemma='करन'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+ 94. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2522694_date_13_6_2004.dat line 54
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+ 95. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2522689_date_13_6_2004.dat line 222
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 96. [wrong_features]  surface=किए  vtype=irregular/conf=high  cpos=VM
+     fullnews_id_2575944_date_6_7_2004.dat line 34
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: [IRREG] lemma='कर'         suf='(irregular)' aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+     PREDICTED: lemma='कि'         suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+ 97. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2534552_date_19_6_2004.dat line 141
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+ 98. [wrong_lemma]  surface=होगी  vtype=participle/conf=low  cpos=VM
+     file-rishthey_ka_dhaag-0807112232.dat line 937
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='होग'        suf='ी'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+ 99. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2484341_date_28_5_2004.dat line 80
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+100. [wrong_lemma]  surface=होगा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2564261_date_1_7_2004.dat line 70
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='होग'        suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+101. [wrong_features]  surface=लिए  vtype=irregular/conf=high  cpos=VM
+     fullnews_id_2564272_date_1_7_2004.dat line 105
+     GOLD:      lemma=ले  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: [IRREG] lemma='ले'         suf='(irregular)' aspect:perfective, verbal_type:participle, number:P, gender:M  compound(ले)
+     PREDICTED: lemma='लि'         suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+102. [wrong_features]  surface=लाने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2516260_date_10_6_2004.dat line 194
+     GOLD:      lemma=ला  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: lemma='ला'         suf='ने'       verbal_type:infinitive, number:S, gender:M, case:O
+     PREDICTED: lemma='लान'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+103. [no_analysis]  surface=हटाकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2494314_date_1_6_2004.dat line 6
+     GOLD:      lemma=हटा  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+104. [wrong_lemma]  surface=हुए  vtype=participle/conf=low  cpos=VM
+     file-rishthey_ka_dhaag-0807112232.dat line 429
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: lemma='हू'         suf='ुए'       aspect:perfective, verbal_type:participle, number:P, gender:M
+     PREDICTED: lemma='हु'         suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+105. [no_analysis]  surface=आ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2484410_date_29_5_2004.dat line 47
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+106. [no_analysis]  surface=चल  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2545613_date_23_6_2004.dat line 134
+     GOLD:      lemma=चल  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+107. [wrong_features]  surface=देखते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2568927_date_4_7_2004.dat line 180
+     GOLD:      lemma=देख  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='देख'        suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(दे)
+     PREDICTED: lemma='देखत'       suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(दे)
+
+108. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2580810_date_8_7_2004.dat line 97
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+109. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2578416_date_8_7_2004.dat line 281
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+110. [wrong_lemma]  surface=पढ़ता  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2496922_date_3_6_2004.dat line 126
+     GOLD:      lemma=पढ  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='पढ़'        suf='ता'       aspect:imperfective, verbal_type:participle, number:S, gender:M
+     PREDICTED: lemma='पढ़त'       suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+111. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2520521_date_12_6_2004.dat line 44
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+112. [no_analysis]  surface=उतर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2610163_date_20_7_2004.dat line 15
+     GOLD:      lemma=उतर  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+113. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2578474_date_8_7_2004.dat line 108
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+114. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2552480_date_26_6_2004.dat line 112
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+115. [no_analysis]  surface=हुआ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2474841_date_25_5_2004.dat line 131
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+116. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2506462_date_6_6_2004.dat line 72
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+117. [no_analysis]  surface=कह  vtype=unknown/conf=none  cpos=VM
+     file-mouth_ka_saudagar-1507111034.dat line 794
+     GOLD:      lemma=कह  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+118. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2615432_date_22_7_2004.dat line 130
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+119. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2580820_date_8_7_2004.dat line 111
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+120. [wrong_lemma]  surface=देगी  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2529449_date_16_6_2004.dat line 119
+     GOLD:      lemma=दे  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='देग'        suf='ी'        aspect:perfective, verbal_type:participle, number:S, gender:F  compound(दे)
+
+121. [wrong_features]  surface=करते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2520573_date_13_6_2004.dat line 88
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='कर'         suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(कर)
+     PREDICTED: lemma='करत'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+122. [no_analysis]  surface=हुआ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2484339_date_28_5_2004.dat line 98
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+123. [no_analysis]  surface=था  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2484404_date_29_5_2004.dat line 40
+     GOLD:      lemma=था  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+124. [wrong_lemma]  surface=हुई  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2583218_date_9_7_2004.dat line 83
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='हु'         suf='ई'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+125. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     1070425029_3.dat line 11
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+126. [wrong_lemma]  surface=आने  vtype=participle/conf=low  cpos=VM
+     file-rishthey_ka_dhaag-0807112232.dat line 842
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: lemma='आन'         suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(आ)
+
+127. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2605272_date_18_7_2004.dat line 293
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+128. [no_analysis]  surface=सुनकर  vtype=unknown/conf=none  cpos=VM
+     file-udhaar-0707111504.dat line 960
+     GOLD:      lemma=सुन  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+129. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     1070425056_2.dat line 139
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+130. [no_analysis]  surface=लेकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2484370_date_28_5_2004.dat line 35
+     GOLD:      lemma=ले  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+131. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2554861_date_27_6_2004.dat line 185
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+132. [wrong_features]  surface=चलाएंगे  vtype=finite/conf=medium  cpos=VM
+     fullnews_id_2508874_date_8_6_2004.dat line 260
+     GOLD:      lemma=चला  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='चला'        suf='एंगे'     tense:future, verbal_type:finite, number:P, gender:M  compound(चल)
+     PREDICTED: lemma='चलाएंग'     suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(चल)
+
+133. [wrong_lemma]  surface=चाहिए  vtype=finite/conf=low  cpos=VM
+     fullnews_id_2516264_date_10_6_2004.dat line 72
+     GOLD:      lemma=चाहिए  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: lemma='चाह'        suf='िए'       mood:imperative, verbal_type:finite, person:2  compound(चाह)
+     PREDICTED: lemma='चाहि'       suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(चाह)
+
+134. [wrong_lemma]  surface=बढ़ी  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2479661_date_27_5_2004.dat line 24
+     GOLD:      lemma=बढ  asp=None  ten=None  mood=None  gen=F  num=P  per=None
+     PREDICTED: lemma='बढ़'        suf='ी'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+135. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2504164_date_6_6_2004.dat line 173
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+136. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2513742_date_10_6_2004.dat line 96
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+137. [no_analysis]  surface=जी  vtype=unknown/conf=none  cpos=VM
+     file-andhe_ki_lathi-1507111038.dat line 358
+     GOLD:      lemma=जी  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+138. [wrong_lemma]  surface=लगा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2479665_date_27_5_2004.dat line 10
+     GOLD:      lemma=लगा  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='लग'         suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M  compound(लग)
+
+139. [no_analysis]  surface=ढक  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2491763_date_31_5_2004.dat line 194
+     GOLD:      lemma=ढक  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+140. [no_analysis]  surface=थे  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2605251_date_18_7_2004.dat line 120
+     GOLD:      lemma=था  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+141. [wrong_lemma]  surface=बढ़ा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2552488_date_26_6_2004.dat line 13
+     GOLD:      lemma=बढ़ा  asp=None  ten=None  mood=None  gen=F  num=P  per=None
+     PREDICTED: lemma='बढ़'        suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+142. [wrong_lemma]  surface=होंगे  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2605273_date_18_7_2004.dat line 181
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: lemma='होंग'       suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+143. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2559041_date_29_6_2004.dat line 190
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+144. [wrong_lemma]  surface=पड़ा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2564258_date_1_7_2004.dat line 221
+     GOLD:      lemma=पड  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='पड़'        suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M  compound(पड़)
+
+145. [wrong_features]  surface=कहते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2520528_date_12_6_2004.dat line 119
+     GOLD:      lemma=कह  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='कह'         suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M
+     PREDICTED: lemma='कहत'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+146. [wrong_lemma]  surface=लगवा  vtype=participle/conf=low  cpos=VM
+     file-khadi_ka_kurtha-0807112238.dat line 693
+     GOLD:      lemma=लग  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='लगव'        suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M  compound(लग)
+
+147. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2578385_date_7_7_2004.dat line 226
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+148. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2504136_date_5_6_2004.dat line 117
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+149. [wrong_lemma]  surface=मांगने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2550227_date_26_6_2004.dat line 123
+     GOLD:      lemma=माँग  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: lemma='मांग'       suf='ने'       verbal_type:infinitive, number:S, gender:M, case:O
+     PREDICTED: lemma='मांगन'      suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+150. [no_analysis]  surface=हैं  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2534439_date_18_6_2004.dat line 28
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+151. [wrong_features]  surface=पाने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2610170_date_20_7_2004.dat line 138
+     GOLD:      lemma=पा  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: lemma='पा'         suf='ने'       verbal_type:infinitive, number:S, gender:M, case:O  compound(पा)
+     PREDICTED: lemma='पान'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(पा)
+
+152. [no_analysis]  surface=बिखेरकर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2580867_date_9_7_2004.dat line 91
+     GOLD:      lemma=बिखेर  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+153. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2552480_date_26_6_2004.dat line 39
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+154. [no_analysis]  surface=था  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2550142_date_25_6_2004.dat line 77
+     GOLD:      lemma=था  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+155. [no_analysis]  surface=बन  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2573580_date_6_7_2004.dat line 204
+     GOLD:      lemma=बन  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+156. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2499326_date_3_6_2004.dat line 91
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+157. [no_analysis]  surface=आई  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2491782_date_31_5_2004.dat line 53
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+158. [wrong_lemma]  surface=होंगे  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2536766_date_19_6_2004.dat line 139
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='होंग'       suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+159. [no_analysis]  surface=घूम  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2513737_date_10_6_2004.dat line 98
+     GOLD:      lemma=घूम  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+160. [wrong_lemma]  surface=आने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2518178_date_11_6_2004.dat line 245
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: lemma='आन'         suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(आ)
+
+161. [wrong_lemma]  surface=हुई  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2525003_date_14_6_2004.dat line 90
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='हु'         suf='ई'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+162. [wrong_lemma]  surface=बढ़ा  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2501718_date_4_6_2004.dat line 9
+     GOLD:      lemma=बढा  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='बढ़'        suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+163. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2633508_date_29_7_2004.dat line 190
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+164. [wrong_features]  surface=करने  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2566778_date_2_7_2004.dat line 248
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: lemma='कर'         suf='ने'       verbal_type:infinitive, number:S, gender:M, case:O  compound(कर)
+     PREDICTED: lemma='करन'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+165. [no_analysis]  surface=सौंप  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2558470_date_29_6_2004.dat line 57
+     GOLD:      lemma=सौंप  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+166. [wrong_features]  surface=करेंगे  vtype=finite/conf=medium  cpos=VM
+     fullnews_id_2580878_date_9_7_2004.dat line 44
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='कर'         suf='ेंगे'     tense:future, verbal_type:finite, number:P, gender:M  compound(कर)
+     PREDICTED: lemma='करेंग'      suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+167. [no_analysis]  surface=उठ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2534466_date_18_6_2004.dat line 333
+     GOLD:      lemma=उठ  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+168. [wrong_lemma]  surface=होगी  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2561712_date_30_6_2004.dat line 105
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='होग'        suf='ी'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+169. [no_analysis]  surface=सौंप  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2578384_date_7_7_2004.dat line 124
+     GOLD:      lemma=सौंप  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+170. [no_analysis]  surface=पड़  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2484340_date_28_5_2004.dat line 73
+     GOLD:      lemma=पड  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+171. [no_analysis]  surface=NULL  vtype=unknown/conf=none  cpos=VM
+     file-kiraye_ka_ghar-1507111043.dat line 30
+     GOLD:      lemma=null  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+172. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2534464_date_18_6_2004.dat line 10
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+173. [no_analysis]  surface=NULL  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2499648_date_4_6_2004.dat line 39
+     GOLD:      lemma=null  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+174. [no_analysis]  surface=आकर  vtype=unknown/conf=none  cpos=VM
+     1070609018_1.dat line 207
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+175. [wrong_lemma]  surface=होगी  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2625778_date_26_7_2004.dat line 130
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='होग'        suf='ी'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+176. [wrong_features]  surface=दिलाते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2580823_date_8_7_2004.dat line 188
+     GOLD:      lemma=दिला  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='दिला'       suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M
+     PREDICTED: lemma='दिलात'      suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+177. [no_analysis]  surface=जूझ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2605260_date_18_7_2004.dat line 205
+     GOLD:      lemma=जूझ  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
+
+178. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2479716_date_27_5_2004.dat line 218
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+179. [no_analysis]  surface=भेज  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2633494_date_29_7_2004.dat line 30
+     GOLD:      lemma=भेज  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+180. [wrong_features]  surface=करने  vtype=participle/conf=low  cpos=VM
+     file-tyaag-1507111040.dat line 1570
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=P  per=None
+     PREDICTED: lemma='कर'         suf='ने'       verbal_type:infinitive, number:S, gender:M, case:O  compound(कर)
+     PREDICTED: lemma='करन'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+
+181. [no_analysis]  surface=ले  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2571141_date_5_7_2004.dat line 113
+     GOLD:      lemma=ले  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+182. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2524995_date_14_6_2004.dat line 236
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+183. [no_analysis]  surface=आ  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2506457_date_6_6_2004.dat line 156
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+184. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2534457_date_18_6_2004.dat line 205
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+185. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2580882_date_9_7_2004.dat line 107
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=None  per=None
+     PREDICTED: (no analysis returned)
+
+186. [no_analysis]  surface=हो  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2623355_date_25_7_2004.dat line 33
+     GOLD:      lemma=हो  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+187. [wrong_lemma]  surface=बढ़ाई  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2494358_date_2_6_2004.dat line 50
+     GOLD:      lemma=बढा  asp=None  ten=None  mood=None  gen=F  num=P  per=None
+     PREDICTED: lemma='बढ़ा'       suf='ई'        aspect:perfective, verbal_type:participle, number:S, gender:F
+
+188. [wrong_lemma]  surface=सता  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2580871_date_9_7_2004.dat line 174
+     GOLD:      lemma=सता  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: lemma='सत'         suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M
+
+189. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2504128_date_5_6_2004.dat line 180
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+190. [no_analysis]  surface=मार  vtype=unknown/conf=none  cpos=VM
+     file-tyaag-1507111040.dat line 131
+     GOLD:      lemma=मार  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+191. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2506483_date_7_6_2004.dat line 65
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+192. [no_analysis]  surface=हड़प  vtype=unknown/conf=none  cpos=VM
+     file-andhe_ki_lathi-1507111038.dat line 205
+     GOLD:      lemma=हडप  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+193. [wrong_features]  surface=रहते  vtype=participle/conf=low  cpos=VM
+     fullnews_id_2474843_date_25_5_2004.dat line 168
+     GOLD:      lemma=रह  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='रह'         suf='ते'       aspect:imperfective, verbal_type:participle, number:P, gender:M  compound(रह)
+     PREDICTED: lemma='रहत'        suf='े'        aspect:perfective, verbal_type:participle, number:P, gender:M  compound(रह)
+
+194. [wrong_lemma]  surface=आता  vtype=participle/conf=low  cpos=VM
+     1070621056_2.dat line 153
+     GOLD:      lemma=आ  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: lemma='आत'         suf='ा'        aspect:perfective, verbal_type:participle, number:S, gender:M  compound(आ)
+
+195. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2561722_date_30_6_2004.dat line 35
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+196. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2612815_date_21_7_2004.dat line 142
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+197. [no_analysis]  surface=है  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2484364_date_28_5_2004.dat line 216
+     GOLD:      lemma=है  asp=None  ten=None  mood=None  gen=None  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+198. [no_analysis]  surface=NULL  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2631047_date_28_7_2004.dat line 150
+     GOLD:      lemma=भेज  asp=None  ten=None  mood=None  gen=F  num=S  per=None
+     PREDICTED: (no analysis returned)
+
+199. [wrong_features]  surface=किए  vtype=irregular/conf=high  cpos=VM
+     fullnews_id_2522735_date_14_6_2004.dat line 129
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=M  num=S  per=None
+     PREDICTED: [IRREG] lemma='कर'         suf='(irregular)' aspect:perfective, verbal_type:participle, number:P, gender:M  compound(कर)
+     PREDICTED: lemma='कि'         suf='ए'        aspect:perfective, verbal_type:participle, number:P, gender:M
+
+200. [no_analysis]  surface=कर  vtype=unknown/conf=none  cpos=VM
+     fullnews_id_2479626_date_26_5_2004.dat line 96
+     GOLD:      lemma=कर  asp=None  ten=None  mood=None  gen=None  num=P  per=None
+     PREDICTED: (no analysis returned)
