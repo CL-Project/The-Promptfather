@@ -19,15 +19,25 @@ HOW IT WORKS
 
 2. PARSE GOLD FEATURES
    The feats column uses pipe-separated key-value pairs with '-' as separator:
-       cat-v|gen-m|num-sg|per-3|asp-perf|ten-past|...
+       cat-v|gen-m|num-sg|pers-3|case-|vib-या|tam-yA|chunkId-VGF|...
 
-   Relevant keys extracted and mapped to analyzer notation:
-       gen   →  m/f          →  'M' / 'F'         (None if 'any' or missing)
-       num   →  sg/pl        →  'S' / 'P'
-       per   →  1/2/3/any    →  '1' / '2' / '3'   (None if 'any')
-       asp   →  perf/imperf  →  'perfective' / 'imperfective'
-       ten   →  fut/past/pres→  'future' / 'past' / 'present'
-       mood  →  imp/sub/cond →  'imperative' / 'subjunctive' / 'conditional'
+   Keys actually present on verbal tokens and how they are mapped:
+       gen   →  m / f / any      →  'M' / 'F' / None
+       num   →  sg / pl / any    →  'S' / 'P' / None
+       pers  →  1/2/3/1h/2h/3h  →  '1' / '2' / '3'  (honorifics collapsed)
+       tam   →  transliteration of the TAM suffix, decoded as follows:
+                 wA   → aspect:imperfective
+                 yA / yA1 / vA → aspect:perfective
+                 gA   → tense:future
+                 WA   → tense:past
+                 hE   → tense:present
+                 eM / Uz → mood:subjunctive
+                 ao / aO → mood:imperative
+                 nA / kara / 0 → (infinitive/conjunctive — no assertion)
+
+   NOTE: HDTB does NOT have explicit `asp`, `ten`, or `mood` keys on verbal
+   tokens. The original evaluator looked for these and always got None, making
+   the full-match metric meaningless. This version decodes from `tam` instead.
 
 3. LEMMA NORMALISATION
    Gold lemmas pass through unicodedata.normalize('NFC') before comparison,
@@ -111,22 +121,41 @@ from verb_analyzer import VerbAnalyzer
 # CPOS tags that identify verbal tokens in HDTB
 _VERBAL_CPOS = {"VM", "VAUX"}
 
-# HDTB aspect / tense / mood → analyzer notation
-_ASP_MAP: dict[str, str] = {
-    "perf":   "perfective",
-    "imperf": "imperfective",
-    "prog":   "imperfective",   # treat progressive as imperfective
+# HDTB feature mapping — decoded from the actual `tam` field in the corpus.
+# `asp`, `ten`, `mood` keys do NOT exist in HDTB verbal tokens.
+# Tense/aspect/mood is encoded entirely in the `tam` transliteration field.
+#
+#   tam=wA   → ता  → imperfective participle
+#   tam=yA   → या  → perfective participle
+#   tam=yA1  → या  → perfective participle (alternate annotation)
+#   tam=vA   → वा  → perfective (rare variant)
+#   tam=gA   → गा  → future
+#   tam=WA   → था  → past/habitual auxiliary
+#   tam=hE   → है  → present auxiliary
+#   tam=eM   → एं  → subjunctive
+#   tam=ao   → ओ   → imperative (low register)
+#   tam=aO   → ओ   → imperative (high register)
+#   tam=Uz   → ऊं  → subjunctive first person
+#   tam=nA   → ना  → infinitive  (no tense/aspect/mood asserted)
+#   tam=kara → कर  → conjunctive (no tense/aspect/mood asserted)
+#   tam=0    → ∅   → zero marker / light verb (no assertion)
+_TAM_TO_FEATURES: dict[str, dict] = {
+    "wA":   {"aspect": "imperfective"},
+    "yA":   {"aspect": "perfective"},
+    "yA1":  {"aspect": "perfective"},
+    "vA":   {"aspect": "perfective"},
+    "gA":   {"tense":  "future"},
+    "WA":   {"tense":  "past"},
+    "hE":   {"tense":  "present"},
+    "eM":   {"mood":   "subjunctive"},
+    "ao":   {"mood":   "imperative"},
+    "aO":   {"mood":   "imperative"},
+    "Uz":   {"mood":   "subjunctive"},
+    "nA":   {},   # infinitive  — no tense/aspect/mood to assert
+    "kara": {},   # conjunctive — no tense/aspect/mood to assert
+    "0":    {},   # zero marker — no assertion
 }
-_TEN_MAP: dict[str, str] = {
-    "fut":  "future",
-    "past": "past",
-    "pres": "present",
-}
-_MOO_MAP: dict[str, str] = {
-    "imp": "imperative",
-    "sub": "subjunctive",
-    "cond": "conditional",
-}
+
 _GEN_MAP: dict[str, Optional[str]] = {
     "m":   "M",
     "f":   "F",
@@ -137,10 +166,11 @@ _NUM_MAP: dict[str, Optional[str]] = {
     "pl":  "P",
     "any": None,
 }
+# pers-1h / pers-2h / pers-3h are honorific variants — collapse to base person
 _PER_MAP: dict[str, Optional[str]] = {
-    "1":   "1",
-    "2":   "2",
-    "3":   "3",
+    "1":   "1",  "1h": "1",
+    "2":   "2",  "2h": "2",
+    "3":   "3",  "3h": "3",
     "any": None,
 }
 
@@ -170,23 +200,30 @@ def _map_features(feat_dict: dict[str, str]) -> dict[str, Optional[str]]:
     """
     Convert an HDTB feature dict to VerbAnalyzer notation.
 
-    Returns None for any dimension that is absent or explicitly 'any'
-    so the evaluator can skip those slots during comparison.
+    HDTB does not have asp/ten/mood keys on verbal tokens.
+    Tense, aspect, and mood are decoded entirely from the `tam` field.
+    Person uses the key `pers` (not `per`), and honorific variants
+    (1h, 2h, 3h) are collapsed to their base values.
+
+    Returns None for any dimension that is absent or 'any', so the
+    evaluator skips those slots during comparison rather than penalising
+    the analyzer for unannotated dimensions.
     """
-    raw_gen  = feat_dict.get("gen",  "")
-    raw_num  = feat_dict.get("num",  "")
-    raw_per  = feat_dict.get("per",  "")
-    raw_asp  = feat_dict.get("asp",  "")
-    raw_ten  = feat_dict.get("ten",  "")
-    raw_mood = feat_dict.get("mood", "")
+    raw_gen = feat_dict.get("gen",  "")
+    raw_num = feat_dict.get("num",  "")
+    raw_per = feat_dict.get("pers", "")   # HDTB uses 'pers', not 'per'
+    raw_tam = feat_dict.get("tam",  "")
+
+    # Decode tense/aspect/mood from tam; default to empty dict (all None)
+    tam_feats = _TAM_TO_FEATURES.get(raw_tam, {})
 
     return {
         "gender": _GEN_MAP.get(raw_gen),
         "number": _NUM_MAP.get(raw_num),
         "person": _PER_MAP.get(raw_per),
-        "aspect": _ASP_MAP.get(raw_asp),
-        "tense":  _TEN_MAP.get(raw_ten),
-        "mood":   _MOO_MAP.get(raw_mood),
+        "aspect": tam_feats.get("aspect"),
+        "tense":  tam_feats.get("tense"),
+        "mood":   tam_feats.get("mood"),
     }
 
 
